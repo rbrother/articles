@@ -35,7 +35,7 @@ How about consultants having to work on the most shitty projects? I am sure this
 Good colleagues matter. Not only in gaining the respect of customers through good performance, but also simply as enjoyable and interesting human beings to spend your days with. It seems to me now, that some of the best tech people tend to gravitate to these next-generation consulting companies. This "good" should not be taken too narrowly to mean knowledge, skills and intelligence - while those are also important, the real kick that comes with these people is their character: Great unique humans with charm, personality, passion and stories to tell. Perhaps it is not just a coincidence that highly skilled people tend to also be quirky and colourful in interesting and delightful ways.
 
 ![Italy trip](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/from-a-product-company-to-a-consulting-company/colleagues.jpg)
-With Nitor colleagues on our trip to Italy in September
+<small>With Nitor colleagues on our trip to Italy in September</small>
 
 Of course it is also relative question who are "good colleagues" for any particular person. So perhaps it is more accurate to talk of "culture match": that the best colleagues for someone are the ones that are like-minded with similar values and culture expectations. When a company succeeds in bringing together people who are compatible in this way, it forsters creation of valuable feeling of "coming home", of another family.
 
@@ -46,7 +46,7 @@ The more stable business model of consultant companies might also help bring out
 What about my biggest original hurdle, my feeling that I must be working for product company in order to have a feeling of ownership of my work? In this case it turned out I was just wrong. It turns out that it does not much matter what is the chain of organisations and their agreements through which one ends up contributing to some project and product. I found out that once I *do* contribute to a product, once I *do* innovate and use my skills and write the code and features and once customers see the product and use it and are delighted by it - then regardless of anything else it feels that it is *mine* and *ours* and that nothing can take that feeling and pride away.
 
 ![Italy trip](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/from-a-product-company-to-a-consulting-company/posti-kioski.jpg)
-Customers exploring the new Post self-service kiosk that our Nitor team launched in the summer
+<small>Customers exploring the new Post self-service kiosk that our Nitor team launched in the summer</small>
 
 And even if being one degree more remote from the product does sometimes slightly lower the ownership feeling, that's not an entirely bad thing either. Towards the end of my career at Napa I think many of us, including myself, become *too* attached to the product, starting to take the ups and downs of the product *too personally*. This resulted in inevitable bad feelings when the product was suffering with heavy technical debt that seemed impossible mountain to climb. Occasionally it can be advantageous to be able to take slight healthy distance to the product in order not to become too obsessed about it.
 
@@ -57,6 +57,6 @@ Of course, life is not always sunshine anywhere. I have also experienced hard mo
 In terms of programming technologies, consulting companies might on average be more on the latest-and-greatest side of the curve than product companies with any length of history. So there might be a bit less need to compensate lack of learning in work by high-tech hobby projects like I have been doing during my years. Indeed it is remarkable that I am currently able to use in my main project the wonderful ClojureScript / Re-Frame combo that I had earlier used only in hobby projects.
 
 ![Laptop](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/from-a-product-company-to-a-consulting-company/laptop.jpg)
-A consultant decorates his laptop with stickers denoting his favorite technologies
+<small>A consultant decorates his laptop with stickers denoting his favorite technologies</small>
 
 Changing jobs can be a bit radical, even harsh. Especially for a nerd like me whose colleagues usually form my main circle of friends. With such social setting moving companies can be like a small divorce. Prospect of that has been at least in my case resulting in delaying leaving a company bit too long after things have already turned sour. And herein lies the final reason why I eventually warmed up to a possibility of life in consulting: I hope and expect to be able to "change jobs without changing jobs" - rotate to other customer projects when the need arises and still keep well-connected to my colleague-friends. Perhaps that is the sweet-spot between the possibility for social continuation on one hand and possibility for personal renewal and growth on the other. Only time will tell, but so far I am happy I opened my heart to a consulting company.
