@@ -3,8 +3,7 @@
 **How the right gift at the right time started my life-long interest in programming in 1983**
 
 ![Old photo](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/humble-beginnings-the-vic-20/oppe.jpg)
-Me, my grandmother Elsa and grandfather Oppe in 1980s
-
+<small>Me, my grandmother Elsa and grandfather Oppe in 1980s</small>
 
 My grandfather **Robert Siegfried "Oppe" Brotherus** was a wise man. He followed with interest where the world and technology was going and in 1982 come to conclusion that computers and computer skills would be important part of the future. He was then 68 years old and decided to buy home computers for all of his four grandchildren, including me. I was nine years old and blissfully ignorant of any concept of a computer. So when the Commodore VIC-20 box arrived, I was filled with genuine wonder and awe.
 
