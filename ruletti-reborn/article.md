@@ -6,7 +6,7 @@ In 2020 I re-discovered [the small roulette-game I did in 1987](https://www.brot
 
 *Now I have done just that*. The new "Ruletti 2021" version is done in Functional-Reactive style as a SPA (Single-Page App) Web-Application with ClojureScript and React/Re-frame frameworks. I have deployed it to AWS cloud S3-service.
 
-You can [play the new game here](http://roulette-reframe.s3-website.eu-north-1.amazonaws.com/  and inspect the source code at [its GitHub repo](https://github.com/rbrother/ruletti-reframe). For comparison, you can check the [original C64 version here](https://www.brotherus.net/post/blast-from-my-commodore-64-past).
+You can [play the new game here](http://roulette-reframe.s3-website.eu-north-1.amazonaws.com/) and inspect the source code at [its GitHub repo](https://github.com/rbrother/ruletti-reframe). For comparison, you can check the [original C64 version here](https://www.brotherus.net/post/blast-from-my-commodore-64-past).
 
 [![ruletti-reframe screenshot](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-reborn/ruletti-reframe.webp)](http://roulette-reframe.s3-website.eu-north-1.amazonaws.com/)
 
