@@ -4,9 +4,9 @@
 
 ![Infia windows](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/infia-windows.png)
 
-After the dead-end of [my first project of vibrational wavefunctions](https://www.brotherus.net/post/starting-on-a-career-in-computational-quantum-chemistry) and the grinding to halt of my [Arsine vibrations project](https://www.brotherus.net/post/death-by-fortran-common-block) at the Physical Chemistry laboratory, there was a need to try something with higher probability of success. To this end professor **Lauri Halonen** proposed spectrum analysis in January 1996. Halonen had available Deuterobromoacetylene (DCCBr) high-resolution infrared spectra which had been measured by **Olavi Vaittinen** (in Halonens group) and **Oliver Polanz** (from Wuppertal University in Germany) but not yet analyzed.
+After the dead-end of [my first project of vibrational wavefunctions](https://www.brotherus.net/post/starting-on-a-career-in-computational-quantum-chemistry) and the grinding to halt of my [Arsine vibrations project](https://www.brotherus.net/post/death-by-fortran-common-block) at the Physical Chemistry laboratory, there was a need to try something with higher probability of success. To this end professor **Lauri Halonen** proposed spectrum analysis in January 1996. Halonen had available Deuterobromoacetylene (DCCBr) high-resolution infrared spectra which had been measured by **Olavi Vaittinen** (in group of Halonen) and **Oliver Polanz** (from Wuppertal University in Germany) but not yet analyzed.
 
-Such spectra contain thousands of absolution peaks at specific wavelengths in the infrared area. These peaks correspond to transitions in the vibrational and rotational state of the molecule. Quantum mechanical vibration-rotation model allows derivation of mathematical relationship between the vibration and rotation parameters or the molecule and the wavelengths of its infrared spectrum. The molecular properties include force strengths of bonds between atoms and rotational moments of intertia along its axes.
+Such spectra contain thousands of absolution peaks at specific wavelengths in the infrared area. These peaks correspond to transitions in the vibrational and rotational state of the molecule. Quantum mechanical vibration-rotation model allows derivation of mathematical relationship between the vibration and rotation parameters or the molecule and the wavelengths of its infrared spectrum. The molecular properties include force strengths of bonds between atoms and rotational moments of inertia along its axes.
 
 Below Figure 1 shows one band-system out of five that I analyzed from DCCBr spectrum. Three levels of magnification demonstrate the high density of absorption peaks:
 
@@ -14,7 +14,7 @@ Below Figure 1 shows one band-system out of five that I analyzed from DCCBr spec
 
 Analysis of the spectrum means assignment of each spectrum peak to the vibration-rotation quantum transition it corresponds to. After the assignment of as many peaks as possible, the quantum mechanical model can be used to calculate molecules vibration and rotation parameters from the peak wavelengths.
 
-Other researchers in Halonens group (Olavi Vaittinen and **Maria Saarinen**) had already earlier analyzed in a similar way many spectrum band-systems of *Bromoacetylene* (HCCBr). In DCCBr the hydrogen is swapped with Deuterium (heavy hydrogen), leading to slightly different vibrational and rotational parameters, but the method of analysis should be essentially same. Olavi had software and instructions for me to use. The amount of work in such project is quite large and tedious because of the large number of spectrum peaks. But such work is also easy, predictable and low-risk in the sense that it doesn't depend on any new theoretical innovations and has high probability of leading to publishable results.
+Other researchers in the group of Halonen (Olavi Vaittinen and **Maria Saarinen**) had already earlier analyzed in a similar way many spectrum band-systems of *Bromoacetylene* (HCCBr). In DCCBr the hydrogen is swapped with Deuterium (heavy hydrogen), leading to slightly different vibrational and rotational parameters, but the method of analysis should be essentially same. Olavi had software and instructions for me to use. The amount of work in such project is quite large and tedious because of the large number of spectrum peaks. But such work is also easy, predictable and low-risk in the sense that it doesn't depend on any new theoretical innovations and has high probability of leading to publishable results.
 
 I was given the spectrum as a paper printout of 100+ pages and a computer file listing about 20 000 peak wavelengths. Olavi also provided two Fortran programs that had been used in pre analyses. One was used to determine initial peak assignments based on some preliminary guesses with *Combination Difference Prediction* algorithm. The other one was used for calculating the vibration-rotation parameters of the molecule based on final assignments. Both were command-line programs reading input files listing peak wavelengths printing text output. I quite soon learned from Olavi the operation of these programs and could proceed in the analysis work independently. Professor Halonen was also going to be still 6 months in USA, so I proceeded in the work in that sense quite independently as well. I don't have records on how many hours per week I was able to put to the effort, but probably less than 20 since I was simultaneously studying on several courses in chemistry, physics and mathematics for my Masters degree, acting as teaching assistant in Physical Chemistry laboratory courses, as the editor of Chemist Student association HYK magazine "Esitisle" and as a weekly tutor for an Open University Computer-science course.
 
@@ -30,85 +30,90 @@ So, during spring 1996 I started to divide my research time into progressing wit
 
 In Delphi visual components like windows consists of binary Form files produced Delphi UI editor and corresponding Pascal files defining functionality. For spectrum window these are [SpecWin.dfm](https://github.com/rbrother/Infia/blob/master/SPECWIN.dfm) and [SpecWin.pas](https://github.com/rbrother/Infia/blob/master/SpecWin.pas). The final version of SpecWin.pas is about 700 lines, but the initial version just showing the spectrum waveform was much shorter. ObjectPascal is object-oriented strongly-typed language and separates each file to publicly visible interface containing class-definitions (think of C++ header-file) and private implementation part which contains method implementations (think of C++ *.cpp file):
 
-    unit Specwin;
+```delphi
+unit Specwin;
 
-    interface
+interface
 
-    type
-    TSpectraWindow = class(TForm)
-        WavenumberPanel: TPanel;  // Subcomponents from designer
-        ...
-        procedure FormPaint(Sender: TObject); // Events from designer
-        procedure FormMouseDown(...; X, Y: Integer);
-        procedure FormMouseMove(...; X, Y: Integer);
-        ...
-        SpectrumLoaded : boolean; // variables
-        DrawLineMarkers, DrawPredMarkers : boolean;
-        ViewStart, ViewEnd : double;
-        ...
-        procedure DrawSpectra(startx, endx : integer);
-        procedure DrawSpectraLow(startx, endx : integer);
-        procedure DrawSpectraHigh(startx, endx : integer); 
-        procedure DrawPeakMarkers(StartWn, EndWn : double);
-        ...
-    end;
-
-    var
-    SpectraWindow: TSpectraWindow;  // Variable for the class instance
-
-    procedure TSpectraWindow.DrawGraphics(startx, endx : integer);
-        var
-            drawstart, drawend : double;
-        begin
-            drawstart := WindowXtoWave(startx-20); 
-            drawend := WindowXtoWave(endx+20);
-            if DrawLineMarkers then DrawPeakMarkers(drawstart,drawend);
-            DrawSpectra(startx, endx); // draw the spectra
-            if (Bands.count > 0) and DrawPredMarkers and DrawAllBandLabels then
-                DrawPredLabels(drawstart,drawend);
-            ...
-    end;
-
+type
+TSpectraWindow = class(TForm)
+    WavenumberPanel: TPanel;  // Subcomponents from designer
     ...
+    procedure FormPaint(Sender: TObject); // Events from designer
+    procedure FormMouseDown(...; X, Y: Integer);
+    procedure FormMouseMove(...; X, Y: Integer);
+    ...
+    SpectrumLoaded : boolean; // variables
+    DrawLineMarkers, DrawPredMarkers : boolean;
+    ViewStart, ViewEnd : double;
+    ...
+    procedure DrawSpectra(startx, endx : integer);
+    procedure DrawSpectraLow(startx, endx : integer);
+    procedure DrawSpectraHigh(startx, endx : integer); 
+    procedure DrawPeakMarkers(StartWn, EndWn : double);
+    ...
+end;
+
+var
+SpectraWindow: TSpectraWindow;  // Variable for the class instance
+
+procedure TSpectraWindow.DrawGraphics(startx, endx : integer);
+    var
+        drawstart, drawend : double;
+    begin
+        drawstart := WindowXtoWave(startx-20); 
+        drawend := WindowXtoWave(endx+20);
+        if DrawLineMarkers then DrawPeakMarkers(drawstart,drawend);
+        DrawSpectra(startx, endx); // draw the spectra
+        if (Bands.count > 0) and DrawPredMarkers and DrawAllBandLabels then
+            DrawPredLabels(drawstart,drawend);
+        ...
+end;
+...
+```
 
 I would expect that for any current or past OO-programmer ObjectPascal should appear quite clean and self-explanatory in its syntax. The root event procedure is **FormPaint** which Delphi framework calls for custom-rendering of window content. This in turn calls **DrawGraphics** which calls **DrawSpectra**. I realized quite quickly that with a very wide scale of zoom levels, single algorithm for rendering the spectrum was not enough. On high zoom levels where density of screen pixels is higher than density of spectrum samples the method of interpolating one y-position per pixel x-position works well:
 
-    procedure TSpectraWindow.DrawSpectraHigh(startx, endx : integer);
-    begin
-    xstep := (ViewEnd - ViewStart) / ClientWidth;
-    x := ViewStart + xstep * (startx-SpectraRect.Left);
-    repeat
-        y := WaveToWindowY(x);
-        screenx := WaveToWindowX(x);
-        ...
-        Canvas.LineTo(screenx, y);
-        x := x + xstep;
-    until screenx >= endx;
-    end;
+```delphi
+procedure TSpectraWindow.DrawSpectraHigh(startx, endx : integer);
+begin
+xstep := (ViewEnd - ViewStart) / ClientWidth;
+x := ViewStart + xstep * (startx-SpectraRect.Left);
+repeat
+    y := WaveToWindowY(x);
+    screenx := WaveToWindowX(x);
+    ...
+    Canvas.LineTo(screenx, y);
+    x := x + xstep;
+until screenx >= endx;
+end;
+```
 
 However, on low zoom levels, where there are 10's or 100's spectrum samples per pixel x-position, this approach would fail to capture the peaks and valleys that occur *within each pixel*. Therefore, when the samples per pixel exceeded 5 I switched to another rendering which takes multiple samples withing the x-pixel and then *renders vertical line* between the minimum and maximum sampled values.
 
-    procedure TSpectraWindow.DrawSpectraLow(startx, endx : integer);
-    begin
-        xstep := (ViewEnd - ViewStart) / ClientWidth;
-        screenx := startx;
-        x := ViewStart + xstep * (startx-SpectraRect.Left);
+```delphi
+procedure TSpectraWindow.DrawSpectraLow(startx, endx : integer);
+begin
+    xstep := (ViewEnd - ViewStart) / ClientWidth;
+    screenx := startx;
+    x := ViewStart + xstep * (startx-SpectraRect.Left);
+    repeat
+        // Find the minimum and maximum y-value in the pixels range
+        maxy := MySpectra.Value(x); miny := maxy;
+        xx := x - xstep * 0.6;
         repeat
-            // Find the minimum and maximum y-value in the pixels range
-            maxy := MySpectra.Value(x); miny := maxy;
-            xx := x - xstep * 0.6;
-            repeat
-                y := MySpectra.Value(xx);
-                if y > maxy then maxy := y;
-                if y < miny then miny := y;
-                xx := xx + 0.001; // Take samples near each other to not miss peaks
-            until xx > x + xstep*0.6;
-            Canvas.MoveTo(screenx, IntensityToWindowY(miny));
-            Canvas.LineTo(screenx, IntensityToWindowY(maxy)-1);
-            x := x + xstep;
-            inc(screenx);
-        until screenx >= endx;
-    end;
+            y := MySpectra.Value(xx);
+            if y > maxy then maxy := y;
+            if y < miny then miny := y;
+            xx := xx + 0.001; // Take samples near each other to not miss peaks
+        until xx > x + xstep*0.6;
+        Canvas.MoveTo(screenx, IntensityToWindowY(miny));
+        Canvas.LineTo(screenx, IntensityToWindowY(maxy)-1);
+        x := x + xstep;
+        inc(screenx);
+    until screenx >= endx;
+end;
+```
 
 The spectrum zooms in Figure 1 above demonstrate these rendering routines: first one is rendered with low-zoom-level version and the middle and bottom ones with the high-zoom-level version.
 
@@ -126,73 +131,77 @@ With this new data for peak assignments, I needed new files to store the data. C
 
 At runtime the bands and their assignments were modeled by classes in [BandUnit.pas](https://github.com/rbrother/Infia/blob/master/BandUnit.pas):
 
-    unit BandUnit;
+```delphi
+unit BandUnit;
 
-    TBand = class(TSaveListItem)
-        Assignments : TAssignments;
-        Name, Comment : string;
-        ColorIndex1, ColorIndex2 : integer;
-        BandType : TBandType;
-        Molecule : TMolecule;   // Reference to mole
-        UpperState, LowerState : TState; // References to the state list
-        // Methods
-        procedure DrawBandLabel(MyCanvas : TCanvas; x,y : integer; ...);
-        function AddAssignment(NewM : integer; ...);
-        ...
-    end;
+TBand = class(TSaveListItem)
+    Assignments : TAssignments;
+    Name, Comment : string;
+    ColorIndex1, ColorIndex2 : integer;
+    BandType : TBandType;
+    Molecule : TMolecule;   // Reference to mole
+    UpperState, LowerState : TState; // References to the state list
+    // Methods
+    procedure DrawBandLabel(MyCanvas : TCanvas; x,y : integer; ...);
+    function AddAssignment(NewM : integer; ...);
+    ...
+end;
 
-    TBands = class(TSaveList)
-        function Band(n : integer) : TBand;
-        function FindBand(TestBandName : string) : TBand;
-        ...
-    end;
+TBands = class(TSaveList)
+    function Band(n : integer) : TBand;
+    function FindBand(TestBandName : string) : TBand;
+    ...
+end;
+```
 
 Note the inheritance of **TBands** from **TSaveList** and **TBand** from **TSaveListItem**: I implemented these base classes in [AdvancedList.pas](https://github.com/rbrother/Infia/blob/master/AdvancedList.pas) to implement common functionality when I started to have more types of data objects that should be saved in the tagged-CSV syntax discussed above and displayed in UI grids. These classes provided shared generic code that could display and serialize multiple lists of different object-types inheriting from **TSaveListItem**, demonstrating the reasonably advanced OO-programming capabilities of Delphi in 1996:
 
-    TSaveList = class(TGridEditList)
-        procedure LoadFromTextFile(filename : string);
-        procedure SaveToTextFile(filename : string);
-        function CreateItem(fields : tstringlist) : TSaveListItem; virtual;
-        procedure LoadChildren(filename, keyfield : string; ...);
-        function FindName(NameToFind : string) : TSaveListItem;
-    end;
+```delphi
+TSaveList = class(TGridEditList)
+    procedure LoadFromTextFile(filename : string);
+    procedure SaveToTextFile(filename : string);
+    function CreateItem(fields : tstringlist) : TSaveListItem; virtual;
+    procedure LoadChildren(filename, keyfield : string; ...);
+    function FindName(NameToFind : string) : TSaveListItem;
+end;
 
-    TGridEditList = class(TAdvancedList)
-        procedure ConnectDrawGrid(Grid : TDrawGrid); override;
-        procedure GridDrawCell(Sender: TObject; Col, Row: Integer;...);
-        procedure DrawGridHeader(Col : integer; Rect : TRect;...);
-        ...
-    end;
-
-    TAdvancedList = class(TList)
-        function CreateEmptyItem : TAdvListItem; virtual; abstract;
-        function Nearest(ItemValue : TObjectValue; value : double) : integer;
-        procedure BubbleSort(Compare: TListSortCompare);
-        ...
-    end;
-
-    procedure TSaveList.LoadFromTextFile(filename : string);
-        // Reads a data text file of format:
-        // valename1=value1,valuename2=value2,...,
-    begin
-        assignfile(tablefile, filename);
-        while not eof(tablefile) do begin
-            Fields := TStringList.create;
-            readln(tablefile, line);
-            Fields.commatext := line; // Parse line into field values and names
-            NewItem := TSaveListItem(CreateItem(fields));
-            add(NewItem);
-        end;
-        closefile(tablefile);
-    end;
-
-    function TSaveList.CreateItem(fields : tstringlist) : TSaveListItem;
-    begin
-        NewItem := TSaveListItem(CreateEmptyItem);
-        NewItem.SetFieldsFromStrings(Fields);
-        CreateItem := NewItem;
-    end;
+TGridEditList = class(TAdvancedList)
+    procedure ConnectDrawGrid(Grid : TDrawGrid); override;
+    procedure GridDrawCell(Sender: TObject; Col, Row: Integer;...);
+    procedure DrawGridHeader(Col : integer; Rect : TRect;...);
     ...
+end;
+
+TAdvancedList = class(TList)
+    function CreateEmptyItem : TAdvListItem; virtual; abstract;
+    function Nearest(ItemValue : TObjectValue; value : double) : integer;
+    procedure BubbleSort(Compare: TListSortCompare);
+    ...
+end;
+
+procedure TSaveList.LoadFromTextFile(filename : string);
+    // Reads a data text file of format:
+    // valename1=value1,valuename2=value2,...,
+begin
+    assignfile(tablefile, filename);
+    while not eof(tablefile) do begin
+        Fields := TStringList.create;
+        readln(tablefile, line);
+        Fields.commatext := line; // Parse line into field values and names
+        NewItem := TSaveListItem(CreateItem(fields));
+        add(NewItem);
+    end;
+    closefile(tablefile);
+end;
+
+function TSaveList.CreateItem(fields : tstringlist) : TSaveListItem;
+begin
+    NewItem := TSaveListItem(CreateEmptyItem);
+    NewItem.SetFieldsFromStrings(Fields);
+    CreateItem := NewItem;
+end;
+...
+```
 
 I worked quite long time on the DCCBr spectrum analysis with this version of the software, at least until summer 1996 when professor Halonen returned to Finland from his sabbatical in USA. Spectrum-view with assignment labels provided good *bang for the buck* in terms of improved productivity in analysis work with limited programming effort. All peak predictions and band-calculations were at this point still performed with the command-line Fortran-programs, necessitating working with their input- and output files.
 
@@ -208,56 +217,58 @@ Below is typical window setup when assigning peaks to new band. Predicted peak w
 
 For the linear-least-squares polynomial fit required implementation of linear algebra operations with **Matrix**, **SquareMatrix** and **Vector** objects, which I implemented in 500-line [LINALG.PAS](https://github.com/rbrother/Infia/blob/master/LINALG.PAS) exemplified below:
 
-    type
+```delphi
+type
 
-    TMatrix = class(TPersistent)
-        Element : PHugeArray;
-        function GetE(x,y:integer) : double;
-        procedure SetE(x,y:integer; v:double);
-        xsize, ysize : integer;
-        property EVal[x,y : integer] : double read GetE write SetE; default;
-        procedure MulConst(c : double);
-        procedure Add(b : TMatrix);
-        procedure Sum(a,b : TMatrix);
-        procedure RightMultiply(b : TMatrix);
-        procedure LeftMultiply(a : TMatrix);
-        procedure Transpose;
-        ...
+TMatrix = class(TPersistent)
+    Element : PHugeArray;
+    function GetE(x,y:integer) : double;
+    procedure SetE(x,y:integer; v:double);
+    xsize, ysize : integer;
+    property EVal[x,y : integer] : double read GetE write SetE; default;
+    procedure MulConst(c : double);
+    procedure Add(b : TMatrix);
+    procedure Sum(a,b : TMatrix);
+    procedure RightMultiply(b : TMatrix);
+    procedure LeftMultiply(a : TMatrix);
+    procedure Transpose;
+    ...
+end;
+
+TSquareMatrix = class(TMatrix)
+    procedure Invert;
+    ...
+end;
+
+TVector = class(TMatrix)
+    ...
+end;
+
+implementation
+
+procedure TMatrix.Product(a,b : TMatrix);
+SetSize(b.xsize, a.ysize);
+for x := 1 to xsize do
+    for y := 1 to ysize do begin
+    sum := 0.0;
+    for n := 1 to a.XSize do
+        sum := sum + a[n,y]*b[x,n];
+    EVal[x,y] := sum;
     end;
+end;
 
-    TSquareMatrix = class(TMatrix)
-        procedure Invert;
-        ...
-    end;
+procedure TSquareMatrix.Invert;
+    Size := XSize;
+    Inv := AllocMem(size*size*sizeof(double));
+    ErrorCode := InvMatrix(Size, Element, Inv);
+    for n := 1 to size*size do Element^[n-1] := Inv^[n-1];
+    FreeMem(Inv, size*size*sizeof(double));
+end;
 
-    TVector = class(TMatrix)
-        ...
-    end;
+function InvMatrix(var MatrixSize : longint; M, Inv : PHugeArray) 
+    external 'imslmath.dll' name '_INVERT_MATRIX@12';
+```
 
-    implementation
-
-    procedure TMatrix.Product(a,b : TMatrix);
-    SetSize(b.xsize, a.ysize);
-    for x := 1 to xsize do
-        for y := 1 to ysize do begin
-        sum := 0.0;
-        for n := 1 to a.XSize do
-            sum := sum + a[n,y]*b[x,n];
-        EVal[x,y] := sum;
-        end;
-    end;
-
-    procedure TSquareMatrix.Invert;
-        Size := XSize;
-        Inv := AllocMem(size*size*sizeof(double));
-        ErrorCode := InvMatrix(Size, Element, Inv);
-        for n := 1 to size*size do Element^[n-1] := Inv^[n-1];
-        FreeMem(Inv, size*size*sizeof(double));
-    end;
-
-    function InvMatrix(var MatrixSize : longint; M, Inv : PHugeArray) 
-        external 'imslmath.dll' name '_INVERT_MATRIX@12';
-    
 Note in the last function **InvMatrix** the *external* declaration: Delphi allows calling functions from external windows DLLs, so for the heavier linear algebra I did that. For matrix inversion (and later matrix diagonalization) I created a small C-program which called the powerful routines in [IMSL math library](https://www.imsl.com/products/imsl-c-libraries) and then compiled this program to **imslmath.dll** that I could call from Delphi.
 
 Integration of the *Combination Difference Prediction* method to the UI was also very efficient in eliminating tedious trial-and-error manual work. Since the method involved *guessing* of bands correct vibrational lower state *and* rotational J-value, it might require many attempts (say 20) to find correct guess and evaluating whether guess is correct takes a long time of manual checking (say 15 mins). The automated code of Infia can calculate 100+ most likely guesses and evaluate all with good accuracy in one second, finding the correct combination with high probability.
@@ -336,84 +347,88 @@ So, in Wuppertal during evenings I wrote two new modules to Infia:
 
 The implemented calculations are general in the sense of being able to handle any number of bands in mutual resonance (and hence Hamiltonian matrix of any size) despite in the DCCBr systems I analysed there was only two bands in resonance at any system. Below is summary of the **TResonanceFit** class and excerpt from its core **CalculateValues** method:
 
-    TResonanceFit = class(TNewton)
-    public
-        ResBands : TBands;
-        Resonances : TResonances;
-        Assignments : TAssignments; // Assignments of *all* res. system bands
-        // Implement optimization interface defined in TNewton
-        function DataCount : integer; override;
-        procedure CalculateValues; override;
-        function YObs(n : integer) : real; override;
-        function YCalc(n : integer) : real; override;
-        function Weight(n : integer) : real; override;
-        procedure Calculate;
-        procedure PredictPeaks;
-    end;
+```delphi
+TResonanceFit = class(TNewton)
+public
+    ResBands : TBands;
+    Resonances : TResonances;
+    Assignments : TAssignments; // Assignments of *all* res. system bands
+    // Implement optimization interface defined in TNewton
+    function DataCount : integer; override;
+    procedure CalculateValues; override;
+    function YObs(n : integer) : real; override;
+    function YCalc(n : integer) : real; override;
+    function Weight(n : integer) : real; override;
+    procedure Calculate;
+    procedure PredictPeaks;
+end;
 
-    ...
+...
 
-    procedure TResonanceFit.CalculateValues;
-    var
-       Hamilton : TSymmetricMatrix;
-       UpperResEnergies : TVector;
-       b : TBand; Upper, Lower : TState;
-    begin
-       // Determine the position of resonance elements in Hamiltonian matrix
-       with ResBands do for n := 0 to count-1 do with band(n) do
-           with Resonances do for m := 0 to count-1 do begin
-             if UpperState = res(m).State1 then res(m).HamiltonX := n+1;
-              if UpperState = res(m).State2 then res(m).HamiltonY := n+1;
-       end;
-       // Create and diagonalize hamilton matrix for each J:
-       for J := 0 to MaxUpperJ+20 do begin
-          Hamilton := TSymmetricMatrix.Create(ResBands.count);
-          // Diagonal values from unperturbed wavenumbers
-          with ResBands do for n := 0 to count-1 do begin
-          b := ResBands .band(n);
-          UpperEnergy := b.UpperState.TotEnergy(J);
-          Hamilton[n+1,n+1] := UpperEnergy;
-       end;
-       // Add the resonance matrix elements to off-diagonal locations
-       for n := 0 to Resonances.count-1 do
-          with Resonances.res(n) do
-            Hamilton[HamiltonX, HamiltonY] :+= ElementValue(J);
-       // Solve the post-resonance energy values of upper states
-       UpperResEnergies := Hamilton.OrderedEigenvals;
-       // Store the resonance energies to state arrays
-       with ResBands do for n := 0 to count-1 do
-         with ResBands.band(n).UpperState do
-            ResEnergy[J] := UpperResEnergies[n+1];
-       end;
-       // Set assignment calculated wavenumbers based on resonance energies
-       for n := 1 to Assignments.count do with Assignments[n] do
-           WnCalc := TBand(Band).UpperState.ResEnergy[J1] - 
-                TBand(Band).LowerState.TotEnergy(J0);
+procedure TResonanceFit.CalculateValues;
+var
+    Hamilton : TSymmetricMatrix;
+    UpperResEnergies : TVector;
+    b : TBand; Upper, Lower : TState;
+begin
+    // Determine the position of resonance elements in Hamiltonian matrix
+    with ResBands do for n := 0 to count-1 do with band(n) do
+        with Resonances do for m := 0 to count-1 do begin
+            if UpperState = res(m).State1 then res(m).HamiltonX := n+1;
+            if UpperState = res(m).State2 then res(m).HamiltonY := n+1;
     end;
+    // Create and diagonalize hamilton matrix for each J:
+    for J := 0 to MaxUpperJ+20 do begin
+        Hamilton := TSymmetricMatrix.Create(ResBands.count);
+        // Diagonal values from unperturbed wavenumbers
+        with ResBands do for n := 0 to count-1 do begin
+        b := ResBands .band(n);
+        UpperEnergy := b.UpperState.TotEnergy(J);
+        Hamilton[n+1,n+1] := UpperEnergy;
+    end;
+    // Add the resonance matrix elements to off-diagonal locations
+    for n := 0 to Resonances.count-1 do
+        with Resonances.res(n) do
+        Hamilton[HamiltonX, HamiltonY] :+= ElementValue(J);
+    // Solve the post-resonance energy values of upper states
+    UpperResEnergies := Hamilton.OrderedEigenvals;
+    // Store the resonance energies to state arrays
+    with ResBands do for n := 0 to count-1 do
+        with ResBands.band(n).UpperState do
+        ResEnergy[J] := UpperResEnergies[n+1];
+    end;
+    // Set assignment calculated wavenumbers based on resonance energies
+    for n := 1 to Assignments.count do with Assignments[n] do
+        WnCalc := TBand(Band).UpperState.ResEnergy[J1] - 
+            TBand(Band).LowerState.TotEnergy(J0);
+end;
+```
 
 Critical call in the function above is **Hamilton.OrderedEigenvals** which is calculating the *Eigenvalues* (energy levels) of the resonance system with *matrix diagonalization*. This is a complex mathematical operation and one of the main reasons I did not implement resonance calculations in Infia 1.0. But at the time of making these extensions in Wuppertal, I had taken to use the powerful IMSL math-library (discussed earlier above), and I could leverage the work to IMSL library-routine DIAGONALIZE_SYM_MATRIX:
 
-    function TSymmetricMatrix.OrderedEigenvals : TVector;
+```delphi
+function TSymmetricMatrix.OrderedEigenvals : TVector;
+begin
+    Diagonalize(EigenVals, EigenVecs); // Get eigenvalues
+    // Do the ordering
+    ...
+    OrderedEigenvals := OrdVals;
+end;
+
+procedure TSymmetricMatrix.Diagonalize(var EigVecs : TSquareMatrix);
     begin
-      Diagonalize(EigenVals, EigenVecs); // Get eigenvalues
-      // Do the ordering
-      ...
-      OrderedEigenvals := OrdVals;
-    end;
+    Size := XSize;
+    EigVals := TVector.Create(size);
+    EigVecs := TSquareMatrix.Create(size);
+    ErrorCode := DiagSymMatrix(Size, Element, 
+            EigVals.GetElements, EigVecs.GetElements);
+    if ErrorCode <> 0 then ErrorMessage('Diagonalize: failed to converge');
+end;
 
-    procedure TSymmetricMatrix.Diagonalize(var EigVecs : TSquareMatrix);
-      begin
-      Size := XSize;
-      EigVals := TVector.Create(size);
-      EigVecs := TSquareMatrix.Create(size);
-      ErrorCode := DiagSymMatrix(Size, Element, 
-                EigVals.GetElements, EigVecs.GetElements);
-      if ErrorCode <> 0 then ErrorMessage('Diagonalize: failed to converge');
-    end;
-
-    function DiagSymMatrix(var MatrixSize : longint;
-      M, EigVals, EigVecs : PHugeArray) : longint; stdcall;
-      external 'imslmath.dll' name '_DIAGONALIZE_SYM_MATRIX@16';
+function DiagSymMatrix(var MatrixSize : longint;
+    M, EigVals, EigVecs : PHugeArray) : longint; stdcall;
+    external 'imslmath.dll' name '_DIAGONALIZE_SYM_MATRIX@16';
+```
 
 ## Loomis-Wood view of a band-system
 
@@ -433,26 +448,28 @@ Infia interactive Loomis-wood view of the 𝜈<sub>4</sub> Band-system of DCCBr:
 
 I implemented the interactive Loomis-Wood diagram in [LoomisUnit.pas](https://github.com/rbrother/Infia/blob/master/LoomisUnit.pas). The simplicity of the beautiful idea of the diagram is evident in the main function being only 50 lines long in Deplhi. Condensed here:
 
-    procedure TLoomisForm.DrawPlot;
-        TempBitmap := LoomisImage.Picture.Bitmap;
-        // Locate X- ans Y-origin of the plot
-        center.x := 10 + round((-mMinusCol - StartCol) * xstep);
-        center.y := round(-StartOffset/(EndOffset - StartOffset) * height);
-        with TempBitmap.Canvas do begin // Black background    
-            brush.Color := clBlack;
-            FillRect(rect(0,0,TempBitmap.Width,TempBitmap.Height));
-        end;
-        FirstPeak := Peaks.NearestIndex(WnOrigin[StartCol]);
-        LastPeak := Peaks.NearestIndex(WnOrigin[EndCol]);
-        // Draw unassigned peaks as white balls
-        for peak := FirstPeak to LastPeak do 
-            DrawPeak(TempBitmap.canvas, Peaks.peak(peak), clWhite, clBlack);
-        // Draw assignments using respective band colors
-        with Bands do for n := 0 to count-1 do with Band(n) do
-        for m := 1 to Assignments.count do with Assignments[m] do
-            if AssType = assigned then
-            DrawPeak(TempBitmap.canvas, peak, col1, col2)      
+```delphi
+procedure TLoomisForm.DrawPlot;
+    TempBitmap := LoomisImage.Picture.Bitmap;
+    // Locate X- ans Y-origin of the plot
+    center.x := 10 + round((-mMinusCol - StartCol) * xstep);
+    center.y := round(-StartOffset/(EndOffset - StartOffset) * height);
+    with TempBitmap.Canvas do begin // Black background    
+        brush.Color := clBlack;
+        FillRect(rect(0,0,TempBitmap.Width,TempBitmap.Height));
     end;
+    FirstPeak := Peaks.NearestIndex(WnOrigin[StartCol]);
+    LastPeak := Peaks.NearestIndex(WnOrigin[EndCol]);
+    // Draw unassigned peaks as white balls
+    for peak := FirstPeak to LastPeak do 
+        DrawPeak(TempBitmap.canvas, Peaks.peak(peak), clWhite, clBlack);
+    // Draw assignments using respective band colors
+    with Bands do for n := 0 to count-1 do with Band(n) do
+    for m := 1 to Assignments.count do with Assignments[m] do
+        if AssType = assigned then
+        DrawPeak(TempBitmap.canvas, peak, col1, col2)      
+end;
+```
 
 The value of the Loomis-Wood view in India was enhanced by its interactive nature: could use it not only to look at the spectrum but assign peaks by clicking. And it works together with the spectrum-view and band-assignments view: selecting a peak in any of these views automatically shows the peak in all three views. The most productive way of working in Infia was hence to tile these different sub-windows withing the main window as shown here:
 
@@ -472,7 +489,7 @@ The article abstract with citation-links is also available in [ScienceDirect ser
 
 While the review-process of the DCCBr article was still going on, professor Halonen encouraged me also to write another article about Infia-software itself. I am grateful for that encouragement since this latter article become in the end more significant, more unique and more defining of my career in research and later in software industry. The magazine chosen for the attempt was *Journal for Computational Chemistry*, which I was told is more famous than JMS, but also more challenging one to get accepted for publication.
 
-The acceptance for publication was indeed more close call. I sent the first manuscript with [simple cover letter](https://github.com/rbrother/Infia/blob/master/documentation/article_saatekirje.pdf) in August 1998 to founding editor of the magazine, [Dr Norman L. Allinger](https://en.wikipedia.org/wiki/Norman_Allinger). I later received response from another editor of the magazine [Professor Gernot Frenking](https://en.wikipedia.org/wiki/Gernot_Frenking). He sent me comments from two additional anonymous reviewers. The first reviewer provided extensive feedback and suggestions, provisionally supporting publication of the article. The other reviewer was *not* recommending publication based on the article in his opinion not fitting the theme of the Journal of Computational Chemistry. 
+The acceptance for publication was indeed more close call. I sent the first manuscript with [simple cover letter](https://github.com/rbrother/Infia/blob/master/documentation/article_saatekirje.pdf) in August 1998 to founding editor of the magazine, [Dr Norman L. Allinger](https://en.wikipedia.org/wiki/Norman_Allinger). I later received response from another editor of the magazine [Professor Gernot Frenking](https://en.wikipedia.org/wiki/Gernot_Frenking). He sent me comments from two additional anonymous reviewers. The first reviewer provided extensive feedback and suggestions, provisionally supporting publication of the article. The other reviewer was *not* recommending publication based on the article in his opinion not fitting the theme of the Journal of Computational Chemistry.
 
 Luckily for me, professor Frenking concluded: "*I tend to agree with the first reviewer.*" So I sent the extensively amended manuscript [with extended cover letter](https://github.com/rbrother/Infia/blob/master/documentation/article_Saatekirje_2.pdf) to professor Frenking in November 1998 and the article "**INFIA - Program for Rotational Analysis of Linear Molecule Spectra**" got published in March 1999 as [R. Brotherus, J Comput Chem 20: 610-622, 1999](https://github.com/rbrother/Infia/blob/master/documentation/article.pdf):
 
@@ -486,28 +503,30 @@ Infia was adopted to some later analysis projects by other researchers in profes
 
 Some early users included **Mark M Law** from University of Aberdeen in UK, **Juan-Franco Di Lonardo** from University of Bologna in Italy, **Peter Paplewski** from Wuppertal University in Germany, **Winther Flemming** from University of Kiel in Germany (author of an earlier MS-DOS Loomis-Wood program from 1992), **Rohidas Kshirsagar** from NASA Ames Research Center in USA, **Dominique Appadoo** from Monash University Australia, **Michaël Lecoutre** from University of Lille in France, **Olga Naumenko** from University of Tomsk at Russia, **Maurits van der Schaar** from ASML Measurement Systems Development in Netherlands, Professor **Ricardo Metz** from University of Massachusetts, **Pavlo Korsun** from University of Kiev in Ukraine (astronomer studying spectra of comets), **Serguei Raspopov** from University of Toronto in Canada, **James Hornkohl** from University of Tennessee Space Institute, **Marcel Snels** from Istituto Materiali Speciali in Rome (studying CH<sub>2</sub>Cl<sub>2</sub>), **Janne Hautala** from University of Oulu in Finland (analysing Methane-derivatives), **Dhia Al-Amiedy** from University of Bagdad in Iraq, **Madhu Kumar** from India (studying Plasma Spectroscopy). As a typical example of emails I received, here is the initial email from Rohidas Kshirsagar:
 
-    Date: Mon, 21 Sep 1998 16:52:37 -0700 (PDT)
-    From: Rohidas Kshirsagar <rohidas@hertz2.arc.nasa.gov>
-    To: ROBERT@IKI.FI
-    Subject: Computer Program
+```plaintext
+Date: Mon, 21 Sep 1998 16:52:37 -0700 (PDT)
+From: Rohidas Kshirsagar <rohidas@hertz2.arc.nasa.gov>
+To: ROBERT@IKI.FI
+Subject: Computer Program
 
-    To: Dr. Robert Brotherus
-        Laboratory of Physical Chemistry
-        P.O. Box 55, 00014 Helsinki University, FINLAND.        
-    Dear Dr. Brotherus,
-        It was very nice to meet you and see and discuss your posters 
-        at the High resolution spectroscopy conference at Prague in August 1998. 
-        I am very impressed about your work, posters and the software
-        program for analysis of the vibration-rotation spectra. 
-        Will you please send me the computer program and zerox copy 
-        of the posters explaning the program in detail. I will also be very
-        grateful if you could send me the zerox copy of the posters of
-        theory part of the analysis of the linear molecules.
-        Thanking you very much and hope to hear from you.
-    Sincerely,
-    Rohidas Kshirsagar
-    NASA/Ames Research Center
-    Moffett Field, MS 245-4, CA 94035-1000, U.S.A.
+To: Dr. Robert Brotherus
+    Laboratory of Physical Chemistry
+    P.O. Box 55, 00014 Helsinki University, FINLAND.        
+Dear Dr. Brotherus,
+    It was very nice to meet you and see and discuss your posters 
+    at the High resolution spectroscopy conference at Prague in August 1998. 
+    I am very impressed about your work, posters and the software
+    program for analysis of the vibration-rotation spectra. 
+    Will you please send me the computer program and zerox copy 
+    of the posters explaning the program in detail. I will also be very
+    grateful if you could send me the zerox copy of the posters of
+    theory part of the analysis of the linear molecules.
+    Thanking you very much and hope to hear from you.
+Sincerely,
+Rohidas Kshirsagar
+NASA/Ames Research Center
+Moffett Field, MS 245-4, CA 94035-1000, U.S.A.
+```
 
 Many new uesrs expressed particular interest in the Loomis-Wood view (discussed above) so I'm glad I had been adding that to the software. Since the Loomis-Wood view had been relatively easy to implement on top of the existing program framework, it probably provided in the end the best *bang-for-the-buck* for the entire community. Many users had projects that did not involve linear molecules like DCCBr but *symmetric top* molecules such as water (H<sub>2</sub>O) or methane-derivatives. Symmetric tops have more complex shape than linear molecules and hence more complex rotational physics and spectra. Nevertheless their spectal bands are still simple enough for the logic in Infia to be useful for peak assignment although separate external programs are then needed for the final calculations.
 
@@ -596,6 +615,7 @@ I think that demonstration carried some weight partly because in my Infia-develo
 My career as software developer in industry since 2000 has been wide and rewarding and I am planning to write later in this blog about some projects at various companies, like I have written before about [my experiece at Nitor](https://www.brotherus.net/post/from-a-product-company-to-a-consulting-company). I have attempted during my 24 years since leaving University to find, if possible, programming jobs that have some scientific or mathematical aspect to them, to take some advantage of my natural science background. In that I have succeeded with variable success, more again at my current job at [Sartorius](https://www.sartorius.com/).
 
 [Short video promotion of my job at Sartorius in 2022](https://www.youtube.com/watch?v=xX0hwqSnlW0):
+
 [![robert-sartorius.jpg](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/robert-sartorius.jpg)](https://www.youtube.com/watch?v=xX0hwqSnlW0)
 
 ### Love of Software, Love of Science
@@ -608,4 +628,4 @@ I have remained in occasional contact with Professor Halonen during the years si
 
 It is indeed interesting to speculate on how my career might have proceeded with more encouragement and focus of developing Infia further. Perhaps my research career in academia would have lasted many more years or throughout my career. But it is difficult to guess whether that would have been better in the end, whether I would have been more happy on such career than my current one. My industry projects have had interesting programming challenges and interesting subject-matters and I have been able to retain science as a beloved hobby. And at the University I was often severely stressed and deeply unhappy with the various project dead-ends. And I have come to think that perhaps my idea of academic career was from the beginning partly based on an unhealthy obsession.
 
-But there were definitely also moments of loving the science and loving the math and loving the software-development that combined it all, most exemplified in Infia. So leaving University and career in research was also bit like breaking up with ones first love: it seemed to be the right thing to do, but one always retains a small nagging thought about how life might been if luck and circumstances lead to a different path. 
+But there were definitely also moments of loving the science and loving the math and loving the software-development that combined it all, most exemplified in Infia. So leaving University and career in research was also bit like breaking up with ones first love: it seemed to be the right thing to do, but one always retains a small nagging thought about how life might been if luck and circumstances lead to a different path.

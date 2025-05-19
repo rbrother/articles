@@ -1,6 +1,6 @@
 # Why so many languages?
 
-**Hundreds of programming languages have been born and died during the decades since 1940's. Some created by comittees, many by lone heroes, they have transformed the world.**
+**Hundreds of programming languages have been born and died during the decades since 1940's. Some created by committees, many by lone heroes, they have transformed the world.**
 
 ![Programming languages tree](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/why-so-many-languages/many-languages.jpg)
 
@@ -14,7 +14,7 @@ Original computers in the 1940's and early 1950's we programmed only in machine 
 
 ![Programming languages tree](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/why-so-many-languages/languages-tree.webp)
 
-After 2001 the pace has not been slowing down with newcomers like XSLT, Ruby, F#, Clojure, Go, Rust, Scala and Kotlin rising to prominance and the popularity of earlier languages going up and down (most notably JavaScript rising to be a major language). Like with natural languages, new programming languages and dialects don't form in a vacuum but are based on one or more preceding languages. Most languages represent linear development of improving on a single predecessor (like steps from C# 1.0 to current 7.3 version) whereas entirely new languages can draw on multiple sources like Ruby that draws inspiration from SmallTalk, Eiffel, LISP and Python.
+After 2001 the pace has not been slowing down with newcomers like XSLT, Ruby, F#, Clojure, Go, Rust, Scala and Kotlin rising to prominence and the popularity of earlier languages going up and down (most notably JavaScript rising to be a major language). Like with natural languages, new programming languages and dialects don't form in a vacuum but are based on one or more preceding languages. Most languages represent linear development of improving on a single predecessor (like steps from C# 1.0 to current 7.3 version) whereas entirely new languages can draw on multiple sources like Ruby that draws inspiration from SmallTalk, Eiffel, LISP and Python.
 
 ## Rising and fading away
 
@@ -23,8 +23,8 @@ Like with any cultural phenomenon, the rise and fall of languages popularity is 
 Given the extreme importance of programming languages in todays world, it is remarkable how accidental their birth has often been, dependent on initiative and work of single heroes. Many major languages that have changed the world have been essentially created by a single person: Lisp by **John McCarthy**, Pascal by **Niklaus Wirth**, C++ by **Bjarne Stroustrup**, Perl by **Larry Wall**, Python by **Guido van Rossum**, PHP by **Rasmus Lerdorf**, Ruby by **Yukihiro Matsumoto**, Clojure by **Rich Hickey** and many more. 
 
 ![Programming language creators](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/why-so-many-languages/heroes.jpg)
-John McCarthy, Bjarne Stroustrup, Guido van Rossum and Rich Hickey
 
+<small>John McCarthy, Bjarne Stroustrup, Guido van Rossum and Rich Hickey</small>
 
 Such work has my highest respects: it has been shaping the landscape of computing. It is more rare for a language to be designed by a company or committee, notable exceptions including early FORTRAN designed at IBM and ALGOL which was created by a committee of computer scientists. While ALGOL did not become the permanent universal language that it was aiming to be, it was popular for a while and did influence many successor languages that are alive today.
 
@@ -34,7 +34,7 @@ The fact that new languages still pop up and rise to prominence from single-man 
 
 ![Programming languages tree](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/why-so-many-languages/pragmatic-programmer.webp)
 
-**Andy Hunt** and **David Thomas** recommend in their great practical and inspirational book The Pragmatic Programmer that a good software craftsman learns at least two new programming languages per year. While I have not succeeded in quite as high a pace, it is true that continuous learning of new languages throughout ones career is beneficial (and enjoyable!). Bit surprisingly it can be beneficial even in case of new languages that one never ends up using professionally. Languages vary from imperative to functional to declarative, from object-oriented to data-oriented, from weakly to strongly typed, from dynamically to gradually to statically typed, from manifest to inferred typed, from interpreted to compiled, from message-passing to pattern-matching, from garbage-collected to explicitly managed, from curly-braces to homoiconic parenthesis, from stand-alone to runtime-hosted. Learning more and more languages is beneficial because it *expands ones thinking* which allows oneself to become better programmer even *even in the languages one already knows*.
+**Andy Hunt** and **David Thomas** recommend in their great practical and inspirational book *The Pragmatic Programmer* that a good software craftsman learns at least two new programming languages per year. While I have not succeeded in quite as high a pace, it is true that continuous learning of new languages throughout ones career is beneficial (and enjoyable!). Bit surprisingly it can be beneficial even in case of new languages that one never ends up using professionally. Languages vary from imperative to functional to declarative, from object-oriented to data-oriented, from weakly to strongly typed, from dynamically to gradually to statically typed, from manifest to inferred typed, from interpreted to compiled, from message-passing to pattern-matching, from garbage-collected to explicitly managed, from curly-braces to homoiconic parenthesis, from stand-alone to runtime-hosted. Learning more and more languages is beneficial because it *expands ones thinking* which allows oneself to become better programmer even *even in the languages one already knows*.
 
 When I learned F# in 2012 I had been using C# for 12 years already, but I started to write C# in more functional stateless way, leading to less simpler program flow and less potential errors from invalid program state. When in 2014 I learned Clojure with its common use of maps and lists instead of objects to store information, I began also reducing my unnecessary usage of classes in Ruby and Python in favor of more data-oriented approach, increasing re-usability of my code and ease of serialization of my data. It is good to have wide set of tools in ones toolbox of thinking and problem-solving. Programmers know a bad pattern of "Golden Hammer" when a novice developer is using just one language, one method or one way to solve all problems, leading to awkward and inelegant solutions in many cases. The saying goes: "*If only tool you have got is a hammer, then everything looks like a nail to you.*"
 

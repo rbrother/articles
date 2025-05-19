@@ -9,6 +9,7 @@ One nice feature of Basic-programming with a physical Commodore 64 is the startu
 Contrast this to my current *ClojureScript*-setup: In addition to installation of OS on the PC, one needs installation of [IntelliJ IDEA editor](https://www.jetbrains.com/idea/download/) and [Cursive-plugin](https://cursive-ide.com/) for Clojure. Launching the PC from power-on to the editor being up-and-running takes at least a minute. Further, to get coding and compiling the project, one needs to install [node.js](https://nodejs.org/en/download/) and [Leiningen](https://leiningen.org/) build-tool and then initiate new project with command `lein new re-frame ruletti`.
 
 Commodore 64 basic-environment and IntelliJ IDEA IDE:
+
 ![editor-old-new.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-developer-experience/editor-old-new.png)
 
 The blazing startup-time and lack of required installations in the C64 environment is, however, also a hint to its greatest weakness: lack of evolution in form of updates. Content of ROM-chip is read-only by definition, so Commodore Basic-hobbyists in 1988 were still using the same OS, same editing tools and same Basic-language as Commodore hobbyists in 1982. The fact modern PC-environment requires installation of several tools means that these tools can be *updated to new better versions later*. And with internet it's easy and quick to do such updates. The fierce competition of different languages, libraries and tools for hearts and minds of developers has been leading to rapid evolution of the capabilities of these technologies.
@@ -56,7 +57,7 @@ Bigger logical chunks of program - the subroutines - I started at big round line
 
 A modern program consists of multiple *files* and good editor allows keeping many files open at the same time and seamless navigation between the files to desired location. In contrast C64 Basic program is always just one file, one continuous list of lines. If one has a big program, then it's just a long single list. Although the limit of 38 *kilo*-Bytes available for Basic-program will be reached quite soon. Ruletti-64 game has 167 lines and size of 4.5 kB. With same average line size the memory limit would be reached with approximately 1500 lines - quite small piece of software by today's standards.
 
-A simple operation that both programmers and writers use hundrets of times per day is *Select + Cut + Paste* to move text around. Nothing like that is available in C64: not even possibility to select text let alone copy or cut it. To copy lines to a different place in a program you must LIST them, then one by one edit a new line-number for the line and press enter. And before that better check that no other lines exist with the given numbers yet or else they will be overwritten. Moving larger groups of lines also becomes almost impossible since there is likely not enough free line-numbers available at the destination location (as explained in the previous chapter on line-numbers).
+A simple operation that both programmers and writers use hundreds of times per day is *Select + Cut + Paste* to move text around. Nothing like that is available in C64: not even possibility to select text let alone copy or cut it. To copy lines to a different place in a program you must LIST them, then one by one edit a new line-number for the line and press enter. And before that better check that no other lines exist with the given numbers yet or else they will be overwritten. Moving larger groups of lines also becomes almost impossible since there is likely not enough free line-numbers available at the destination location (as explained in the previous chapter on line-numbers).
 
 Users of modern editors like IntelliJ also enjoy many more advanced editing features that developers in 1980's could not even dream about:
 
@@ -68,17 +69,18 @@ Users of modern editors like IntelliJ also enjoy many more advanced editing feat
 1. Code-completion or "intellisense" where editor suggests intelligently ways to auto-complete symbols, function-names, references, keywords and other common patterns
 
 Plain code view of C64 Basic versus syntax-highlighting of Clojure in IntelliJ IDEA:
+
 ![code-comparison.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-developer-experience/code-comparison.png)
 
 The IntelliJ IDEA editor with Cursive-plugin even supports special [Structural Edition or "Paredit"](https://cursive-ide.com/userguide/paredit.html) for working with LISP-structures of Clojure. These allow easy and robust creation and editing of nested parenthesis-expressions as alternative to the more brittle copy/cut/paste.
 
 ## Version Control and Backup
 
-GIT revolutionised version control in 2005 and now over 80% of projects use this powerful version control system, including [Ruletti-reframe in GitHub](https://github.com/rbrother/ruletti-reframe). But as much as GIT with its distributed design and lightweight branching is improvement over earlier popular systems like Subversion, those earlier systems were still much better than *absolutely no version control at all* like I had with developing C64 Ruletti.
+GIT revolutionized version control in 2005 and now over 80% of projects use this powerful version control system, including [Ruletti-reframe in GitHub](https://github.com/rbrother/ruletti-reframe). But as much as GIT with its distributed design and lightweight branching is improvement over earlier popular systems like Subversion, those earlier systems were still much better than *absolutely no version control at all* like I had with developing C64 Ruletti.
 
 While version control really shines in multi-person project, it is surprisingly useful even in a one-man hobby project. It makes it possible to easily back-up every step of the project to cloud and the freedom to experiment on drastic changes (delete and rewrite big chunks of code) without any risk of permanently losing anything. Making clean commit-packets of changes related to a new feature simplify later inspection and bring focus by identification and optional undoing of the changes related to the feature currently under development.
 
-At the time of writing Ruletti 64 I did already have floppy-disk-drive which was huge upgrade to my earlier setup with C-casette tape-drive. Still, that allowed at most the saving of some set of earlier versions of the code. And without any tools to compare or inspect these versions or have them opened at the same time or copy code between them, this was not very useful except for simple backup purposes. Though such backups were still valuable considering how easily the 5"25 floppy-disks used by C64 were getting corrupted.
+At the time of writing Ruletti 64 I did already have floppy-disk-drive which was huge upgrade to my earlier setup with C-cassette tape-drive. Still, that allowed at most the saving of some set of earlier versions of the code. And without any tools to compare or inspect these versions or have them opened at the same time or copy code between them, this was not very useful except for simple backup purposes. Though such backups were still valuable considering how easily the 5"25 floppy-disks used by C64 were getting corrupted.
 
 ![floppy.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-developer-experience/floppy.png)
 
@@ -93,6 +95,7 @@ Modern build tools like [Shadow-cljs ClojureScript compiler](https://shadow-cljs
 Dropping of compilation time from the full 10-30 seconds to the hot reload incremental 1 second is nice, but the best aspect of this feature is that the reload is done *without touching the program state*. For example when I want to modify Ruletti-reframe winnings calculation and display, I need to play the game to the winnings screen only once after which I can do any number of incremental changes to the relevant code see each time result immediately in the UI. It's super delightful and effective and once experienced working in this way, one really does not want to go back to the need to re-start app after changes.
 
 In the case of Clojure(Script) the hot reload can be enhanced further by *REPL* (Read Evaluate Print Loop) feature where custom commands and expressions can be evaluated from the keyboard interactively *within the live running process of the game*:
+
 ![repl.jpg](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-developer-experience/repl.jpg)
 
 While hot reload can be used to quickly experiment with code, REPL adds quick experiments with program state and events. Even the humble Commodore 64 has primitive REPL as the main user interface to the system - individual Basic-statements can be written and executed interactively - but this is not withing running program context and requires the program execution to be stopped.
@@ -103,12 +106,14 @@ Part of developers work and pain is to get the ready software to the hands of us
 
 The slow process in 1988 involved sending the game to the MikroBitti magazine on a diskette in post. After a two month delay the magazine [printed the source code listing](https://raw.githubusercontent.com/rbrother/ruletti64/main/ruletti.JPG) in their 1988/5 number. After which come the hardest part for the readers: typing the code to their computers from the listing accurately enough to run without errors. The slow process of deploying software to users meant that listings were published one time in one form and never updated. Only in some rare extreme cases where a listing contained a fatal bug, next magazine might contain a small correction.
 
-All this has of course changed completely because of Internet and it's current extensive services. Internets TCP/IP protocol was standardised only in 1982 and in 1988 Internet was still only used by small circle of university researchers and not widely known about until around 1995. Slow and expensive modems did exist but were still relatively rare, and mainly for PC-hardware. Before widespread use of internet the modems were used around 1990-1995 of *Bulleting Board Systems* (BBS) that users could call in and swap messages and later pieces of software. MikroBitti magazine also set up their own BBS in 1994 for distributing software and that finally killed the remaining source-code listings in the magazine.
+All this has of course changed completely because of Internet and it's current extensive services. Internets TCP/IP protocol was standardized only in 1982 and in 1988 Internet was still only used by small circle of university researchers and not widely known about until around 1995. Slow and expensive modems did exist but were still relatively rare, and mainly for PC-hardware. Before widespread use of internet the modems were used around 1990-1995 of *Bulleting Board Systems* (BBS) that users could call in and swap messages and later pieces of software. MikroBitti magazine also set up their own BBS in 1994 for distributing software and that finally killed the remaining source-code listings in the magazine.
 
 Now publishing the source code is just matter of one click and one second for pushing new commit to the free and unlimited [GitHub repo](https://github.com/rbrother/ruletti64). Deploying new version of the playable game is also just a two-line script that takes about one minute to compile the code and upload compiled files to AWS S3 bucket:
 
-    lein release
-    aws s3 cp resources/public s3://roulette-reframe/ --recursive
+```bash
+lein release
+aws s3 cp resources/public s3://roulette-reframe/ --recursive
+```
 
 This makes the updated game version immediately available in URL [http://roulette-reframe.s3-website.eu-north-1.amazonaws.com/](http://roulette-reframe.s3-website.eu-north-1.amazonaws.com/) enabling true iterative development and feedback all the way to users.
 

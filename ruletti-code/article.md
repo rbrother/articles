@@ -60,19 +60,23 @@ Here one can see control-characters being represented by their name in parenthes
 For modern PC-users wanting to inspect Commodore 64 Basic-programs there is set of [VICE (Versatile Commodore Emulator) tools for Unix](https://vice-emu.sourceforge.io/), including [petcat-command](http://manpages.ubuntu.com/manpages/bionic/man1/petcat.1.html) for converting PRG-files to ASCII-text. The result I have saved as [ruletti.txt](https://github.com/rbrother/ruletti64/blob/main/ruletti.txt) with 167 lines of BASIC. For example,
 Line 4030 print-statement petcat ASCII version if looks like:
 
-    4030 print" {CBM-C}{rvon}{CBM-D}{CBM-F}{rvof}{CBM-F}
-    {rvon}{CBM-F}{rvof}{CBM-V}{rvon}{CBM-F}{rvof}{CBM-V}
-    {rvon}{CBM-F}{rvof}{CBM-V} {rvon}{CBM-F}{CBM-I}{rvof}
-    {CBM-K}{rvon}{CBM-D}{CBM-D}{rvof}{CBM-K}{rvon}{CBM-D}
-    {CBM-D}{rvof}{CBM-K}{rvon}{CBM-F}{rvof}{CBM-V}"
+```basic
+4030 print" {CBM-C}{rvon}{CBM-D}{CBM-F}{rvof}{CBM-F}
+{rvon}{CBM-F}{rvof}{CBM-V}{rvon}{CBM-F}{rvof}{CBM-V}
+{rvon}{CBM-F}{rvof}{CBM-V} {rvon}{CBM-F}{CBM-I}{rvof}
+{CBM-K}{rvon}{CBM-D}{CBM-D}{rvof}{CBM-K}{rvon}{CBM-D}
+{CBM-D}{rvof}{CBM-K}{rvon}{CBM-F}{rvof}{CBM-V}"
+```
 
-Since ASCII/UNICODE does not include the kind of block-characters used in C64, petcat simply uses `{CBM-X}` (with X in C, D, F, V, I, K) to represent them in addition to the textual representation of control-codes used by Mikrobitti like `{rvon}`.
+Since ASCII/UNICODE does not include the kind of block-characters used in C64, petcat simply uses `{CBM-X}` (with X in C, D, F, V, I, K) to represent them in addition to the textual representation of control-codes used by MikroBitti like `{rvon}`.
 
 ## Memory manipulation
 
 Another challenging feature of C64 Basic is the extensive need to use direct memory manipulation with `POKE`-commands to achieve some effects. Just like the used of control characters, usage of general `POKE`-command instead of separate more clear commands allows for smaller and simpler Basic-interpreter at the cost of programming difficulty and program readability. Typical example is the poke-commands on line 4010:
 
-    4010 print"{clr}":poke 53281,0:poke 53280,0
+```basic
+4010 print"{clr}":poke 53281,0:poke 53280,0
+```
 
 The memory locations 53280 and 53281 determine the color of the screen border and screen background. Setting both to zero make the whole screen background black - typical for the style of many games. A more extensive Basic (with larger memory footprint) would surely include some user-friendly command like "COLOR" for such common setting.
 
@@ -96,26 +100,32 @@ It does not help that variable-names can be only 2 characters long. At my univer
 
 In the Ruletti-game there is need to store some information for all 23 pieces in the roulette-wheel: the number in the piece, the x-coordinate and y-coordinate. The modern way would be to have an array of objects (tuples, structs, maps, etc.) with each object containing tile number, x and y. For example in Clojure:
 
-    [ {:n 0 :x 17 :y 5}  {:n 8 :x 23 :y 5} {:n 1 :x 27 :y 5 }
-    {:n 16 :x 31 :y 5} {:n 5 :x 31 :y 8} ... {:n 13 :x 11 :y 5} ]
+```clojure
+[ {:n 0 :x 17 :y 5}  {:n 8 :x 23 :y 5} {:n 1 :x 27 :y 5 }
+  {:n 16 :x 31 :y 5} {:n 5 :x 31 :y 8} ... {:n 13 :x 11 :y 5} ]
+```
 
 But since C64 does not have such structures and arrays cannot contain other arrays, one needs to use three separate arrays for n, x and y and just *by convention* store properties of items in the three arrays with matching indexes:
 
-    n:  [ 0   8  1 16  5 ... 13 ]
-    x:  [ 17 23 27 31 31 ... 11 ]
-    y:  [ 5   5  5  5  8 ...  5 ]
+```clojure
+n:  [ 0   8  1 16  5 ... 13 ]
+x:  [ 17 23 27 31 31 ... 11 ]
+y:  [ 5   5  5  5  8 ...  5 ]
+```
 
 Furthermore, since the language does not have array-literals, to initialize the array values, they need to be `READ` with a loop from a flat list of `DATA`-statements:
 
-    4540 dim n(23),x(23),y(23),si(27)
-    4550 for t=0 to 22:read n(t),x(t),y(t):next t
-    4560 data 0,17,5,8,23,5,1,27,5,16,31,5
-    4565 data 5,31,8,10,31,11,7,31,14
-    4570 data 20,31,17,3,31,20,12,27,20
-    4575 data 17,23,20,14,19,20,19,15,20
-    4580 data 6,11,20,9,7,20,2,3,20
-    4585 data 21,3,17,22,3,14,11,3,11
-    4590 data 18,3,8,15,3,5,4,7,5,13,11,5
+```basic
+4540 dim n(23),x(23),y(23),si(27)
+4550 for t=0 to 22:read n(t),x(t),y(t):next t
+4560 data 0,17,5,8,23,5,1,27,5,16,31,5
+4565 data 5,31,8,10,31,11,7,31,14
+4570 data 20,31,17,3,31,20,12,27,20
+4575 data 17,23,20,14,19,20,19,15,20
+4580 data 6,11,20,9,7,20,2,3,20
+4585 data 21,3,17,22,3,14,11,3,11
+4590 data 18,3,8,15,3,5,4,7,5,13,11,5
+```
 
 Since the data in DATA-statements is read in the loop three at a time (N, X,Y) the groups of three consequent numbers belong logically together. But due to the limitation of the language, this grouping cannot be expressed with the language syntax which makes the data confusing to read.
 
@@ -127,39 +137,43 @@ However, in addition to the [infamous `GOTO`-statement](https://homepages.cwi.nl
 
 If you look at the [Ruletti-game source code](https://github.com/rbrother/ruletti64/blob/main/ruletti.txt), you can see some attempts to establish primitive sections of the code to different subroutines. Indeed, the beginning of the program defines "main loop" that consists only of calls to subroutines:
 
-    90 gosub 4500:rem alkuparametrit
-    100 gosub 4000:rem kuva
-    120 :
-    130 gosub 1000:rem valinnat
-    140 gosub 2000:rem pyoritys
-    150 gosub 3000:rem voitot
-    160 if ra>0 then 130
+```basic
+90 gosub 4500:rem alkuparametrit
+100 gosub 4000:rem kuva
+120 :
+130 gosub 1000:rem valinnat
+140 gosub 2000:rem pyoritys
+150 gosub 3000:rem voitot
+160 if ra>0 then 130
+```
 
 I chose the line-numbering of the subroutines so that new subroutine starts with round number 1000, 2000, 3000, etc. and the step of line-numbers inside the subroutine are 10 apart (so there could be maximum of 100 lines in a subroutine). Furthermore I have added some empty lines as space between subroutines and some REM (remark) statement as the title and name of the subroutine. For example the subroutine at lines 2000-2190 "pyöritys" (rotation) performs spinning of the light when roulette is running and has 23 lines:
 
-    2000 rem ***** pyoritys *****
-    2015 r=int(rnd(0)*23)+40
-    2030 t=0:k=0:vi=1
-    2050 poke 781,y(t):poke 780,0:poke 782,0:sys 65520
-    2055 if int(t/2)=t/2 then v1=2:v2=10:goto 2060
-    2057 v1=11:v2=12
-    2060 if t=0 then v1=5:v2=13
-    2065 if k>r then vi=vi*1.5
-    2070 poke 646,v2
-    2080 print tab(x(t))"{rght}{rvon}  {CBM-M}{rvof}"
-    2085 print tab(x(t))"{rvon} {rght}{rght}{CBM-M}{rvof}"
-    2090 print tab(x(t))"{rvon}{CBM-P}{CBM-P}{CBM-P}{SHIFT-@}{rvof}{up}{up}{up}"
-    2095 poke 646,v1:for tt=1 to vi:next tt
-    2097 if vi>800 then 2160
-    2100 print tab(x(t))"{rght}{rvon}  {CBM-M}{rvof}"
-    2105 print tab(x(t))"{rvon} {rght}{rght}{CBM-M}{rvof}"
-    2110 print tab(x(t))"{rvon}{CBM-P}{CBM-P}{CBM-P}{SHIFT-@}{rvof}"
-    2120 t=t+1:if t=23 then t=0
-    2130 k=k+1
-    2150 goto 2050
-    2160 t=n(t)
-    2170 vv=t
-    2190 return
+```basic
+2000 rem ***** pyoritys *****
+2015 r=int(rnd(0)*23)+40
+2030 t=0:k=0:vi=1
+2050 poke 781,y(t):poke 780,0:poke 782,0:sys 65520
+2055 if int(t/2)=t/2 then v1=2:v2=10:goto 2060
+2057 v1=11:v2=12
+2060 if t=0 then v1=5:v2=13
+2065 if k>r then vi=vi*1.5
+2070 poke 646,v2
+2080 print tab(x(t))"{rght}{rvon}  {CBM-M}{rvof}"
+2085 print tab(x(t))"{rvon} {rght}{rght}{CBM-M}{rvof}"
+2090 print tab(x(t))"{rvon}{CBM-P}{CBM-P}{CBM-P}{SHIFT-@}{rvof}{up}{up}{up}"
+2095 poke 646,v1:for tt=1 to vi:next tt
+2097 if vi>800 then 2160
+2100 print tab(x(t))"{rght}{rvon}  {CBM-M}{rvof}"
+2105 print tab(x(t))"{rvon} {rght}{rght}{CBM-M}{rvof}"
+2110 print tab(x(t))"{rvon}{CBM-P}{CBM-P}{CBM-P}{SHIFT-@}{rvof}"
+2120 t=t+1:if t=23 then t=0
+2130 k=k+1
+2150 goto 2050
+2160 t=n(t)
+2170 vv=t
+2190 return
+```
 
 ## Imperative galore
 
