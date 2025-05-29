@@ -1,0 +1,3062 @@
+Date: Sun, 6 Aug 1995 07:49:15 +0300 (EET DST)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: lhalonen@convex.csc.fi
+Subject: Terveisia USA:sta!
+
+Vaikka täällähän taidat sinäkin olla :)
+
+Olen pysahtynyt muutamaksi paivaksi matkallani tanne Eugeneen, Oregoniin, 
+professori Hayes Griffitin luo (johti aikoinaan tutkimusryhmaa jossa 
+isani oli). Matka on ollut hieno. 
+
+Toivotan hyvää vuotta USA:ssa - hieno maa!
+
+Tuleeko tama convex olemaan jotkossakin email-osoitteesi vai saatko 
+tunnuksen sielta (varmaan)?
+
+---------------------------------------------------------------------------
+
+Date: Mon, 2 Oct 1995 19:12:55 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: lhalonen@convex.csc.fi
+Subject: Projektin sisalto
+
+Hei Lauri!
+
+Olen lueskellut artikkeleitasi ja aloittamassa ohjelmaan tutustumisen
+ja ajattelin että nyt olisi hyvä kerrata mikä tämän projektin sisältä
+ja tavoitteet olivatkaan. Kun meni se suullinen tehtävänanto hiukan
+pikaisesti pari viikkoa sitten.
+
+Eli minun käsitykseni asiasta: (kommentoi)
+- Tutkitaan Arsiinin (AsH3) anharmonista potentiaalienergiapintaa, 
+  ilmaistuna eri kertaluokkien (mihin saakka?) voimavakioilla
+  potentiaalienergian sarjakehitelmässä. Koordinaatteina käytetään
+  käyräviivaisia (geometrisia) sisäisiä koordinaatteja.
+- PE-pinnan ensimmäinen arvio saadaan ab-initio-tyästä (mistä?)
+- Käytettävä ohjelma saa syätteenään värähdyskoordinaatit, niihin
+  liittyvät pe-termit ja ristitermit sekä symmetriainformaatiota
+- Ohjelmassa on kaksi moodia: suora ja iteratiivinen. Suora laskee
+  spektroskooppisia vakioita (ei spektriviivojen sijainteja)
+  pe-pinnan perusteella.
+- Iteratiivisessa moodissa lasku suoritetaan monta kertaa ja pe-
+  pintaan voidaan tehdä kierrosten välillä muutoksia. Joitakin
+  pe-pinnan parametreja (mitä?) varioidaan siten että lasketut
+  spektroskooppiset vakiot poikkeavat mahdollisimman vähän (pns)
+  kokeellisista vakioista.
+
+Täytyykä optimointia varten:
+a) Ainoastaan valita ohjelmasta toinen toimntamoodi?
+b) Tehdä ohjelmaan optimoinnin toteuttavia muutoksia?
+c) Tehdä toinen ohjelma, jota käytetään yhdessä alkup. ohjelman kanssa?
+
+Käytännän asioita:
+- Janne on saanut ohjelman toimimaan ja se kuulemma laskee
+  jonkun molekyylin spektroskooppiset vakiot ok. Janne on myäs 
+  rakentanut syättätiedostoa arsiinin pe-pinnan parametreista.
+  Tässä on kuulemma ollut kuitenkin ongelmia tiettyjen symmetria-
+  parametrien kanssa.
+- Minulla ei ole vielä tunnusta Convexiin, mutta hakemus on lähetetty.
+  Ajan ohjelmalla testilaskut käyttäen sitä toista molekyyliä (en
+  muista mitä) jolla Jannekin on ohjelmaa testannut.
+- Olen lueskellut antamiasi artikkeleita (lähinnä A.R.Hoy et al tällä
+  hetkellä). Paljon on opittu, lähinnä koordinaattisysteemeistä ja
+  niiden välisistä muunnoksista (en ollut tiennyt että ne näyttelevät
+  niin tärkeää osaa vib-rot probleeman ratkaisussa!). Mailaan
+  sinulle lähipäivinä kommentteja ja kysymyksiä lukemastani.
+
+----------------------------
+
+From: Lauri.Halonen@csc.fi
+Subject: Re: Projektin sisalto
+To: rbrother@cc.helsinki.fi (Robert Brotherus)
+Date: Mon, 2 Oct 1995 21:08:16 +0200 (EET)
+
+Hei Robert!
+
+Ihan kiva, että otit minuun heti yhteyttä.  Lähetä jatkossa posti minulle
+tänne USA:han suoraan osoitteeseen: halonen@chemvax.princeton.edu
+
+> 
+> - Tutkitaan Arsiinin (AsH3) anharmonista potentiaalienergiapintaa, 
+>   ilmaistuna eri kertaluokkien (mihin saakka?) voimavakioilla
+>   potentiaalienergian sarjakehitelmässä. Koordinaatteina käytetään
+>   käyräviivaisia (geometrisia) sisäisiä koordinaatteja.
+
+Neljänteen kertalukuun saakka.
+
+> - PE-pinnan ensimmäinen arvio saadaan ab-initio-tyästä (mistä?)
+
+Breidung ja Thiel, J. Mol. Spectrosc. 169, 166(1995).
+
+> - Käytettävä ohjelma saa syätteenään värähdyskoordinaatit, niihin
+>   liittyvät pe-termit ja ristitermit sekä symmetriainformaatiota
+> - Ohjelmassa on kaksi moodia: suora ja iteratiivinen. Suora laskee
+>   spektroskooppisia vakioita (ei spektriviivojen sijainteja)
+>   pe-pinnan perusteella.
+> - Iteratiivisessa moodissa lasku suoritetaan monta kertaa ja pe-
+>   pintaan voidaan tehdä kierrosten välillä muutoksia. Joitakin
+>   spektroskooppiset vakiot poikkeavat mahdollisimman vähän (pns)
+>   kokeellisista vakioista.
+> 
+> Täytyykä optimointia varten:
+   Ei ole helppoa vastata mitä voidaan varioida ja mitä ei.  Palataan tähän vähän myöhemmin
+> c) Tehdä toinen ohjelma, jota käytetään yhdessä alkup. ohjelman kanssa?
+> 
+> Käytännän asioita:
+> - Janne on saanut ohjelman toimimaan ja se kuulemma laskee
+>   jonkun molekyylin spektroskooppiset vakiot ok. Janne on myäs 
+>   rakentanut syättätiedostoa arsiinin pe-pinnan parametreista.
+>   Tässä on kuulemma ollut kuitenkin ongelmia tiettyjen symmetria-
+>   parametrien kanssa.
+
+Jannen piti ainoastaan toistaa AsH3-molekyylille Breidungin ja Thielin tulokset
+Mitäs jos sinä nyt yhdessä Jannen kanssa tarkistatte, että tulokset ovat OK.
+Sinun piti myös tehdä hommia arsiinin parissa.  Meidän tarkoituksia varten
+pitäisi käyttää sitten jatkossa sitä pns-osuutta.  Datoina voitaisiin näin 
+aluksi käyttää alpha-vakioita (eli vakioita, jotka kuvaavat rotaatiovakioiden
+värähdystilariippuvuuta.  Nämä vakiot saadaan kirjallisuudesta.  Valitettavasti
+tässä esiintyy Corilois-vuorovaikutuksen vuoksi joitain komplikaatioita
+joihin palataan myöhemmin.
+> - Minulla ei ole vielä tunnusta Convexiin, mutta hakemus on lähetetty.
+>   Ajan ohjelmalla testilaskut käyttäen sitä toista molekyyliä (en
+>   muista mitä) jolla Jannekin on ohjelmaa testannut.
+> - Olen lueskellut antamiasi artikkeleita (lähinnä A.R.Hoy et al tällä
+>   hetkellä). Paljon on opittu, lähinnä koordinaattisysteemeistä ja
+>   niiden välisistä muunnoksista (en ollut tiennyt että ne näyttelevät
+>   niin tärkeää osaa vib-rot probleeman ratkaisussa!). Mailaan
+>   sinulle lähipäivinä kommentteja ja kysymyksiä lukemastani.
+
+Eli ehdotan, että laitatte ohjelman kunnolla pyörimään AsH3:lle (ei
+vielä tässä vaiheessa pns-osaa).  REtsit kirjallisuuden avulla alphavakiot.
+Jannella on viitteitä. Löydät myöt viitteitä Tuomaksen, Esan  ja minun
+AsH3-paperista.  Vertaa kokeellisia ja teidän laskemia vakioita.
+Tämän jälkeen miedän pitää miettiä coriolisongelmaa.
+
+Terveisin.....Lauri
+
+------------------------
+
+Date: Mon, 9 Oct 1995 14:31:02 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: Lauri Halonen <halonen@chemvax.princeton.edu>
+Subject: Ohjelma
+
+Olen nyt saanut tunnuksen convexiin ja siirsimme Jannen kanssa ohjelman 
+hakemistooni. 
+
+> > - Janne on saanut ohjelman toimimaan ja se kuulemma laskee
+> >   jonkun molekyylin spektroskooppiset vakiot ok. 
+
+> Jannen piti ainoastaan toistaa AsH3-molekyylille Breidungin ja Thielin 
+> tulokset Mitäs jos sinä nyt yhdessä Jannen kanssa tarkistatte, että 
+> tulokset ovat OK.
+
+Se molekyyli oli CH3F. Nyt kun se symmetria-syättätietojen epäselvyys
+on tullut selvitettyä, on Janne saanut muodostettua arsiinin syättä-
+tiedoston. 
+
+Potentiaalipintana emme kylläkään ole käyttäneet Breidungin ja Thielin
+parametrejä, kun sieltä ei läytynyt harmonisia voimakenttäparametreja.
+Sen sijaan Janne käytti voimavakioita Tuomaksen artikkelista.
+
+Lasku meni läpi. Vertailimme juuri x-vakioita ja g-vakioita Breidungin ja 
+Thielin laskennallisiin ja kokeellisiin lukuihin.
+
+Tulokset ovat jokseenkin erilaisia kuin heidän laskennalliset 
+tuloksensa, mutta vastaavat oikein hyvin heidän ilmoittamiasan
+kokeellisia arvoja: (muut sarakkeet ohjelman outputista, experimental
+ja calc. Breidungilta)
+
+0   INDICES     CONT2     CONT3     CALC.    experim.  calc.
+
+    1  1      -24.783    11.340   -13.442    -12.8     -10.88
+    1  2       20.934   -37.399   -16.466    
+    1  3      -98.143    45.362   -52.777    -51.2     -43.28
+    1  4        7.404   -31.320   -23.914    
+    2  2       -5.679    -0.332    -6.011    -3.6      -3.9
+    2  3       15.093   -38.137   -17.710    
+    2  4        0.076     1.591     3.760    -1.8      +0.1
+
+----------------------
+
+From halonen@CHEMVAX.PRINCETON.EDU Tue Oct 10 16:37:31 1995
+Date: Tue, 10 Oct 1995 10:35:09 EDT
+To: rbrother@cc.helsinki.fi
+Subject: RE: Ohjelma
+
+Hei Robert!
+
+< Potentiaalipintana emme kylläkään ole käyttäneet 
+> Breidungin ja Thielin parametrejä, kun sieltä ei löytynyt 
+> harmonisia voimakenttäparametreja. Sen sijaan Janne käytti 
+> voimavakioita Tuomaksen artikkelista.
+
+Onhan se harmooninen pinta siellä Thielin artikkelissa ilmoitettuna 
+symmetrisoidussa muodossa (taulukko XI).  Ihan yksinkertaisella taskulaskin 
+hommalla sen saa muunnettua symmetrisoimattomaan muotoon.  Jos ette tätä, 
+keksi niin minä autan.  Joka tapauksessa Tuomas on sen tehnyt paperissaan 
+arsiinille ja Juha Lummila stibiinille.  Voitte kysyä Juhalta apua.
+
+> Lasku meni läpi. Vertailimme juuri x-vakioita ja g-vakioita
+> Breidungin ja Thielin laskennallisiin ja kokeellisiin lukuihin.
+> Tulokset ovat jokseenkin erilaisia kuin heidän ...
+
+Tulokset ovat erilaisia, koska teillä ei ole käytössä Thielin neljännen 
+kertaluvun pintaa.  Olen lähettänyt täsätä viestin Jannelle jo jokin aika
+sitten, mutta hän ei lue viesttejä.  Mikähän olisi paras osoite Jannelle.
+Pyydätkö ystävällisesti Jannea ottamaan minuun yhteyttä.
+Jannen pitäisi nyt lukea se minun viesti.  Siellä on myös sinua koskettavaa
+materiaalia.
+
+Olen muuten kirjoittanut Thielille ja pyytänyt neljännen kertaluvun pinnan
+sisäisten koordinaattien avaruudessa.  Se voi kestää joitakin viikkoja,
+ennenkuin me saamme sen.  Siksi nyt sinun pitäisi keskittyä alpha-vakioiden
+laskemiseen.  Siihen ei tarvita neljännen kertaluvun pintaa.
+
+Kirjoittele minulle heti, kun on vain ongelmia.  En ollut eilen töissä,
+sillä täällä oli vapaa päivä.
+
+Terveisin....Lauri
+
+----------------------
+
+Date: Wed, 11 Oct 1995 14:06:08 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: halonen@CHEMVAX.PRINCETON.EDU
+Subject: RE: Ohjelma
+
+On Tue, 10 Oct 1995 halonen@CHEMVAX.PRINCETON.EDU wrote:
+
+> Onhan se harmooninen pinta siellä Thielin artikkelissa ilmoitettuna 
+> symmetrisoidussa muodossa (taulukko XI).  Ihan yksinkertaisella taskulaskin 
+> hommalla sen saa muunnettua symmetrisoimattomaan muotoon.  Jos ette tätä, 
+> keksi niin minä autan.  Joka tapauksessa Tuomas on sen tehnyt paperissaan 
+> arsiinille ja Juha Lummila stibiinille.  Voitte kysyä Juhalta apua.
+
+Okei. Koetan ensin selvittaa itse tuota muunnosta.
+Kyseessa lienee lineaarinen muunnos jollakin muunnosmatriisilla.
+Katson Hoyn ja tuomaksen artikkeleista.
+
+> Tulokset ovat erilaisia, koska teillä ei ole käytössä Thielin neljännen 
+> kertaluvun pintaa.  
+
+Jep, nainhan se on.
+
+> Olen lähettänyt täsätä viestin Jannelle jo jokin aika
+> sitten, mutta hän ei lue viesttejä.  Mikähän olisi paras osoite Jannelle.
+> Pyydätkö ystävällisesti Jannea ottamaan minuun yhteyttä.
+
+Jep. Kylla hanella pitaisi toimia janne.pesonen@helsinki.fi
+Mutta kuten sanoit, han ei taida lukea viesteja joka paiva.
+
+> Jannen pitäisi nyt lukea se minun viesti.  Siellä on myös sinua koskettavaa
+> materiaalia.
+
+> Olen muuten kirjoittanut Thielille ja pyytänyt neljännen kertaluvun pinnan
+> sisäisten koordinaattien avaruudessa.  Se voi kestää joitakin viikkoja,
+> ennenkuin me saamme sen.  Siksi nyt sinun pitäisi keskittyä alpha-vakioiden
+> laskemiseen.  Siihen ei tarvita neljännen kertaluvun pintaa.
+
+Okei, eli selvitan miten muunnetaan se harmoninen pinta ei-symmetrisoituun
+koordinaatistoon ja teen ohjelmalle syottotiedoston jossa on ao. harmoniset
+parametrit + heidan 3. kertaluvun parametrinsa.
+
+Mikas muuten on tensori? Lineaarisissa koordinaattimuunnoksissahan 
+kaytetaan matriisia ja sen ymmarran ok. Tensori lienee viela laajempi 
+objekti, kun sita kaytetaan muunnoksessa esim. sisaisista normaali-
+koordinaatteihin. 
+
+----------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Wed, 11 Oct 1995 11:45:30 EDT
+To: rbrother@cc.helsinki.fi
+Subject: RE: Ohjelma
+
+Hei Robert!
+
+< Okei. Koetan ensin selvittaa itse tuota muunnosta.
+< Kyseessa lienee lineaarinen muunnos jollakin muunnosmatriisilla.
+< Katson Hoyn ja tuomaksen artikkeleista.
+
+Muunnoshan on seuraava: S1 = (1/sqrt(3)) (r1 + r2 +r3)
+                      S3a = (1/sqrt(6) (2r1 + r2 +r3)
+                      S3b = (1/sqrt(2)) (r2-r3)
+
+Eli esimerkiksi (1/2)F11*S1**2 + (1/2)F33*(S3a**2 + S3b**2) =
+                (1/2)frr*(r1**2 + r2**2 + r3**2) + frrp*(r1*r2 
+               + r1*r3 + r2*r3)
+Käyttämällä ylläolevia yhtälöitä saat sitten johdettua relaatiot
+F ja f voimavakioiden välille.
+
+< Mikas muuten on tensori? Lineaarisissa koordinaattimuunnoksissahan 
+< kaytetaan matriisia ja sen ymmarran ok. Tensori lienee viela laajempi 
+< objekti, kun sita kaytetaan muunnoksessa esim. sisaisista normaali-
+< koordinaatteihin. 
+
+Molekyylivärähdysproblematiikassa taivutusvärähdysten osalta muunnos 
+käyräviivaisista sisäisistä valenssikoordinaateista suoraviivaisiin 
+normaalikoordinaatteihin ei ole lineaarinen.  Sitä varten tarvitaan 
+epälineaarinen muunnos, joka hoituu tosiaan tensoreiden avulla.  Schaumin 
+sarjassa on matriisilaskentaa käsittelevä kirja.  Siitä löytyy myös asiaa
+tensoreista.  Kirja on minun huoneessa.  Jos tarvitset sitä, niin pyydä 
+Marjaa päästämään sinut huoneeseeni.
+
+Terveisin....Lauri
+
+-------------------------------
+
+Date: Thu, 12 Oct 1995 15:50:50 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: halonen@CHEMVAX.PRINCETON.EDU
+Subject: RE: Ohjelma
+
+On Wed, 11 Oct 1995 halonen@CHEMVAX.PRINCETON.EDU wrote:
+
+> Muunnoshan on seuraava: S1 = (1/sqrt(3)) (r1 + r2 +r3)
+>                       S3a = (1/sqrt(6) (2r1 + r2 +r3)
+>                       S3b = (1/sqrt(2)) (r2-r3)
+
+Simppeliä tuntuu olevan, tosin en vielä ymmärrä, miksi juuri
+tällaisen lineaarikombinaation tulosta kutsutaan symmetria-
+koordinaateiksi. Hoy et al sanoo muunnoksesta mielestäni liian
+epäselvästi:
+
+"The important property of transformation matrix U [from internal
+to symmetry coordinates] is that it shall be chosen to make the
+symmetry coordinates transform according to the irreductible
+symmetry representations of the point group"
+
+Mietinpä... Arsiinin pisteryhmä on C3v, jonka "irreductible
+symmetry representations" ovat kai A1, A2 ja E... Okei, taidan
+ymmärtää: tuo esittämäsi S1 tosiaankin transformoituu kuten A1.
+Transformoituvatko vastaavasti S3a kuten A2 ja S3b kuten E? Eivät 
+mielestäni... en ehkä sittenkään ymmärtänyt.
+
+Nuo muunnoksethan ovat sitä paitsi vain venytyksille. Entäs taivutukset 
+sitten? 
+
+> Eli esimerkiksi (1/2)F11*S1**2 + (1/2)F33*(S3a**2 + S3b**2) =
+
+[tässä välissä ilmeisesti sijoitetaan em. koordinaattien määrittelyt]
+
+>                 (1/2)frr*(r1**2 + r2**2 + r3**2) + frrp*(r1*r2 
+>                + r1*r3 + r2*r3)
+> Käyttämällä ylläolevia yhtälöitä saat sitten johdettua relaatiot
+> F ja f voimavakioiden välille.
+
+Kyllä. Asia on nyt luullakseni selvä (siis käytännän tasolla).
+
+Muuten, miten tuossa antamassasi esimerkkilaisekkeessa voit olettaa
+että sekä koordinaatilla S3a ja S3b on sama voimavakio? Minusta se
+ei ole selvää kun katsoo millaisia lineaarikombinaatioita ne ovat.
+
+Nyt muunnos varmaan sujuisi, mutta sitä ei ilmeisesti sittenkään
+tarvita. Huomasin nimittäin että Breidungilla on sekä qudratric
+että cubic voimavakiot symmetriakoordinaateissa. Ohjelman tämän-
+hetkisessä syättätiedostossa on käytetty sisäisiä koordinaatteja,
+mutta käsittääkseni sille voi antaa myäs suoraan inputtina symmetria-
+koordinaatteja. Janne kopioi minulle ohjelman input-tiedoston
+selosteen ja pyrin nyt sellaisen tekemään noita symmetriakoordinaatteja
+käyttäen. 
+
+Onko ohjelmasta olemassa muuten mitään tarkempaa selostusta, esimerkiksi
+samanlaista kuin sinun ja Childin "tetra" ohjelmasta? Olen hieman
+listausta katsellut, mutta se on niin sekava (ei sisennyksiä, paljon
+goto hyppyjä - huonoa ohjelmointityyliä) etten siitä taida nopeasti
+viisastua.
+
+Roope
+
+-----------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Thu, 12 Oct 1995 14:54:13 EDT
+To: rbrother@cc.helsinki.fi
+Subject: RE: Ohjelma
+
+Hei Robert!
+
+S1 transformoi kuten A1
+pari (S3a,S3b) transformoi kuten E (eli toinen Ea ja toinen Eb)
+
+Taivutukselle homma menee aivan samoin.  Korvaat vain r1:n theta1:llä
+jne.
+
+Kyllä termeillä Sa**2 ja Sb**2 on samat kertoimet (eli samat 
+voimavakiot eli F3a,3a =F3b,3b.  Muotoa F3a,3b * S3a *S3b
+olevan termin kerroin F3a, 3b häviää syystä, jonka olen kertonut
+hiljattain Jannelle.  Kysy häneltä.  Jos ei selviä niin kysy
+minulta.
+
+<Nyt muunnos varmaan sujuisi, mutta sitä ei ilmeisesti sittenkään
+<tarvita. Huomasin nimittäin että Breidungilla on sekä qudratric
+<että cubic voimavakiot symmetriakoordinaateissa. Ohjelman tämän-
+<hetkisessä syöttötiedostossa on käytetty sisäisiä koordinaatteja,
+<mutta käsittääkseni sille voi antaa myös suoraan inputtina symmetria-
+<koordinaatteja. Janne kopioi minulle ohjelman input-tiedoston
+<selosteen ja pyrin nyt sellaisen tekemään noita symmetria=
+<koordinaatteja käyttäen.
+
+Tosiaan taitaa olla niin, että tämä Thiel antaa tulokset symmetrisoidussa
+muodossa.  Jälleen voimavakiot voidaan saada muotoon, jossa symmetrisointia
+ei ole käytetty.  Se on edellä kertomani idean laajennus.  Muuten
+Juha Lummilalla on tarvittavia muunnoskaavoja.  Kysy häneltä ja sitten
+voit yrittää johtaa samat tulokset. Se ei ole vaikeaa, koska minäkin
+olen onnistunut sen tekemään.
+
+Muuten eikö se epäharmooninen voimakenttäohjelma hyväsy inputin symmetri-
+soidussa muodossa?  Jos näin on niin sitten olemme tehneet turhaa työtä.
+Tarkista asia.  Voi olla, että se hyväksyy inputin kummassa muodossa
+tahansa.  Muuten tehän olette jo laskeneet tuloksia arsiinille.
+Kuinkas ne on saatu.  Eikös se vastaus ole siellä?
+
+<Onko ohjelmasta olemassa muuten mitään tarkempaa selostusta, esimerkiksi
+<samanlaista kuin sinun ja Childin "tetra" ohjelmasta? Olen hieman
+
+Epäharmooninen voimakenttäohjelma on hankalasti ymmärrettävä. Ainoa ohje 
+one se käyttohje.  Siellä on vähän kommentteja.
+
+Fotranin ikävä piirre on se, että on vaikeaa ohjelmoida ilman GOTO -käskyä.
+Siksi minun ohjelmat ovat vähän vaikeita ymmärtää.  Toisaalta meille 
+on tärkeintä saada oikeita tuloksia.  Kosmeettiset seikat eivät
+ole ratkaisevia. Eli tärkeintä on se, että ohjelma toimii oikein.
+
+Auttaako tämä sinua ollenkaan?
+
+Terveisin....Lauri
+
+--------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Fri, 13 Oct 1995 10:02:19 EDT
+To: rbrother@helsinki.fi
+Subject: anff
+
+
+Hei Robert!
+
+Hyviä uutisia Sveitsistä!
+
+Terveisin.....Lauri
+
+
+Dear Professor Halonen,                                  13 Oct 95
+
+in the appendix we send you an internal quartic force field which
+corresponds to a normal coordinate quartic field with phi(1234)=0.
+Please recall that our standard ab initio procedure does not
+generate quartic force constants phi(ijkl) with four different
+indices by default. Therefore, an internal quartic force field
+derived with the assumption phi(1234)=0 for AsH3 or SbH3 would
+only be approximate.
+
+>From the numerical values for symmetry-equivalent quartic force 
+constants you can check the numerical accuracy of the data (cf.
+deviations in the third digit for the quartic force constants).
+
+I do not expect the quartic force field to change much upon
+calculating phi(1234) which should be small. Therefore I would
+suggest that you start with the force fields in the appendix.
+If the need arises we could calculate the missing phi(1234) value
+at your request.
+
+Best regards              Walter Thiel
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ AB INITIO VALENCE FORCE CONSTANTS FOR ARSINE AND STIBINE
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+1.) AsH3    Geometry: AsH    1.499706 Angstroms
+                      HAsH  94.101882 Degrees
+
+
+    Explanations:
+    
+  - the equilibrium geometry (see above) and the 
+    following valence force constants refer to
+    SCF/AREP calculations (see J.Mol.Spectrosc.169, 166 (1995))
+
+  - the quadratic, cubic and quartic force fields
+    are headlined with F2INT, F3INT and F4INT,
+    respectively (see below)
+
+  - the internal coordinates with indices 1, 2,
+    and 3 refer to the stretching coordinates,
+    those with indices 4, 5, and 6 refer to the 
+    bond angles (angle 4 opposite to bond 3,
+    angle 5 opposite to bond 2, angle 6 opposite
+    to bond 1)
+
+  - the force constants are in units of 
+    " aJ Angstrom**(-m) rad**(-n) " for m 
+    stretching and n bending coordinates
+
+# F2INT ##
+   21
+    1    1        3.2406353648
+    1    2         .0015317068
+    1    3         .0015318780
+    ...
+# F3INT ##
+   56
+    1    1    1      -14.1924290409
+    1    1    2        -.0223750283
+    1    1    3        -.0223754492
+   ...
+# F4INT ##
+  126
+    1    1    1    1       54.4048
+    1    1    1    2         .0859
+    1    1    1    3         .0849
+    1    1    1    4        -.1239
+    1    1    1    5        -.1291
+    1    1    1    6         .0484
+   ...
+
+=================================================
+=================================================
+=================================================
+
+2.) SbH3    Geometry: SbH    1.688654 Angstroms
+                      HSbH  93.582309 Degrees
+
+-------------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Fri, 13 Oct 1995 14:13:55 EDT
+To: rbrother@cc.helsinki.fi
+Subject: RE: Ohjelma
+
+Hei Robert!
+
+Olen lähettänyt sinulle Thielin antaman neljännen kertaluvun pinnan sekä
+arsiinille että stibiinille.
+Huomaa seuraavaa:
+1. Pinnat on annettu symmetrisoimattomassa muodossa.  Tarkista, voidaanko
+ohjelmaan syöttää pinta tässä muodossa, vai pitääkö sen ensin 
+symmetrisoida.
+2. Harmoninen pinta täytyy ottaa Breidungin ja Thielin julkaisun taulukosta 
+XI, koska siinä se on laskettu riitävällä tasolla.  Huomaa, että tämä 
+harmoninen pinta on kuitenkin annettu symmetrisoidussa muodossa, joten joko
+se täytyy muuttaa symmetrisoimattomaan muotoon tai neljännen kertaluvun
+pinta täytyy symmetrisoida.  Molemmat ovat tehtävissä!!!!
+
+Ota yhteyttä, kun tulee ongelmia (tai muutenkin)!!!!
+
+Täällä on todella lämmintä ja kaunista. Ulkona hellelukemat ja jo
+lokakuun puoliväli.
+
+Terveisin....Lauri
+
+---------------------------
+
+Date: Tue, 17 Oct 1995 13:24:50 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: halonen@CHEMVAX.PRINCETON.EDU
+Subject: RE: Ohjelma
+
+On Thu, 12 Oct 1995 halonen@CHEMVAX.PRINCETON.EDU wrote:
+
+> S1 transformoi kuten A1
+> pari (S3a,S3b) transformoi kuten E (eli toinen Ea ja toinen Eb)
+
+Asia selvä.
+
+> Taivutukselle homma menee aivan samoin.  Korvaat vain r1:n theta1:llä
+
+Hyvä.
+
+> Tosiaan taitaa olla niin, että tämä Thiel antaa tulokset symmetrisoidussa
+> muodossa.  Jälleen voimavakiot voidaan saada muotoon, jossa symmetrisointia
+> ei ole käytetty.  Se on edellä kertomani idean laajennus.  Muuten
+> Juha Lummilalla on tarvittavia muunnoskaavoja.  Kysy häneltä ja sitten
+> voit yrittää johtaa samaty tulokset.  se ei ole vaikeaa, koska minäkin
+> olen onnistunut sen tekemään.
+> 
+> Muuten eikö se epäharmooninen voimakenttäohjelma hyväsy inputin symmetri-
+> soidussa muodossa?  Jos näin on niin sitten olemme tehneet turhaa työtä.
+
+Kyllä, käsittääkseni PE-pinta voidaan antaa joko sisäisissä
+koordinaateissa (jolloin täytyy lisäksi syättää sopiva muunnosmatriisi)
+symmetriakoordinaatteihin, tai symmetriakoordinaatistossa (jolloin
+annetaan muunnosmatriisiksi ykkäsmatriisi). 
+
+Tämä ensimmäinen syättätiedostomme, joka on tehty Tuomaksen paperin
+pe-pinnalla, sisältää sisäisen koordinaatiston pe-pinnan ja
+muunnosmatriisin. 
+
+Breidun ja Thiel käyttävät symmetriakoordinaatteja
+sekä taulukon 4 kuutiollisissa voimavakioissa että taulukon 11
+harmonisissa voimavakioissa. Eli olin ajatellut tehdä symmetrisoidun
+syättätiedoston niiden perusteella.
+
+Nyt kun kuitenkin lähetit minulle tuon Thielin mailin, joka sisältää
+kaikki kertaluvut sisäisissä koordinaateissa, taidankin käyttää
+sitä. Symmetrisointimatriisiksihan kelvannee se ensimmäisessä
+syättätiedostossa oleva. 
+
+> Epäharmooninen voimakenttäohjelma on hankalasti ymmärrettävä. Ainoa ohje 
+> one se käyttöohje.  Siellä on vähän kommentteja.
+
+No niin, yritän tänään saada uuden syättätiedoston valmiiksi.
+
+> Fotranin ikävä piirre on se, että on vaikeaa ohjelmoida ilman GOTO -käskyä.
+> Siksi minun ohjelmat ovat vähän vaikeita ymmärtää.  Toisaalta meille 
+> on tärkeintä saada oikeita tuloksia.  Kosmeettiset seikat ievät
+> ole ratkaisevia.  eli tärkeintä on se, että ohjelma toimii oikein.
+
+Ymmärrän. Olisi tietysti vain mukavampaa ymmärtää laskut
+oikeiden tulosten saamisen lisäksi. Mutta ehkä sen ehtii myöhemmin.
+
+------------------------
+
+Date: Tue, 17 Oct 1995 13:30:23 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: halonen@CHEMVAX.PRINCETON.EDU
+Subject: RE: Ohjelma
+
+On Fri, 13 Oct 1995 halonen@CHEMVAX.PRINCETON.EDU wrote:
+
+> Olen lähettänyt sinulle Thielin antaman neljännen kertaluvun pinnan sekä
+> arsiinille että stibiinille.
+
+Kiitokset, tämä oli oikein hyvä!
+
+> Huomaa seuraavaa:
+> 1. Pinnat on annettu symmetrisoimattomassa muodossa.  Tarkista, voidaanko
+> ohjelmaan syöttää pinta tässä muodossa, vai pitääkö sen ensin 
+> symmetrisoida.
+
+Kuten sanottu, kyllä voidaan. Ensimmäinen syättätiedosto onkin juuri
+tässä muodossa. 
+
+> 2. Harmoninen pinta täytyy ottaa Breidungin ja Thielin julkaisun taulukosta 
+> XI, koska siinä se on laskettu riitävällä tasolla.  
+
+Ai jaa? Mikä tekee siinä mailissa olevasta harmonisesta pinnasta
+"riittämätäntä tasoa" olevan? Eivätkä mailin pinta ja artikkelin pinta
+vastaakaan toisiaan? Ellei, emmehän voi toistaa heidän tuloksiaankaan.
+
+> Huomaa, että tämä 
+> harmoninen pinta on kuitenkin annettu symmetrisoidussa muodossa, joten joko
+> se täytyy muuttaa symmetrisoimattomaan muotoon tai neljännen kertaluvun
+> pinta täytyy symmetrisoida.  Molemmat ovat tehtävissä!!!!
+
+Joo, kokeilen muuntaa sen symmetrisoimattomaan muotoon.
+
+> Ota yhteyttä, kun tulee ongelmia (tai muutenkin)!!!!
+
+Jep!
+
+> Täällä on todella lämmintä ja kaunista. Ulkona hellelukemat ja jo
+> lokakuun puoliväli.
+
+Kun olin kesällä Las Vegasissa, päivällä oli 107 fahrenheittia.
+En osaa sanoa, mitä se on celsiuksissa, mutta varmaan yli 35.
+
+Täällä on synkkää ja sumuista ;)
+
+
+------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Mon, 16 Oct 1995 16:00:01 EDT
+To: rbrother@helsinki.fi
+Subject: projekti
+
+Hei Robert!
+
+Ajattelin tässä vähän katsella, pystynkö helposti muuttamaan XH3 
+molekyylien venetysvärähdystiloja lakavaa ohjelmaani sellaiseksi, että
+siihen voidaan sisällyttää myös taivutukset.  Tämä auttaisin sinua
+kovasti eteenpäin.  Keskity sinä tällä hetkellä siihen epäharmooniseen
+voimakenttäohjelmaan.  Jos saan tähän jotain järkeä, niin sitten voimme
+yrittää yhdistää nämä kaksi ohjelmaa.
+
+Terveisin...Lauri
+
+------------------------
+
+Date: Tue, 17 Oct 1995 13:44:30 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: halonen@CHEMVAX.PRINCETON.EDU
+Subject: Re: projekti
+
+On Mon, 16 Oct 1995 halonen@CHEMVAX.PRINCETON.EDU wrote:
+
+> Ajattelin tässä vähän katsella, pystynkö helposti muuttamaan XH3 
+> molekyylien venetysvärähdystiloja laskevaa ohjelmaani sellaiseksi, ettäö
+> siihen voidaan sisällyttää myös taivutukset.  Tämä auttaisin sinua
+> kovasti eteenpäin.  
+
+Mutta mutta, eikä silloin siitä sinun ohjelmastasi tulisi juuri saman
+homman hoitava kuin tämä voimakenttäohjelma? Molemmat kai laskisivat
+pe-pinnan perusteella värähdysominaistiloja & spektrivakioita, eikö?
+
+> Keskity sinä tällä hetkellä siihen epäharmooniseen
+> voimakenttäohjelmaan.  Jos saan tähän jotain järkeä, niin sitten voimme
+> yrittää yhdistää nämä kaksi ohjelmaa.
+
+Okei
+
+-----------------------
+
+From halonen@CHEMVAX.PRINCETON.EDU Tue Oct 17 17:02:51 1995
+Date: Tue, 17 Oct 1995 11:00:03 EDT
+To: rbrother@cc.helsinki.fi
+Subject: RE: Ohjelma
+
+
+Hei Robert!
+
+< Ai jaa? Mikä tekee siinä mailissa olevasta harmonisesta pinnasta
+< "riittämätöntä tasoa" olevan? Eivätkö mailin pinta ja artikkelin pinta
+< vastaakaan toisiaan? Ellei, emmehän voi toistaa heidän tuloksiaankaan.
+
+Breidung ja Thiel ovat laskeneet julkaisussaan Taulukossa XI
+olevat symmetrisoidut harmoosiset voimavakiot MP2-tasolla, kun
+taas siinä minun sinulle lähettämässä tiedostossa he ovat laskeneet
+kaiken vain SCF-tasolla.  No nyt otat MP2-harmoonisen pinnan ja
+SCF kuutiollisen ja neljännen kertaluvun pinnan ja yrität toistaa 
+Thielin tuloksia.  Voit yrittää myös käyttää sitä SCF-harmoonista
+pintaa ja verrata tuloksia.  Kannattaa tehdä syöttötiedosto 
+symmetrisoimattomassa muodossa.
+
+Terveisin.....Lauri
+
+----------------------
+
+Date: Tue, 17 Oct 1995 17:12:44 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: halonen@CHEMVAX.PRINCETON.EDU
+Subject: RE: Ohjelma
+
+> Breidung ja Thiel ovat laskeneet julkaisussaan Taulukossa XI
+> olevat symmetrisoidut harmoosiset voimavakiot MP2-tasolla, kun
+> taas siinä minun sinulle lähettämässä tiedostossa he ovat laskeneet
+> kaiken vain SCF-tasolla.  No nyt otat MP2-harmoonisen pinnan ja
+> SCF kuutiollisen ja neljännen kertaluvun pinnan ja yrität toistaa 
+> Thielin tuloksia.  
+
+Ahaa! Asia selvä. 
+
+> Voit yrittää myös käyttää sitä SCF-harmoonista
+> pintaa ja verrata tuloksia.  
+
+Jeps
+
+> Kannattaa tehdä syöttötiedosto symmetrisoimattomassa muodossa.
+
+Näinhän se on. Tuossa Thielin mailissa on muuten paljon enemmän
+kuutiollisia (56) ja quartic (126) parametreja kuin tuomaksen
+paperin perusteella tehdyssä syättätiedostossa. (21+9) Parametrit
+läytyvät itse asiassa kaikille mahdollisille koordinaatti-
+kombinaatioille. Osa vakioita on *hyvin* pieniä verrattuna toisiin
+vastaaviin. Tuleeko laskusta liian hidas näin, eli pitäisikä suorittaa 
+karsintaa, vai otanko kaikki parametrit mukaan?
+
+-----------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Tue, 17 Oct 1995 11:08:03 EDT
+To: rbrother@cc.helsinki.fi
+Subject: Re: projekti
+
+Hei Robert!
+
+< Mutta mutta, eikö silloin siitä sinun ohjelmastasi tulisi juuri saman
+< homman hoitava kuin tämä voimakenttäohjelma? Molemmat kai laskisivat
+< pe-pinnan perusteella värähdysominaistiloja & spektrivakioita, eikö?
+
+Epäharmooninen voimakenttäohjelma laskee ainostaan spektroskooppisia
+parametrejä.  Se ei laske energiatasoja.  Minulla on ohjelma, joka
+laskee värähdysenergiatasoja, mutta ei rotaatioenergiatasoja.
+Ajattelin seuraavaa lähestymistapaa:  Laskisimme värähdysenergiatasoja
+minun ohjelmalla ja rotaatioparametrejä epäharmoonisella voimakenttä-
+ohjelmalla.  Yhdistämme nämä molemmat ohjelmat, jolloin käytämme
+pinnan optimointilaskussa sekä värähdysenergiatasoja että rotaatio-
+parametrejä datoina.  Ajattelin myös sitä, että saattaisimme laskea jopa
+rotaatiovakioita korkeasti virittyneille värähdystiloille.
+
+Terveisin....Lauri
+
+-----------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Tue, 17 Oct 1995 11:32:57 EDT
+To: rbrother@cc.helsinki.fi
+Subject: RE: Ohjelma
+
+Hei Robert!
+
+< Näinhän se on. Tuossa Thielin mailissa on muuten paljon enemmän
+< kuutiollisia (56) ja quartic (126) parametreja kuin tuomaksen
+< paperin perusteella tehdyssä syöttötiedostossa. (21+9) 
+< Parametrit löytyvät itse asiassa kaikille mahdollisille koordinaatti-
+< kombinaatioille. Osa vakioita on *hyvin* pieniä verrattuna toisiin
+< vastaaviin. Tuleeko laskusta liian hidas näin, eli pitäisikö suorittaa
+< karsintaa, vai otanko kaikki parametrit mukaan?
+
+Ei mitään karsintaa.  Kaikki mukaan vain.  Lasku on erittäin nopea
+Vie varmaan sekunnin murto-osan Convexissa!!!!!
+
+Vertaa nyt tuloksia: alpha- ja x-vakioita.  Huomaa muuten, että meidän
+ohjelma ei laske 'oikein' alphab vakioita (ero lienee pienehkö
+verrattuna Thielin tuloksiin).  Tämä johtuu siitä, että meidän
+vakioissa on mukana resonanssicorioliskontribuutio, joka puuttuu
+kokeellisista tuloksista.  Joudut jatkossa modidifioimaan ohjelmaa
+tämän vuoksi.  Palataan tähän vähän myöhemmin.
+
+Terveisin...Lauri
+
+-----------------------
+
+Date: Tue, 17 Oct 1995 17:55:53 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: halonen@CHEMVAX.PRINCETON.EDU
+Subject: RE: Ohjelma
+
+On Tue, 17 Oct 1995 halonen@CHEMVAX.PRINCETON.EDU wrote:
+
+> Ei mitään karsintaa.  Kaikki mukaan vain.  Lasku on erittäin nopea
+> Vie varmaan sekunnin murto-osan Convexissa!!!!!
+
+Okei.
+
+Listan voimavakoista suuri osa on luonnollisesti symmetrian 
+perusteella samoja. Thielin AbInitio-lasku ei kuitenkaan
+(luonnollisesti) ole saanut niille tarkalleen samoja lukuarvoja. 
+Esim. f112 = -.0223750283, f113 = -.0223754492 ja f122 = -.0223783153.
+
+Voimakenttäohjelman syättätiedostossa syätetään tällaisissa tapauksissa
+itse voimavakio vain kertaalleen ja kolmeen kertaan viite tuohon
+voimavakioon. Ehdotan, että laitan voimavakioksi noiden AbInitio
+vakioiden keskiarvon, eli esim.
+f112 = f113 = f122 = 1/3 * (-.0223750283 -.0223754492 -.0223783153)
+
+PS. Ovatko kayttamani skandinaaviset kirjaimet ok sinulle?
+    Talla hetkella kaytan: suomi a = ä   suomi o = ä
+    voin myos kayttaa: suomi a = ä  suomi o = ö
+
+-----------------------
+
+Date: Tue, 17 Oct 1995 17:38:40 +0200 (EET)
+From: Janne M Pesonen <jmpesone@pcu.helsinki.fi>
+To: Robert Brotherus <rbrother@cc.helsinki.fi>
+Subject: Re: Arsiinin varahdyskaavio
+
+
+On Tue, 17 Oct 1995, Robert Brotherus wrote:
+
+> Heips!
+> 
+> Sinähän olit piirtänyt kaavion siitä, miten numeroit
+> ohjelman syättätiedostoa varten arsiinin atomit ja värähdykset.
+> Annapa kaavio minulle monistettavaksi kun ehdit. Vaihtoehtoisesti
+> voin keksiä itse numerointisysteemin.
+
+Ala turhaan vaivaudu numeroimaan niita uudestaan! Tuon sen kaavion huomiseksi
+(18.10 ke) noin puolenpaivan aikaan laitokselle. Jos et ole paikalla, 
+jatan sen tyopoydallesi.
+terv. Janne
+ 
+-----------------------
+
+Date: Tue, 17 Oct 1995 17:22:53 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: halonen@CHEMVAX.PRINCETON.EDU
+Subject: Re: projekti
+
+> Epäharmooninen voimakenttäohjelma laskee ainostaan spektroskooppisia
+> parametrejä.  Se ei laske energiatasoja.  Minulla on ohjelma, joka
+> laskee värähdysenergiatasoja, mutta ei rotaatioenergiatasoja.
+> Ajattelin seuraavaa lähestymistapaa:  Laskisimme värähdysenergiatasoja
+> minun ohjelmalla ja rotaatioparametrejä epäharmoonisella voimakenttä-
+> ohjelmalla.  Yhdistämme nämä molemmat ohjelmat, jolloin käytämme
+> pinnan optimointilaskussa sekä värähdysenergiatasoja että rotaatio-
+> parametrejä datoina.  
+
+Okei, ymmärrän. 
+
+> Ajattelin myös sitä, että saattaisimme laskea jopa
+> rotaatiovakioita korkeasti virittyneille värähdystiloille.
+
+Eikä nuo rotaatiovakiot saadakaan seuraavalla kaavalla?
+
+B(v1,v2,...,vn) = Be - a1(v1+0.5) - a2(v2+0.5) - ... - an(vn+0.5)
+
+Ilmeisestikin tämä kaava lakkaa pätemästä suurilla v-kvanttilukujen
+arvoilla ja on käytettävä muita keinoja?
+
+---------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Tue, 17 Oct 1995 11:42:25 EDT
+To: rbrother@cc.helsinki.fi
+Subject: Re: projekti
+
+Hei Robert!
+
+> Ajattelin myös sitä, että saattaisimme laskea jopa
+> rotaatiovakioita korkeasti virittyneille värähdystiloille.
+
+< Eikö nuo rotaatiovakiot saadakaan seuraavalla kaavalla?
+<
+< B(v1,v2,...,vn) =3D Be - a1(v1+0.5) - a2(v2+0.5) - ... - an(v=
+< <n+0.5)
+< Ilmeisestikin tämä kaava lakkaa pätemästä suurilla =
+< v-kvanttilukujen arvoilla ja on käytettävä muita keinoja?
+
+Kaava pätee silloin, kun meillä tilat ovat puhtaita tai lähes puhtaita
+nollannen kertaluvun tiloja.  Kun meillä on värähdystilojen välillä
+vuorovaikutuksia (esim. fermiresonansseja), niin homma on vähän
+vaikeampi.  Esim. sinun kaavassa lauseke (v1+0.5) = <0.5*(q1**2 + p1**2)>
+kun käytetään harmoonisen värähtelijän aaltofunktioita.  Todellisuudessahan
+meidän tila ei ole tulo yksinkertaisista harmoonisen värähtelijän
+ominaisfunktioista vaan on tuloa paljon monimutkaisemmista funktioista.
+Minun ohjelmasta se saadaan lineaarikombinaationa kantafunktiosta.
+
+Terveisin....Lauri
+
+-----------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Tue, 17 Oct 1995 13:14:31 EDT
+To: rbrother@cc.helsinki.fi
+Subject: RE: Ohjelma
+
+
+
+Hei Robert!
+
+< voimavakioon. Ehdotan, että laitan voimavakioksi noiden AbInitio
+< vakioiden keskiarvon, eli esim.
+< f112 = f113 = f122 = 1/3 * (-.0223750283 -.0223754492 -.0223783153)
+
+Justiinsa niin!!!
+
+PS. Ovatko kayttamani skandinaaviset kirjaimet ok sinulle?
+    Talla hetkella kaytan: suomi a  ä   suomi o  ö
+    voin myos kayttaa: suomi a  ä  suomi o  ö
+
+Eivät ole ok.  Minä saan sinulta tekstiä, jota on vaikea lukea.  
+Onko minun lähettämä teksti OK?
+
+Terveisin.....Lauri
+
+------------------------------
+
+Date: Thu, 19 Oct 1995 15:55:01 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: Lauri Halonen <halonen@chemvax.princeton.edu>
+Subject: Symmetria -> Sisaiset
+
+mailaamasi ohje oli:
+
+Muunnoshan on seuraava: S1 = (1/sqrt(3)) (r1 + r2 +r3)
+                      S3a = (1/sqrt(6) (2r1 - r2 - r3)
+                      S3b = (1/sqrt(2)) (r2-r3)
+
+Eli esimerkiksi (1/2)F11*S1**2 + (1/2)F33*(S3a**2 + S3b**2) =
+                (1/2)frr*(r1**2 + r2**2 + r3**2) + frrp*(r1*r2
+               + r1*r3 + r2*r3)
+
+Tuosta jälkimmäisen yhtälön vasemmalta puolelta puuttunee
+termi (1/2)F13*S3a*S3b
+
+Muuten tuo muunnos on nyt selvä.
+
+Janne sanoi, ettei muunnoskaavoja tarvitse johtaa. Hän sanoi, että
+voin käyttää muunnosmatriisia, jonka hän on tehnyt ohjelman
+syottotiedostoa varten ja joka tekee sisainen -> symmetria
+muunnoksen: kuulemma voimavakioiden operoiminen kaksi kertaa
+tuon matriisin käänteismatriisilla antaa tulokseksi sisaiset
+voimavakiot.
+
+Ajattelin kuitenkin tehda muunnoksen "kasin", koska en ymmarra
+taysin tuon matriisi-operaation perustelua.
+
+-----------------------
+
+Date: Thu, 19 Oct 1995 16:18:44 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: Lauri Halonen <halonen@chemvax.princeton.edu>
+Subject: Symmetria -> Sisainen (lue tama ennen kuin vastaat)
+
+Huomasinkin vastauksen edellisen mailin kysymykseeni toisessa
+mailissasi:
+
+"Kyllä termeillä Sa**2 ja Sb**2 on samat kertoimet (eli samat
+voimavakiot eli F3a,3a =F3b,3b.  Muotoa F3a,3b * S3a *S3b
+olevan termin kerroin F3a, 3b häviää syystä, jonka olen kertonut
+hiljattain Jannelle."
+
+Eli taman vuoksi termi (1/2)F13*S3a*S3b puuttuu kaavastasi:
+(1/2)F11*S1**2 + (1/2)F33*(S3a**2 + S3b**2) 
+
+Mutta mutta! Kuinkas sitten Breidung ja Thiel antavat artikkelissaan
+seuraavat harmoniset symmetriset voimavakiot:
+
+i	j
+1	1	2.810
+1	2	0.138
+2	2	0.588
+
+Miksei tuossa ole F12 ole nolla??
+
+-------------------------
+
+Date: Thu, 19 Oct 1995 19:59:02 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: halonen@CHEMVAX.PRINCETON.EDU
+Subject: RE: Symmetria -> Sisainen (lue tama ennen kuin vastaat)
+
+> Mutta, mutta!!!!!
+> F13=0 kuten pitääkin.
+> F12 voi olla nollasta poikeava, koska molemmat moodit 1 ja 2 ovat
+> totaalisymmetrisiä.
+> Ymmärrätkö tämän?  Jos et, niin kerro.
+
+En vielä ymmärtänyt. Luulen että ymmärryksen puutteen aiheuttavat
+erilaiset merkintätavat ja nimeämiset.
+
+Kun Thiel antaa paperissaan symmetriset voimavakiot:
+
+i	j
+1	1	2.810
+1	2	0.138
+2	2	0.588
+3	3	2.839
+3	4	-0.047
+4	4	0.669
+
+Tulkitsen sen tarkoittavan:
+
+Venytykset: (1 symmetrinen, 2a ja 2b epäsymmetriset)
+1	1	2.810
+1	2a	0.138
+1	2b	0.138
+2a	2a	0.588
+2a	2b	0.588 
+2b	2b	0.588
+
+Taivutukset: (3 symmetrinen, 4a ja 4b epäsymmetriset)
+3	3	2.839
+3	4	-0.047
+3	4b	-0.047
+4a	4a	0.669
+4a	4b	0.669 
+4b	4b	0.669
+
+Venytysten ja taivitusten valinen kytkenta ilmeisesti
+haviaa, koska sita ei ole merkitty mihinkaan:
+1	3	0
+2a	3	0
+2b	3	0
+1	4a	0
+1	4b	0
+2a	4a	0
+2a	4b	0
+2b	4a	0
+2b	4b	0
+
+Eli yhteensa 21 kappaletta kuten
+sisaisien koordinaattien kombinaatioitakin.
+
+Kun sina annat muunnoskaavan:
+
+  S1 = (1/sqrt(3)) (r1 + r2 +r3)
+  S3a = (1/sqrt(6) (2r1 - r2 - r3)
+  S3b = (1/sqrt(2)) (r2-r3)
+
+Tarkoitat ilmeisesti S3a:lla ja S3b:lla samaa kuin
+Thiel 2a:lla ja 2b:lla. (Thielillahan 3a ja 3b liittyvat
+jo taivutuksiin, kun sina puhut venytyksista)
+
+Annat esimerkin, joka sisältää vain kaksi erilaista symmetrisiin
+venytyksiin liittyvää voimavakiota (F11,F33) sanoen,
+että muut venytyksiin liittyvat voimavakiot = 0:
+
+Eli esimerkiksi (1/2)F11*S1**2 + (1/2)F33*(S3a**2 + S3b**2) =
+                (1/2)frr*(r1**2 + r2**2 + r3**2) + frrp*(r1*r2
+               + r1*r3 + r2*r3)
+
+Kuitenkin thiele antaa KOLME erilaista symmetrisiin venytyksiin 
+liittyvaa voimavakiota:
+
+1       1       2.810
+1       2       0.138
+2       2       0.588
+
+Mika noista kolmesta vakiosta on F11, mika on F33 ja mika
+se kolmas oikein on kun se ei ole naemma nollakaan?
+
+-----------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Thu, 19 Oct 1995 14:38:36 EDT
+To: rbrother@cc.helsinki.fi
+Subject: RE: Symmetria -> Sisainen (lue tama ennen kuin vastaat)
+
+Hei Robert:
+
+
+Sinä olet mennyt sekaisin indeksöinnin kanssa.  Ei se mikään ihme ole.  
+Olisinpa siellä sinua auttamassa!!  Piipahdan muuten sielläpäin
+joulukuun alussa 12.12.-16.12.  Haluan silloin jutella kanssasi.
+
+Sekä symmetria että normaalikoordinaatit on indeksöity siten, että
+1 on symmetrinen venytys (A1), 2 on symmetrinen taivutus (A1), 3 (3a,3b) on
+epäsymmetrinen venytys (E) ja 4    (4a,4b) on epäsymmetrinen taivutus.
+Numerointi tulee siitä sopimuksesta, että ensimmäiseksi luetellaan
+totaalisymmetriset värähdykset (A1) alkaen aaltoluvulta suurimmasta
+moodista (joka on symmetrinen venytys, koska symmetrinen taivutus
+on aaltoluvultaan paljon pienempi).
+Nyt tietenkin F12 voi olla nollasta poikkeava, koska 1 on symmetrinen
+venytys (A1) ja 2 on symmetrinen taivutus (A1). Joten Hamiltonin
+operaattori F12*S1*S2 on totaalisymmetrinen (A1 x A1  = A1).  F12
+reaalilukuna on tietenkin totaalisymmetrinen (A1).
+F13 *S1*S3a tai F13*S1*S3a termi ei ole totaalisymmetrinen (A1 x Ea = Ea
+tai A1 * Eb = Eb).  Jälleen F13 reaalilukuna (= nolla) on tietenkin
+totaalisymmetrinen.  F13 on nolla, koska se on ainoa tapa hävittää
+tämä operaattori.
+
+Älä sotke tätä nyt symmetrisoimattomien sisäisten koordinaattien 
+indeksöintiin.  Nämä koordinaatit olivat r1, r2, r3, theta1, theta2 ja
+theta3.  Näillä indekseillä ei ole mitään tekemistä ylläolevien kanssa.
+
+Toivottavasti tämä nyt alkaa valjeta.  Jos ei niin kirjoittele.  Minä autan 
+sinua.
+
+Parhain terveisin....Lauri
+
+-----------------------
+
+Date: Thu, 19 Oct 1995 21:47:08 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: halonen@CHEMVAX.PRINCETON.EDU
+Subject: RE: Symmetria -> Sisainen
+
+No niin, eikohan selvia pikku hiljaa.
+
+Yritetaanpa uudelleen:
+
+Thielin MP2-tasolla laskettu harmoninen symmetrisoitu pinta
+1 on symm. venytys, 2 on symm. taivutus
+3 on epäsymm venytys (a ja b), 4 on epäsymm taivutus (a ja b)
+i	j
+1	1	2.810
+1	2	0.138
+2	2	0.588
+3	3	2.839
+3	4	-0.047
+4	4	0.669
+
+Minuahan kiinnostaa muuntaa nama voimavakiot 
+sisaisten koordinaattien voimavakioiksi. Kerroit sen onnistuvan
+muunnoskaavalla (venytyksille):
+
+(1/2)F11*S1**2 + (1/2)F33*(S3a**2 + S3b**2) =
+(1/2)frr*(r1**2 + r2**2 + r3**2) + frrp*(r1*r2 + r1*r3 + r2*r3)
+
+Ja vastaavasti ilmeisesti taivutuksille:
+
+(1/2)F22*S2**2 + (1/2)F44*(S4a**2 + S4b**2) = ...
+
+Minua hairitsee äärettömasti, etta naissa muunnoskaavoissa
+ei ole mukana noita kertoimia F12 ja F34! Voiko sisaisten koordinaattien
+voimavakiot todellakin laskea, vaikka heittaa F12:n ja F34:n roskiin??
+Tata minun olisi kovin vaikea uskoa. Jos nain ei ole, niin anna
+minulle kunnon muunnoskaava, joka sisaltaa nuokin vakiot.
+
+Oma veikkaukseni muunnoskaavaksi olisi seuraava:
+
+1. Kirjoitetaan molekyylin potentiaalienergia ilmaistuna 
+   symmetriakoordinaateissa ja jätetään kirjoittamatta
+   symmetrian perusteella häviävät termit:
+
+(1/2)F11*S1^2+(1/2)F12*(S1*S2)+(1/2)F22*S2^2+
+(1/2)F33*(S3a^2+S3b^2)+(1/2)F34*(S3a*S4a+S3b*S4b)+
+(1/2)F44*(S4a^2+S4b^2)
+
+(huomaa, etta tuo kaava sisaltaa F12:n ja F34:n)
+
+2. Sijoitetaan symmetriakoordinaattien paikalle niita vastaavat
+   sisaisien koordinaattien lausekkeet:
+
+S1 = (1/sqrt(3)) (r1 + r2 +r3)
+S3a = (1/sqrt(6) (2r1 - r2 - r3)
+S3b = (1/sqrt(2)) (r2-r3)
+S2 = (1/sqrt(3)) (B1 + B2 +B3)
+S4a = (1/sqrt(6) (2B1 - B2 - B3)
+S4b = (1/sqrt(2)) (B2-B3)
+
+3. Keraillaan kaikki r1^2 termit yhteen, r2^2 termit yhteen,
+   r1^r2 termit yhteen, ..., kaikki B3^2 termit yhteen. 
+   Katsotaan millaiset voimavakiot tulevat naiden termien
+   eteen.
+
+Minua muuten hämää, kun sanot "F12 on tietenkin reaalikukuna
+totaalisymmetrinen". En tiennyt, että reaalilukujen symmetriaomi-
+naisuuksista voidaan edes puhua. Kertoisitko minulle, mika on
+TARKKA totaalisymmetrisyyden maaritelma.
+
+Taidan menna nukkumaan
+
+----------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Thu, 19 Oct 1995 17:44:45 EDT
+To: rbrother@cc.helsinki.fi
+Subject: RE: Symmetria -> Sisainen
+
+Hei Robert!
+
+< Minuahan kiinnostaa muuntaa nämä voimavakiot
+< sisaisten koordinaattien voimavakioiksi. Kerroit sen onnistuvan
+< muunnoskaavalla (venytyksille):
+<
+< (1/2)F11*S1**2 + (1/2)F33*(S3a**2 + S3b**2) =3D
+< (1/2)frr*(r1**2 + r2**2 + r3**2) + frrp*(r1*r2 + r1*r3 + r2*r=
+
+3)
+Huomaa, että minä olen kirjoittanut yllä olevan kaavan hypoteettiselle
+ongelmalle, jossa meillä on ainoastaan venytys mukana.  Tietenkin tarvitaan 
+mukaan erilaisia lisätermejä, kun taivutus on mukana!!!!
+Sorry en ole esittänyt asioita riittävän selvästi.
+Minulle kunnon muunnoskaava, joka sisaltaa nuokin vakiot.
+
+< Oma veikkaukseni muunnoskaavaksi olisi seuraava:
+<
+< 1. Kirjoitetaan molekyylin potentiaalienergia ilmaistuna=20
+<    symmetriakoordinaateissa ja jatetaan kirjoittamatta
+<    symmetrian perusteella haviavat termit:
+<
+< (1/2)F11*S1^2+(1/2)F12*(S1*S2)+(1/2)F22*S2^2+
+< (1/2)F33*(S3a^2+S3b^2)+(1/2)F34*(S3a*S4a+S3b*S4b)+
+< (1/2)F44*(S4a^2+S4b^2)
+<
+< (huomaa, etta tuo kaava sisaltaa F12:n ja F34:n)
+
+just näin!!!!!
+
+2. Sijoitetaan symmetriakoordinaattien paikalle niita vastaavat  
+sisaisien koordinaattien lausekkeet:
+
+S1 =3D (1/sqrt(3)) (r1 + r2 +r3)
+...
+3. Keraillaan kaikki r1^2 termit yhteen, r2^2 termit yhteen,
+   r1^r2 termit yhteen, ..., kaikki B3^2 termit yhteen.0
+   Katsotaan millaiset voimavakiot tulevat naiden termien
+   eteen.
+
+Just näin!!!!!  
+
+< Minua muuten hämää, kun sanot "F12 on tietenkin reaalikukuna
+< totaalisymmetrinen". En tiennyt, että reaalilukujen symmetriaomi-
+< naisuuksista voidaan edes puhua. Kertoisitko minulle, mika on
+< TARKKA totaalisymmetrisyyden maaritelma.
+
+On tosiaan vähän hassua puhua reaalilukijen symmetriaominaisuuksista.
+No asiaa voi tarkastela ihan yksinkertaisesti niin, että ne ovat 
+invariantteja pisteryhmän symmetriaoperaatiossa. Tämä kaikki on ehkä vähän 
+filosofista, joten ei tätä nyt kannata ehkä sen enempää pohtia.
+
+Hyviä unia sinulle!!!!!
+
+Terveisin....Lauri
+
+----------------------------
+
+Date: Mon, 23 Oct 1995 00:21:00 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+Subject: RE: Symmetria -> Sisainen
+
+On Thu, 19 Oct 1995 halonen@CHEMVAX.PRINCETON.EDU wrote:
+
+> <Oma veikkaukseni muunnoskaavaksi olisi seuraava:<
+> < ...
+> 
+> Just näin!!!!!  
+
+huh huh, oikein hyva. Sitten asia on ihan niinkuin
+aluksi ajattelinkin - ajatukset lähtivät sitten vain
+väärille poluille kun tulkitsin pieleen noita 
+
+Kavin lapi kaikki Thielen cubic & quartic parametrit ja
+kerailin yhteen symmetrian perusteella samat, laskin
+keskiarvot jne. ja laitoin syottotiedostoksi. Eikohan
+nuo harmoniset saada nyt vihdoin mukaan ja lasku
+kayntiin.
+
+-----------------------------
+
+Date: Tue, 24 Oct 1995 17:25:16 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: Lauri Halonen <halonen@chemvax.princeton.edu>
+Subject: Lasku vihdoin laskettu
+
+Sain muunnettua vihdoin symmetrisen harmonisen pinnan sisaiseksi, 
+muodostettua syottotiedoston sen ja uusien cubic & quartic 
+parametrien kanssa ja laskettua laskun.
+
+Minua hiukan hämmästyttää laskemieni voimavakioiden arvot
+verrattuna noihin Thielen SCF-arvoihin. Arvot ovat sen verran
+samanlaisia, että uskon muunnoskaavojeni toimivan, kuitenkin
+jopa 10% heittoja esiintyy. Seuraavassa A = Thielen artikkelin
+sym. pinnasta muuntamani pinta. B = Thielen mailissa ollut pinta.
+
+		A	B
+1	1	2.82933	3.240635
+1	2	-0.0193	0.001532
+1	3	-0.0193	0.001532
+1	4	0.06166	0.073185
+1	5	0.06166	0.073185
+1	6	0.01467	0.02064
+2	2	2.82933	3.240635
+2	3	-0.0193 0.001532
+2	4	0.06166	0.073185
+2	5	0.01467	0.02064
+2	6	0.06166	0.073185
+3	3	2.82933	3.240635
+3	4	0.01467	0.02064
+3	5	0.06166	0.073185
+3	6	0.06166	0.073185
+4	4	0.642	0.807873
+4	5	-0.054	-0.01961
+4	6	-0.054	-0.01961
+5	5	0.642	0.807873
+5	6	-0.054	-0.01961
+6	6	0.642	0.807873
+
+Pieni tarkennus: symmetria-pinta, josta muunnoksen suoritin oli
+siis Thielen artikkelin taulukon IX ABINITIO-pinta, ei samassa
+taulukossa oleva empiirinen pinta. Eiko nain ollut tarkoitus?
+
+Tulokset eivät kyllä vastaa juurikaan Thielen artikkelin tuloksia:
+Esimerkiksi:
+X-vakiot        Lasku       Thiele
+    1  1        18.437      -10.88
+    1  2        148.114     -2.06
+    1  3        19.333      -43.28
+    1  4        137.146     -5.49
+    2  2        -6.465      -3.90
+    2  3        -78.040     -4.84
+    2  4        3.248       +0.03
+    3  3        -13.125     -16.38
+    3  4        -65.032     -9.46
+    4  4        -5.075      -2.42
+
+Jaa-a, tuskinpa nain erilaisia tuloksia tulisi vaan tuosta hieman
+erilaisen pinnan kayttamisesta? Taytyneepa tarkistaa syottotietojen
+oikeellisuus...
+
+-----------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Tue, 24 Oct 1995 11:42:43 EDT
+To: rbrother@cc.helsinki.fi
+Subject: RE: Lasku vihdoin laskettu
+
+Hei Robert!
+
+< Minua hiukan hammastyttaa laskemieni voimavakioiden arvot
+< verrattuna noihin Thielen SCF-arvoihin. Arvot ovat sen verran
+< samanlaisia, etta uskon muunnoskaavojeni toimivan, kuitenkin
+< jopa 10% heittoja esiintyy. Seuraavassa A = Thielen artikkelin
+
+Ei tässä mitään kummaa ole.  Itseytyvän kentän menetelmä ei ole kovin hyvä 
+pinnan määräämiseen.  MP2-menetelmä on paljon parempi.  Tämä tietenkin 
+laittaa mietityttämään noiden korkeamman kertaluvun voimavakioiden 
+tarkkuutta.  Ne on nimittäin laskettu ainoastaan itseytyvän kentän 
+menetelmällä.
+
+<Pieni tarkennus: symmetria-pinta, josta muunnoksen suoritin oli
+<siis Thielen artikkelin taulukon IX ABINITIO-pinta, ei samassa
+<taulukossa oleva empiirinen pinta. Eiko nain ollut tarkoitus?
+
+Just näin!
+
+<Tulokset eivat kylla vastaa juurikaan Thielen artikkelin tuloksia:
+<Esimerkiksi:
+<X-vakiot        Lasku       Thiele
+<    1  1        18.437      -10.88
+<
+<Jaa-a, tuskinpa nain erilaisia tuloksia tulisi vaan tuosta hieman
+<erilaisen pinnan kayttamisesta? Taytyneepa tarkistaa syottotietojen
+<oikeellisuus...
+Syöttötiedoissa täytyy olla häikkää!!!
+Autan, jos tarvitaan.
+
+
+Terveisin.......Lauri
+
+------------------------
+
+From rbrother@cc.helsinki.fi Thu Oct 26 23:59:47 1995
+Date: Thu, 26 Oct 1995 23:59:46 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+X-Sender: rbrother@kruuna
+To: Lauri Halonen <halonen@chemvax.princeton.edu>
+Subject: Virheita loytyi
+Message-ID: <Pine.SOL.3.91.951026225105.17740C-100000@kruuna>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: O
+X-Status: 
+
+Ensinnakin huomasin, etta Jannen kayttama indeksointi taivutuksille
+ei vastannut Thielen indeksointia. Koska olin kopioinut U-symmetrisointi-
+matriisin Jannen input-filesta, tuli laskuvirheita. Korjasin ongelman
+vaihtamalla Thielen datassa taivutusindeksit 4 ja 6 toisikseen joka
+kertaluokan voimavakioista.
+
+Laskemieni harmonisten voimavakioiden pitaisi olla ok: vaikka heitot
+Thielen SCF-pintaan ovat suuria, huomasin etta yhteensopivuus Jannen
+inputtitiedoston (Tuomakselta) kanssa on erittain hyva.
+
+Sitten huomasin haikkaa cubic voimavakioiden outputissa.
+Vaika input filessa lukee:
+
+1 1 1 1
+2 2 2 1
+3 3 3 1
+1 1 2 2
+...
+
+INPUT FORCE CONSTANTS (CUBIC)
+   1  1  1     4   -0.0029
+   2  2  2     6   -0.2033
+   3  3  3     4   -0.0029
+   1  1  2     4   -0.0029
+   1  1  3     5   -0.0145
+...
+
+Eli ohjelma yhdistelee termit vaariin voimavakioihin!
+
+Tama tietysti aiheuttaa inputin taydellisen virheellisyyden. Jannen
+inputin kanssa sekaannusta ei tapahdu. En osaa viela sanoa syyta, mutta
+ainoa ero jonka keksin inputtien valilla on taman uuden inputin
+suuri parametrimaara.
+
+Ongelmaa ei esiinny quartic termeissa ja cubic termeistakin vain
+noin 15 ensimmaisessa.
+
+----------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Thu, 26 Oct 1995 18:53:05 EDT
+To: rbrother@cc.helsinki.fi
+Subject: RE: Virheita loytyi
+
+Hei Robert
+
+< Eli ohjelma yhdistelee termit vaariin voimavakioihin!
+<
+< Tama tietysti aiheuttaa inputin taydellisen virheellisyyden. Jannen
+< inputin kanssa sekaannusta ei tapahdu. En osaa viela sanoa syyta, mutta
+< ainoa ero jonka keksin inputtien valilla on taman uuden inputin
+< suuri parametrimaara.
+<
+< Ongelmaa ei esiinny quartic termeissa ja cubic termeistakin vain
+< noin 15 ensimmaisessa.
+
+En usko nain helposti, etta ohjelma on virheellinen.
+Eiko Jannella ollut sama maara kuutiollisia voimavakioita kuin sinulla?
+Vihje: aja ohjelma lapi ainoastaan kuutiollisella pinnalla (jolloin
+et voi laskea x-vakioita).  Katso meneeko indeksointi silloin
+pieleen.  Janne on testannut ohjelmaa CH3F:lla.  Katsos sita. Onko
+indeksointi siella OK.  Viimekädessä me voimme katsoa itse fortrankoodia.
+Se virhe tapahtuu ilmeisesti ihan siina ohjelman alussa, joten se ei
+liene vaikeaa loytaa (en kuitenkaan viela usko, etta ohjelma on väärässä).
+
+Pida yhteytta!!!
+
+Hei....Lauri
+
+-------------------------
+
+Date: Fri, 27 Oct 1995 15:58:29 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: halonen@CHEMVAX.PRINCETON.EDU
+Subject: RE: Virheita loytyi
+
+On Thu, 26 Oct 1995 halonen@CHEMVAX.PRINCETON.EDU wrote:
+
+> <Eli ohjelma yhdistelee termit vaariin voimavakioihin!
+> <
+> <Tama tietysti aiheuttaa inputin taydellisen virheellisyyden. Jannen
+> <inputin kanssa sekaannusta ei tapahdu. En osaa viela sanoa syyta, mutta
+> <ainoa ero jonka keksin inputtien valilla on taman uuden inputin
+> <suuri parametrimaara.
+> <
+> <Ongelmaa ei esiinny quartic termeissa ja cubic termeistakin vain
+> <noin 15 ensimmaisessa.
+> 
+> En usko nain helposti, etta ohjelma on virheellinen.
+> Eiko Jannella ollut sama maara kuutiollisia voimavakioita kuin sinulla?
+
+Virhe löytyi, ja se liittyi nimenomaan voimavakioiden maaraan.
+Jannella voimavakioita oli vain 30 kappaletta (21 cubic, 9 quartic),
+Minulla kokonaista 56 + 126 kappaletta, eli kaikki mahdolliset
+yhdistelmät.
+
+Laskuvirhe johtui siitä, että quartic- ja cubic parametrien 
+maksimimäärä on 100 kappaletta kumpaakin lajia. Kun vähensin
+summassa 30 quartic parametria listan loppupäästä, tuli tuloksista
+jo oikein kivoja (tässä x-vakioita):
+
+i	j	Janne	Thiele	Experim	Minun uusi laskuni
+1	1	-13.44	-10.88	-12.80	-16.92
+1	2	-16.47	-2.06		8.45
+1	3	-52.78	-43.28	-51.20	-65.33
+1	4	-23.91	-5.49		-8.06
+2	2	-6.01	-3.90	-3.67	-0.50
+2	3	-17.71	-4.84		-4.13
+2	4	3.76	0.03	-1.80	-0.35
+3	3	-20.08	-16.38	-19.20	-24.87
+3	4	-24.63	-9.46		-11.75
+4	4	-5.38	-2.42	-0.60	-2.01
+
+Seuraavaksi taytyy paattaa, mitkä parametrit voi qubic-termeista
+jattaa parhaiten pois. Minun ehdotukseni: itseisarvoltaan pienimmat 
+voimavakion omaavat. Toinen vaihtoehto on, etta yritan muuttaa
+ohjelman hyvaksymaan enemman parametreja.
+
+----------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Fri, 27 Oct 1995 10:46:56 EDT
+To: rbrother@cc.helsinki.fi
+Subject: RE: Virheita loytyi
+
+Hei Robert!
+
+Mistä tiedät, että voit maksimissaan syöttää sisään vain 100 vakioita 
+kumpaakin lajia.  Oletko katsonut listausta?  
+Katsos nyt sitä Jannen metyylifluoritestiajoa.  Montako vakiota hän
+on syöttänyt sisään?
+Sinä olet syöttänyt sisään symmetrisoimattoman kentän.  Siellähän on paljon
+symmetrian vuoksi samoja vakioita.  Täytyykö ne syöttää kaikki sinne?
+Symmetrisoidussa muodossa on yhteensä 26 kuutiollista vakiota joista osa on 
+yhtäsuuria.  Mehän voidaan syöttää sisään koko homma symmetrisoidussa 
+muodossa.  Se vaatii pientä lisätyötä!!!!  Toinen tapa on modifoida 
+ohjelmaa.  Se symmetrisointi tapahtuu siinä alussa varmaan.  Ei taida olla 
+mahdotonta muuttaa siinä alussa dimensioita.  
+
+Muuten sen symmetrisoinnin 
+saattaisi pystyä tekemään sen ohjelman avulla seuraavasti:  Jätä pois 
+neljännen kertaluvun pinta.  Silloin ohjelma symmeterisoi sinulle 
+kuutiollisen pinnan.  Tallenna tämä symmetrisoitu kuutiollinen pinta.
+Sitten symmetrisoi se neljännen kertaluvun pinta jättämällä pois se 
+kuutiollinen pinta (tämä ei ehkä onnistu, koska sinulla on 'liikaa' 
+neljännen kertaluvun vakioita).  Sitten aja ohjelma symmetrisoidulla 
+pinnalla. 
+
+Symmetrisoinnin voi tehdä myös kirjoittamalla pieni tietokoneohjelma.
+
+En ole vieläkään vakuuttunut, että ohjelmassa on virhe!!!!
+
+Terveisin....Lauri
+
+-------------------------
+
+Date: Mon, 30 Oct 1995 15:38:10 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: halonen@CHEMVAX.PRINCETON.EDU
+Subject: RE: Ohjelmaa muuttamassa
+
+On Fri, 27 Oct 1995 halonen@CHEMVAX.PRINCETON.EDU wrote:
+
+> Toinen tapa on modifoida 
+> ohjelmaa.  Se symmetrisointi tapahtuu siinä alussa varmaan.  Ei taida olla 
+> mahdotonta muuttaa siinä alussa dimensioita.  
+
+Olen yrittämässä muuttaa ohjelmaa: läysin kahdesta kohtaa 
+(Input-rutiini ja symmetrisointi-rutiini) F3 ja F4 vakioille
+määritellyn taulukon, joissa molempien taulukkojen koko oli 100.
+Muutin indeksit 200:ksi ja käänsin ohjelman uudelleen.
+
+Ohjelma saa nyt luettua sisään kaikki 56+126 parametria, mutta
+kaatuu kesken suorituksen. Tyäskentelen saadakseni sen toimimaan.
+Kaatuminen tapahtuu kohdassa, jossa se tulostaisi U-Matriisin,
+joka symmetrisoi voimavakiot. Etsin parhaillaan virhekohtaa.
+
+> Muuten sen symmetrisoinnin 
+> saattaisi pystyä tekemään sen ohjelman avulla seuraavasti:  Jätä pois 
+> neljännen kertaluvun pinta.  Silloin ohjelma symmeterisoi sinulle 
+> kuutiollisen pinnan.  Tallenna tämä symmetrisoitu kuutiollinen pinta.
+
+Tämä onnistuisi.
+
+> Sitten symmetrisoi se neljännen kertaluvun pinta jättämällä pois se 
+> kuutiollinen pinta (tämä ei ehkä onnistu, koska sinulla on 'liikaa' 
+> neljännen kertaluvun vakioita).  
+
+Ei onnistuisikaan. Mutta eikähän tämä ohjelman muutos kohta toimi.
+
+> Symmetrisoinnin voi tehdä myös kirjoittamalla pieni tietokoneohjelma.
+
+Tämä olisi tietysti mahdollista, ellei muutos rupea toimimaan.
+Olisiko tämä ohjelma kirjoitettava ihan järkeilemällä sen perusteella
+mitä opin harmonisten voimavakioiden muunnoksesta vai läytyisikä
+jostakin valmiit kaavat / algoritmit?
+
+-----------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Mon, 30 Oct 1995 10:47:35 EST
+To: rbrother@cc.helsinki.fi
+Subject: RE: Ohjelmaa muuttamassa
+
+Hei Robert!!!
+
+Ihan hyvä, että olet itse alkanut katsoa, miten dimensioita muutetaan.  
+Muista muuten, että ne muutokset on tehtävä kautta linjan, joten se voi 
+olla vähän hankala homma.  Kannattaisikohan määritellä dimensiolauseella 
+yksinkertaisesti uusia apumuuttujia, joilla on riittävän suuria 
+demensioita.  Sinähän tarvitsen suuremman dimension ainoastaan sen 
+symmetrisoinnin ajaksi.
+
+Symmetrisointihan on ihan vain matriisien kertolaskua.  Kyllä se on 
+helposti tehtävissä kuutiolliselle ja neljännen kertaluvun pinnoille.
+Autan tässä, jos apua tarvitaan.
+
+Terveisin....Lauri
+
+-------------------------
+
+From rbrother@cc.helsinki.fi Thu Nov  2 12:20:51 1995
+Date: Thu, 2 Nov 1995 12:20:50 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+X-Sender: rbrother@karhu.Helsinki.FI
+To: halonen@CHEMVAX.PRINCETON.EDU
+Subject: RE: Ohjelmaa muuttamassa
+In-Reply-To: <00998A3D.965DD3E0.18936@CHEMVAX.PRINCETON.EDU>
+Message-ID: <Pine.HPP.3.91.951102120758.18848D-100000@karhu.Helsinki.FI>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=ISO-8859-1
+Content-Transfer-Encoding: 8BIT
+Status: O
+X-Status: 
+
+On Mon, 30 Oct 1995 halonen@CHEMVAX.PRINCETON.EDU wrote:
+
+> Ihan hyvä, että olet itse alkanut katsoa, miten dimensioita muutetaan.  
+> Muista muuten, että ne muutokset on tehtävä kautta linjan, joten se voi 
+> olla vähän hankala homma. 
+
+Läysin ainoastaan kaksi kohtaa, joissa indeksi 100 esiintyy:
+input- ja symmetrisointi-rutiinit (kuten voisi olettaakin).
+Noissa indeksien muuttaminen 200:ksi sai siis aikaan sen että
+indeksit eivät inputissa enää sekoile, mutta ohjelma kaatuu
+symmetrisoinnissa. 
+
+> Symmetrisointihan on ihan vain matriisien kertolaskua.  Kyllä se on 
+> helposti tehtävissä kuutiolliselle ja neljännen kertaluvun pinnoille.
+> Autan tässä, jos apua tarvitaan.
+
+Tein C:llä pienen symmetrisointiohjelman, mutta se laskee väärin.
+
+Lasken esim. harmoniselle symmetrisoinnille nyt:
+
+F(a,b) = (summa yli i:n ja j:n) f(i,j)*(U(i,a)*U(j,b)+U(i,b)*U(j,a))
+
+Missäköhän vika?
+
+ps. Harjoitustöiden ohjaaminen alkoi maanantaina. Mukavaa hommaa.
+
+-------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Thu, 02 Nov 1995 11:38:40 EST
+To: rbrother@cc.helsinki.fi
+Subject: RE: Ohjelmaa muuttamassa
+
+Hei Robert!
+
+< Löysin ainoastaan kaksi kohtaa, joissa indeksi 100 esiintyy:
+< input- ja symmetrisointi-rutiinit (kuten voisi olettaakin).
+< Noissa indeksien muuttaminen 200:ksi sai siis aikaan sen että
+< indeksit eivä inputissa enää sekoile, mutta ohjelma kaatuu symmetrisoinnissa.
+
+Miksi se kaatuu symmetrisoinnissa?  Se osa ohjelmaa, joka hoitaa 
+symmetrisoinnin ei voi olla kuin muutamia rivejä pitkä.  Eikö se virhe ole 
+helposti löydettävissä!
+
+<Lasken esim. harmoniselle symmetrisoinnille nyt:
+<
+< F(a,b) =3D (summa yli i:n ja j:n) f(i,j)*(U(i,a)*U(j,b)+U(i,b)*U(j,a))
+<
+< Missäköhän vika?
+
+Oikea yhtälö on F(a,b) = (summa yli i:n ja j:n)*U(a,i)*U(b,j)
+
+Kuutiollisille ja neljännenkertaluvun termien osalta se on sitten tämän 
+yhtälön suora laajennus.
+
+Huomaa, että S = Ur ja r=VS, missä V on U:n transpoosi.
+
+Autan edelleen jos tarvitaan!!!
+
+Katselin muuten vähän sitä minun ohjelman muuntamista siten, että siihen 
+voitaisiin sisällyttää myös taivutusvärähdykset (siinä on nyt vain 
+venytykset).  Kyllä se on tehtävissä, mutta se tulee aika monimutkaiseksi 
+ohjelmoida (eli vaikeudet ovat ihan teknisiä).  Minä olisin nuorena 
+kirjoittanut sellaisen ohjelman hetkessä, mutta nyt se on paljon, paljon 
+vaikeampaa!!!!
+
+
+Tulen muuten sinne käymään joulukuussa viikoksi.
+
+Terveisin....Lauri
+
+---------------------
+
+
+From rbrother@cc.helsinki.fi Fri Nov  3 16:32:10 1995
+Date: Fri, 3 Nov 1995 16:32:08 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+X-Sender: rbrother@karhu.Helsinki.FI
+To: halonen@CHEMVAX.PRINCETON.EDU
+Subject: RE: Ohjelmaa muuttamassa
+In-Reply-To: <00998CA0.3887A4C0.21324@CHEMVAX.PRINCETON.EDU>
+Message-ID: <Pine.HPP.3.91.951103162614.7972A-100000@karhu.Helsinki.FI>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=ISO-8859-1
+Content-Transfer-Encoding: 8BIT
+Status: O
+X-Status: 
+
+On Thu, 2 Nov 1995 halonen@CHEMVAX.PRINCETON.EDU wrote:
+
+> Miksi se kaatuu symmetrisoinnissa?  Se osa ohjelmaa, joka hoitaa 
+> symmetrisoinnin ei voi olla kuin muutamia rivejä pitkä.  Eikö se virhe ole 
+> helposti löydettävissä!
+
+Joo, oudolta se tuntuu että kaatuu. En sitten kuluttanut siihen paljon
+aikaa kun rupesin tekemään omaa symmetrisointi-algoritmia.
+
+> Oikea yhtälö on F(a,b) = (summa yli i:n ja j:n)*U(a,i)*U(b,j)
+
+Sain symmetrisointi-ohjelmani nyt toimimaan. Kauan aikaa meni, kun
+siihen, kun vahingossa käytin väärin indeksoitua sisäistä
+harmonista pintaa: yleensä minulla on taivutus 6 vastapäätä
+venytystä 1 - nyt oli toisin ja parametrille 3 4 laskettiin
+vaara arvo.
+
+> Kuutiollisille ja neljännenkertaluvun termien osalta se on sitten tämän 
+> yhtälön suora laajennus.
+
+Joo, saan sen varmaan nyt nopeasti lisättyä.
+
+> Katselin muuten vähän sitä minun ohjelman muuntamista siten, että siihen 
+> voitaisiin sisällyttää myös taivutusvärähdykset (siinä on nyt vain 
+> venytykset).  Kyllä se on tehtävissä, mutta se tulee aika monimutkaiseksi 
+> ohjelmoida (eli vaikeudet ovat ihan teknisiä).  Minä olisin nuorena 
+> kirjoittanut sellaisen ohjelman hetkessä, mutta nyt se on paljon, paljon 
+> vaikeampaa!!!!
+
+Ihanko totta? Miksi se nyt on niin paljon vaikeampaa - onko vain
+ohjelmointitaito rapistunut?
+
+> Tulen muuten sinne käymään joulukuussa viikoksi.
+
+Ihan hyvä.
+
+-------------------------
+
+Date: Tue, 7 Nov 1995 22:09:25 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: Lauri Halonen <halonen@chemvax.princeton.edu>
+Subject: Symmetristen parametrien nolluus
+
+Hei!
+
+Nyt ohjelmani symmetristen parametrien laskemiseksi kasittaakseni
+toimii. Aion pistaa laskuun huomenna. Yksi seikka tosin vahan
+arveluttaa: ohjelma antaa osalle sellaisia parametreja, joilla
+pitaisi symmetrian perusteella olla arvo nolla, nollasta poikkeavan
+arvon. Onko ok vain poistaa ne jalkeenpain, vai pitaisiko tallaista tapahtua
+lainkaan.? Ainakin harmonisille parametreille ohjelma laskee
+arvot oikein.
+
+------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Tue, 07 Nov 1995 16:55:09 EST
+To: rbrother@cc.helsinki.fi
+Subject: RE: Symmetristen parametrien nolluus
+
+Hei Robert!
+
+< Nyt ohjelmani symmetristen parametrien laskemiseksi kasittaakseni
+< toimii. Aion pistaa laskuun huomenna. Yksi seikka tosin vahan
+< arveluttaa: ohjelma antaa osalle sellaisia parametreja, joilla
+< pitaisi symmetrian perusteella olla arvo nolla, nollasta poikkeavan
+< arvon. Onko ok vain poistaa ne jalkeenpain, vai pitaisiko tallaista tapahtua
+< lainkaan.? Ainakin harmonisille parametreille ohjelma laskee
+< arvot oikein.
+
+Valitettavasti tämä kuulostaa vielä vähän huonolta.  Tälläisia nollasta 
+poikkeavia parametrejä, jotka symmetrian nojalla ovat nollia, ei saa 
+olla!!!!
+
+Tähän voi olla kaksi syytä:
+1. Sinulla on vielä ohjelmassa virhi.
+2. Ab initio menetelmässä vakioita ei voi laskea äärettömällä tarkkuudella, 
+joten monet yhtäsuuret vakiot vähän poikeavat toisistaan.  Olet tästä 
+minulta aikoinaan jotain kysynyt.  No nyt nämä pinet poikkeamat voivat 
+aiheuttaa sen, että jotkut symmterisoidut vakiot ovat nollasta poikkeavia 
+(mutta edelleen niiden tulisi olla itseisarvoltaan hyvin pieniä).
+
+Minulla olisikin nyt kysymys:  Kuinka paljon ne vakiot eroavat nollasta?
+
+Minun pitäisi jälleen uudestaan katsoa sitä minun kirjoittamaa ohjelmaa, 
+mikä pitäisi modifoida sisällyttämään taivutus.  On todella ikävää tämän 
+projektin kannalta, että minä en ole siellä.  Nimittäin sinä varmasti 
+pystyisit modifioimaan tämän ohjelman minun opastuksella. Minulle on 
+nykyään hyvin vaikeaa kirjoittaa monimutkaisia ohjelmia. Se varmasti 
+onnistuisi sinulta helposti.  Tässä ohjelmassa on todella monimutkainen 
+luuppirakenne.
+
+[NOTE: Ohjelmoinnin vaikeus, kun ohjelma kirjoitettu hankalalla arkkitehtuurilla.]
+
+Terveisin.....Lauri
+
+--------------------------
+
+Date: Thu, 9 Nov 1995 15:33:57 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: halonen@CHEMVAX.PRINCETON.EDU
+Subject: RE: Symmetristen parametrien nolluus
+
+On Tue, 7 Nov 1995 halonen@CHEMVAX.PRINCETON.EDU wrote:
+
+> <Yksi seikka tosin vahan
+> <arveluttaa: ohjelma antaa osalle sellaisia parametreja, joilla
+> <pitaisi symmetrian perusteella olla arvo nolla, nollasta poikkeavan
+> <arvon. 
+
+> Valitettavasti tämä kuulostaa vielä vähän huonolta.  Tälläisia nollasta 
+> poikkeavia parametrejä, jotka symmetrian nojalla ovat nollia, ei saa 
+> olla!!!!
+
+Joo, niin Jannekin sanoi kun juttelin hänen kanssaan. Omituista on 
+kuitenkin se, että ohjelma laskee "oikein" ainakin ne harmoniset parametrit
+joiden kuuluu poiketa nollasta (eli saan takaisin ne symmetriset
+voimavakiot, joista viikko sitten johdin "kasin" nuo sisaiset vakiot):
+
+Harmonic symmetric field (sana nolla on niiden vakioiden kohdalla,
+joiden pitaisi kasittaakseni olla symmetrian perusteella nolla)
+1   1   2.810000
+1   2   0.138340
+1   3a   0.01366	nolla
+1   3b   0.007890	nolla
+1   4a   -0.000000	nolla
+1   4b   0.000000	nolla
+2   2   0.588000
+2   3a   0.000000	nolla
+2   3b   0.000000	nolla
+2   4a   -0.038184	nolla
+2   4b   -0.022042	nolla
+3a   3a   2.838995
+3a   3b   -0.005579	nolla
+3a   4a   -0.046670
+3a   4b   0.000000	nolla
+3b   3b   2.838138
+3b   4a   0.000000      nolla
+3b   4b   -0.046656
+4a   4a   0.669000
+4a   4b   0.015586      nolla
+4b   4b   0.668798
+
+Osa vakioista, joiden kuuluu olla nolla, on siis nolla, osa ei.
+Poikkeamat nollasta ovat siis aika pienia. Sama on tilanne
+korkeammissa kertaluokissa:
+
+Cubic symmetric field
+1   1   1    -8.222620
+1   1   2    -0.200242
+1   1   3a    0.020248    nolla
+1   1   3b    0.013968    nolla
+1   1   4a    -0.000000   nolla
+...
+
+Quartic symmetric field
+1   1   1   1    18.253765
+1   1   1   2    -0.034867
+1   1   1   3a    -0.084404	nolla
+1   1   1   3b    -0.045567	nolla
+1   1   1   4a    -0.000000	nolla
+1   1   1   4b    -0.000000	nolla
+1   1   2   2    -0.294767
+1   1   2   3a    0.000000	nolla
+...
+
+> Tähän voi olla kaksi syytä:
+> 1. Sinulla on vielä ohjelmassa virhi.
+
+Tassa harmoniset symmetria-vakiot laskeva patka:
+
+  for (a=1; a<=6; a++) for (b=a; b<=6; b++)
+  {
+    force = 0.0;
+    for(i=1; i<=6; i++) for(j=1; j<=6; j++)
+      force += NonSym2[i][j] * ( U[a][i] * U[b][j] );
+  }
+
+Tuon U-matriisinkin pitäisi olla mielestäni kunnossa.
+
+> 2. Ab initio menetelmässä vakioita ei voi laskea äärettömällä tarkkuudella, 
+> joten monet yhtäsuuret vakiot vähän poikeavat toisistaan.  Olet tästä 
+> minulta aikoinaan jotain kysynyt.  
+
+Tama ei voi olla ratkaisu, koska olen etsinyt symmetrian perusteella
+samansuuruiset (toisistaan hieman poikkeavat) voimavakiot ja korvannut
+ne keskiarvollaan.
+
+Yksi ongelma voisi tulla indeksoinnista. Olen kylla pyrkinyt kaikessa
+käyttämään samaa indeksointia venytyksille / taivutuksille kuin sina
+ja Janne. Thiele kayttaa pinnassaan erilaista indeksointia, ja olen
+joutunut vaihtamaan hanen koordinaateistaan indeksit 4 ja 6 keskenaan.
+En uskoisi tässä kuitenkaan olevan mitään ongelmaa.
+
+Janne lupasi illalla tehda saman ohjelman mathcadilla, niin naemme
+miten se eroaa tasta. Harmillista, etta homma polkee paikoillaan
+tallaisessa pikku jutussa.
+
+> Minun pitäisi jälleen uudestaan katsoa sitä minun kirjoittamaa ohjelmaa, 
+> mikä pitäisi modifoida sisällyttämään taivutus.  On todella ikävää tämän 
+> projektin kannalta, että minä en ole siellä.  Nimittäin sinä varmasti 
+> pystyisit modifioimaan tämän ohjelman minun opastuksella.  
+
+Uskoisin niin.
+
+---------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Thu, 09 Nov 1995 12:29:41 EST
+To: rbrother@cc.helsinki.fi
+Subject: RE: Symmetristen parametrien nolluus
+
+Hei Robert!
+
+Minä aloin todella ihmetellä, mikä tämä ongelma oikein on.  kirjoitin 
+pienen fortranohjelman, jonka olen lähettänyt sinulle.  Se symmetrisoi sen 
+harmonisen pinnan.  Sitä olisi ihan helppo modifioida siten, että se 
+symmetrisoisi myös epäharmonisen pinnan.  Se toimii OK. 
+
+Nyt huomaa seuraavaa:
+
+1.  Thielin indeksöintiä täytyy muuttaa.  Meillähän indeksöinti on 
+sellainen, että r1:n vastakkainen kulma on alpha1 jne.  Täten Thielin
+harmonisessa pinnassa indeksipari 
+1 4 -->1 6
+1 6 -->1 4
+3 4 -->3 6
+3 6 -->3 4
+
+2. Syötetään kaikki Thielin antamat harmoniset voimavakiot 21 kpl.
+Ei lasketa mitään keskiarvoja jne.
+
+3. Katsoin sinun lähettämää aikaisempaa postia.  Olit määritellyt 
+symmetrisoidun pinnan väärin:  Ristitermien kertoimissa ei ole tekijää 
+puoli eli sinulla oli (1/2)*F12*S1*S2.  Sen pitää olla F12*S1*S2.
+
+Tämä kaikki on triviaalisti laajennettavissa kuutiolliseen ja neljännen 
+kertaluvun pintaan. 
+ 
+< Harmonic symmetric field (sana nolla on niiden vakioiden kohdalla,
+< joiden pitaisi kasittaakseni olla symmetrian perusteella nolla)
+< 1   1   2.810000
+< 1   2   0.138340
+
+Näitä vakioita en ymmärrä.  Thielin lähettämästä symmterisoimattomasta 
+harmonisesta pinnasta ei voi saada näitä lukuja, jotka ovat MP2-laskun 
+antamia tuloksia.  Thiel lähetti meille SCF-laskun tuloksia ei 
+MP2-tuloksia.
+
+Alkaako nyt jo aurinko paistaa risukasaan???
+
+Autan heti mielelläni, jos apua tarvitaan.
+
+Terveisin.....Lauri
+
+--------------------------------
+
+From rbrother@cc.helsinki.fi Thu Nov  9 20:56:40 1995
+Date: Thu, 9 Nov 1995 20:56:38 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+X-Sender: rbrother@karhu.Helsinki.FI
+To: halonen@CHEMVAX.PRINCETON.EDU
+Subject: RE: Symmetristen parametrien nolluus
+In-Reply-To: <00999227.81B2F820.26170@CHEMVAX.PRINCETON.EDU>
+Message-ID: <Pine.HPP.3.91.951109204452.15048C-100000@karhu.Helsinki.FI>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=ISO-8859-1
+Content-Transfer-Encoding: 8BIT
+Status: O
+X-Status: 
+
+On Thu, 9 Nov 1995 halonen@CHEMVAX.PRINCETON.EDU wrote:
+
+> Minä aloin todella ihmetellä, mikä tämä ongelma oikein on.  kirjoitin 
+> pienen fortranohjelman, jonka olen lähettänyt sinulle.  Se symmetrisoi sen 
+> harmonisen pinnan.  Sitä olisi ihan helppo modifioida siten, että se 
+> symmetrisoisi my|s epäharmonisen pinnan.  Se toimii OK. 
+> 
+> Nyt huomaa seuraavaa:
+> 
+> 1.  Thielin indeks|intiä täytyy muuttaa.  Meillähän indeks|inti on 
+> sellainen, että r1:n vastakkainen kulma on alpha1 jne.  Täten Thielin
+> harmonisessa pinnassa indeksipari 
+> 1 4 -->1 6
+> 1 6 -->1 4
+> 3 4 -->3 6
+> 3 6 -->3 4
+
+Nimenomaan tämän muutoksen olen tehnyt: vaihtanut kaikkialla 4 <==> 6.
+
+> 2. Sy|tetään kaikki Thielin antamat harmoniset voimavakiot 21 kpl.
+> Ei lasketa mitään keskiarvoja jne.
+
+> <1   1   2.810000
+> <1   2   0.138340
+> 
+> Näitä vakioita en ymmärrä.  Thielin lähettämästä symmterisoimattomasta 
+> harmonisesta pinnasta ei voi saada näitä lukuja, jotka ovat MP2-laskun 
+> antamia tuloksia.  Thiel lähetti meille SCF-laskun tuloksia ei 
+> MP2-tuloksia.
+
+Sopiihan se, mutta sina olit muistaakseni halunnut kayttaa nimenomaan
+Thielen MP2-tasolla laskettua harmonista pintaa, eikä niin?
+Katsos kun minä laskin jo pari viikkoa sitten 21 kappaletta symmetrisoi-
+mattomia vakioita noiden Thielen MP2-parametrien mukaan käsin. 
+Silloin oli ajatuksena, että syätetään kaikki data ohjelmalle 
+symmetrisoimattomassa muodossa. No nyt kun päätettiin käyttää 
+symmetristä muotoa parametrien määrän rajoittamiseksi, päätin 
+tietysti kokeilla ohjelmaani noilla 21 luvulla: tuottaisivatko
+ne takaisin alkuperäiset MP2-symmetriset luvut? No, tuottivathan ne,
+mutta pari muuta nollasta poikkeavaa arvo myäs.
+
+Syy, miksi minun on vaikea uskoa ohjelmassani olevan virheen on
+juuri se, että nuo "oikeat" symmetrisoidut MP2 arvot tulevat
+5 desimaalin tarkkuudella.
+
+> 3. Katsoin sinun lähettämää aikaisempaa postia.  Olit määritellyt 
+> symmetrisoidun pinnan väärin:  Ristitermien kertoimissa ei ole tekijää 
+> puoli eli sinulla oli (1/2)*F12*S1*S2.  Sen pitää olla F12*S1*S2.
+
+Totta. Mutta ei minulla ohjelmassani ole sitten sitä puolikasta ollut.
+
+> Tämä kaikki on triviaalisti laajennettavissa kuutiolliseen ja neljännen 
+> kertaluvun pintaan. 
+
+Joo, se on selvää ja ohjelmani laskee niitäkin.
+
+Katson sitä ohjelmaasi tarkemmin huomenna. Vaikka kyllä se
+ensi katsomalta näytti ihan samalta kuin minun.
+
+-------------------------
+
+Date: Thu, 09 Nov 1995 12:11:28 EST
+From: halonen@CHEMVAX.PRINCETON.EDU
+To: rbrother%helsinki.fi@pucc.PRINCETON.EDU
+Subject: program
+
+      PROGRAM SYMMETRY
+      IMPLICIT DOUBLE PRECISION (A-H,O-Z)
+      CHARACTER*1 L
+      DIMENSION V(6,6),F(6,6),FF(6,6),L(3)
+      DATA L/' ','a','b'/
+      OPEN(2,FILE='OUTPUT.DAT')
+      F(1,1)=3.2406353648D0
+      F(1,2)=0.0015317068D0
+      F(1,3)=0.0015318780D0
+      F(1,6)=0.0731851815D0
+      F(1,5)=0.0731852977D0
+      F(1,4)=0.0206402957D0
+      F(2,2)=3.2406353905D0
+      F(2,3)=0.0015317798D0
+      F(2,4)=0.0731851834D0
+      F(2,5)=0.0206403326D0
+      F(2,6)=0.0731853192D0
+      F(3,3)=3.2406352902D0
+      F(3,6)=0.0206401769D0
+      F(3,5)=0.0731852507D0
+      F(3,4)=0.0731851538D0
+      F(4,4)=0.8078729262D0
+      F(4,5)=-0.0196131296D0
+      F(4,6)=-0.0196131298D0
+      F(5,5)=0.8078729373D0
+      F(5,6)=-0.0196131252D0
+      F(6,6)=0.8078729333D0
+      DO 8 I=1,6
+      DO 9 J=I,6
+      F(J,I)=F(I,J)
+    9 CONTINUE
+    8 CONTINUE
+      T2=1.D0/DSQRT(2.D0)
+      T3=1.D0/DSQRT(3.D0)
+      T6=1.D0/DSQRT(6.D0)
+      DO 10 I=1,6
+      DO 11 J=1,6
+      V(I,J)=0.D0
+   11 CONTINUE
+   10 CONTINUE
+      V(1,1)=T3
+      V(2,1)=T3
+      V(3,1)=T3
+      V(4,2)=T3
+      V(5,2)=T3
+      V(6,2)=T3
+      V(1,3)=2.D0*T6
+      V(2,3)=-T6
+      V(3,3)=-T6
+      V(4,4)=2.0D0*T6
+      V(5,4)=-T6
+      V(6,4)=-T6
+      V(2,5)=T2
+      V(3,5)=-T2
+      V(5,6)=T2
+      V(6,6)=-T2
+      DO 12 I=1,6
+      DO 13 J=I,6
+      T=0.D0
+      DO 14 IA=1,6
+      DO 15 IB=1,6
+      T=T+F(IA,IB)*V(IA,I)*V(IB,J)
+   15 CONTINUE
+   14 CONTINUE
+      FF(I,J)=T
+      I1=I
+      I2=J
+      I3=1
+      IF(I.GE.3) I3=2
+      IF(I.GE.5) I3=3
+      IF(I.EQ.5) I1=3
+      IF(I.EQ.6) I1=4
+      I4=1
+      IF(J.GE.3) I4=2
+      IF(J.GE.5) I4=3
+      IF(J.EQ.5) I2=3
+      IF(J.EQ.6) I2=4
+      WRITE(2,100) I1,L(I3),I2,L(I4),T
+   13 CONTINUE
+   12 CONTINUE
+  100 FORMAT(1X,I1,A1,3X,I1,A1,2X,F12.6)
+      STOP
+      END
+
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Thu, 09 Nov 1995 15:40:07 EST
+To: rbrother@cc.helsinki.fi
+Subject: RE: Symmetristen parametrien nolluus
+
+Hei Robert!
+
+< Sopiihan se, mutta sina olit muistaakseni halunnut kayttaa nimenomaan
+< Thielen MP2-tasolla laskettua harmonista pintaa, eikö niin?
+< Katsos kun minä laskin jo pari viikkoa sitten 21 kappaletta
+< symmetrisoimattomia vakioita noiden Thielen MP2-parametrien mukaan käsin.
+<
+< Silloin oli ajatuksena, että syötetään kaikki data ohjelmalle
+< symmetrisoimattomassa muodossa. No nyt kun päätettiin käyttää
+< symmetristä muotoa parametrien määrän rajoittamiseksi, päätin
+< tietysti kokeilla ohjelmaani noilla 21 luvulla: tuottaisivatko
+< ne takaisin alkuperäiset MP2-symmetriset luvut? No, tuottivathan ne,
+< mutta pari muuta nollasta poikkeavaa arvo myös.
+
+Sorry ymmärsin väärin sen, mitä olet tehnyt.  Kyllä aivan kuten 
+aikaisemmin on sovittu, käytämme harmonisena pinta MP2-pintaa.
+Minä tossa testasin vain ohjelmaani Thielin SCF-pinnalla, joka on annettu 
+symmetrisoimattomassa muodossa.  Minulla ei ole MP2-pintaa 
+symmetrisoimattomassa muodossa (voisin tietenkin sellaisen helposti 
+tuottaa).
+
+Olen varma, että sinulla on jokin virhi ohjelmassasi.  Katsoin 
+uudestaan sinun minulle aikaisemmin lähettämää postia.  Siellä on jo 
+harmonisellakin tasolla 'suuria' lukuja, joiden pitäisi olla nollia.
+Eihän sinulla vain ole virhi syöttötiedoissa?  Koitatko ajaa testimielessä 
+ohjelmasi Thielin SCF-pinnalla?
+
+Aja minun kirjoittama ohjelma, niin näet, että se tuottaa oikean 
+vastauksen.
+
+Terveisin......Lauri
+
+------------------------
+
+From rbrother@cc.helsinki.fi Thu Nov 16 03:16:55 1995
+Date: Thu, 16 Nov 1995 03:16:53 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: Lauri Halonen <halonen@chemvax.princeton.edu>
+Subject: Nyt toimii
+
+Olen ollut pari paivaa poissa kuvioista vatsataudin vuoksi, mutta
+nyt taas jaksaa jatkaa.
+
+Nyt onnistuu parametrien symmetrisointi. Ohjelmastani oli puuttunut
+pikku osa, joka kopioi voimavakio-matriisin parametrit puolelta
+toiselle:
+
+DO 8 I=1,6
+DO 9 J=I,6
+F(J,I)=F(I,J)
+
+Hämäävää viassa oli se, etta sen vaikutukset näkyivät vasta
+viidennessä desimaalissa (jolloin kuvittelin isojen lukujen
+olevan aivan ok ja vain nolla-arvoissa vikaa). Täytyi hajottaa
+koko summa termeiksi ennenkuin huomasin.
+
+Cubic parametreille lisasin tietysti vastaavasti tyyliin:
+DO I=1,6
+DO J=I,6
+DO K=J,6
+F(I,K,J)=F(I,J,K)
+F(K,I,J)=F(I,J,K)
+F(K,J,I)=F(I,J,K)
+F(J,I,K)=F(I,J,K)
+F(J,K,I)=F(I,J,K)
+
+ja quarteille samoin (23 kappaletta kopiointeja, toivottavasti
+permutaatiot menivat kohdalleen)
+
+Katson huomenna, tuleeko cubic ja quartic parametreista ok.
+Annapa vinkki: kun nollasta poikkeavia harmonisia symmetriaparametreja
+on 9 kappaletta (11,12,22,3a3a,3b3b,3a4a,3b4b,4a4a,4b4b), niin
+kuinka monta pitaisi olla vastaavia cubic / quartic parametreja?
+Vai olisiko helpompi vastata kysymykseen, kuinka monta erilaista ko.
+parametria on?
+
+--------------------------------
+
+Date: Thu, 16 Nov 1995 20:23:58 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: halonen@CHEMVAX.PRINCETON.EDU
+Subject: RE: Nyt toimii
+
+On Thu, 16 Nov 1995 halonen@CHEMVAX.PRINCETON.EDU wrote:
+
+> <Annapa vinkki: kun nollasta poikkeavia harmonisia symmetriaparametreja
+> <on 9 kappaletta (11,12,22,3a3a,3b3b,3a4a,3b4b,4a4a,4b4b), niin
+> <kuinka monta pitaisi olla vastaavia cubic / quartic parametreja?
+> <Vai olisiko helpompi vastata kysymykseen, kuinka monta erilaista ko.
+> <parametria on?
+> 
+> Kysymys on erittäin hyvä.  Vastaus löytyy Watsonin julkaisusta J. Mol. 
+> Spectrosc. 41, 229 (1972).
+
+Hyva
+
+> Ajattelin, että kun vierailen Helsingissä, niin me voisimme käydä yhdessä 
+> läpi minun kirjoittaman värähdystilaohjelman XH3-molekyyleille.  Se laskee 
+> ainoastaan venytystasoja.  Meidän pitäisi muuntaa se laskemaan my|s 
+> taivutustasoja.
+
+Okei, tehdään niin.
+
+---------------------------------
+
+Date: Mon, 20 Nov 1995 16:36:08 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: Lauri Halonen <halonen@chemvax.princeton.edu>
+Subject: Syottotiedosto symmetriaparametreilla
+
+Symmetriset voimavakiot tuntuvat olevan nyt kunnossa.
+Cubic voimavakioita on nyt 26 kappaletta (18 erilaista) ja
+qubikkeja 62 kappaletta (42 erilaista). En ole vielä tarkastanut,
+ovatko nama oikeat maarat, mutta uskoisin niin koska nolla
+arvot tulivat nyt niihin paikkoihin joihin pitikin seuraavan
+taulukon mukaisesti (- = 1 tai 2, A = 3a/4a, B = 3b/4b):
+
+-- = 1  -A = 0 
+-B = 0  AA = 1 
+AB = 0  BB = 1
+--- = 1 --A = 0 
+--B = 0 -AA = 1 
+-AB = 0 -BB = 1 
+AAA = 1 AAB = 0 
+ABB = 1 BBB = 0
+---- = 1 ---A = 0 
+---B = 0 --AA = 1 
+--AB = 0 --BB = 1 
+-AAA = 1 -AAB = 0 
+-ABB = 1 -BBB = 0
+AAAA = 1 AAAB = 0
+AABB = 1 ABBB = 0 
+BBBB = 1
+
+Mutta taas tuli ohjelman rajat vastaan: riippumattomia
+voimavakioita (cubic + quartic) on nyt 60 kappaletta, kun niitä
+saa olla vain 50. (Viimeksihan oli se ongelma, etta quartic
+voimavakioita oli yli 100 kappaletta, nyt niita on vain 62, mutta
+useammat ovat erilaisia)
+
+Katson, jos saan talla kertaa ohjelmaa muutettua. Ellen, niin
+aion kylla karsia termeja pienemmasta paasta.
+
+Robert Brotherus, Department of Physical Chemistry, University of Helsinki 
+www.helsinki.fi/~rbrother   It's not wise to believe in god as a child does
+
+----------------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Mon, 20 Nov 1995 09:49:33 EST
+To: rbrother@cc.helsinki.fi
+
+Hei Robert!
+
+Sorry mutta alla olevaa taulukkoa on vaikea ymmärtää!
+
+< ovatko nama oikeat maarat, mutta uskoisin niin koska nolla
+< arvot tulivat nyt niihin paikkoihin joihin pitikin seuraavan
+< taulukon mukaisesti (- =3D 1 tai 2, A =3D 3a/4a, B =3D 3b/4b)=
+<:
+<
+<-- =3D 1  -A =3D 0=20
+<-B =3D 0  AA =3D 1=20
+<AB =3D 0  BB =3D 1
+<--- =3D 1 --A =3D 0=20
+<--B =3D 0 -AA =3D 1=20
+<-AB =3D 0 -BB =3D 1=20
+...
+
+< Mutta taas tuli ohjelman rajat vastaan: riippumattomia
+< voimavakioita (cubic + quartic) on nyt 60 kappaletta, kun nii=
+< tä saa olla vain 50. (Viimeksihan oli se ongelma, etta quartic
+< voimavakioita oli yli 100 kappaletta, nyt niita on vain 62, mutta
+< useammat ovat erilaisia)
+> Katson, jos saan talla kertaa ohjelmaa muutettua. Ellen, niin
+> aion kylla karsia termeja pienemmasta paasta.
+
+Nyt ei ole muuta ratkaisua kun se, että se ohjelma on korjattava kuntoon.  
+Termejä ei voi karsia.  Ideana on se, että me pystymme käyttämääm koko ab 
+initio pintaa hyväksi.
+
+Katsoin muuten viikonlopun aikana uudestaan minun kirjoittamaa ohjelmaa 
+XH3-molekyylien venytystilojen laskemiseksi.  Keksin, miten sen saa 
+muutettua äärellisellä työllä sellaiseksi, että myös taivutus voidaan ottaa 
+mukaan.  Kantajoukon symmetrisointi on ollut pullonkaula.  Olen 
+kirjoittanut nyt yli puolet siitä symmetrisointiosuudesta (vain paperilla 
+en ole vielä naputtanut mitään koneeseen).  Loppu sujuu varmasti.  
+Ajattelin, että ensi alkuun tekisimme version, jolla voidaan tehdä 
+täydellisiä variaatiolaskuja.  Myöhemmin voimme lisätä siihen 
+blokkimallioption.  Keskustellaan tästä Helsingissä 12.12. - 16.12.
+
+Parhain terveisin......Lauri
+
+
+----------------------------------
+
+Date: Tue, 21 Nov 1995 16:14:37 +0200 (EET)
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+To: halonen@CHEMVAX.PRINCETON.EDU
+Subject: RE: Syottotiedosto symmetriaparametreilla
+
+On Mon, 20 Nov 1995 halonen@CHEMVAX.PRINCETON.EDU wrote:
+
+> Nyt ei ole muuta ratkaisua kun se, että se ohjelma on korjattava kuntoon.  
+> Termejä ei voi karsia.  Ideana on se, että me pystymme käyttämääm koko ab 
+> initio pintaa hyväksi.
+
+Tein syottotiedoston kaikkia termeja kayttaen ja yllatyksekseni ohjelma
+luki ja laski kaikilla 60 vakiolla. Siina olivatkin hyvat uutiset,
+silla tulokset ovat huonoja:
+
+i	j	CALC.	Thiele
+1	1	-17.094	-10.88
+1	2	-2.36	-2.06
+1	3	-34.02	-43.28
+1	4	-32.242	-5.49
+2	2	2.151	-3.9
+2	3	-1.15	-4.84
+2	4	21.013	0.03
+3	3	-11.303	-16.38
+3	4	-15.412	-9.46
+4	4	-8.919	-2.42
+
+Minua rupesi arveluttamaan, josko ohjelmaan voi sittenkaan
+syottaa voimakentan valmiiksi symmetrisoituna kuten Janne
+arveli. Tein siis niin, että laitoin voimavakioksi laskemani
+symmetriset voimavakiot ja symmetroisointimatriisiksi ykkosmatriisin.
+
+Ongelmia tuottaa varmaan ainakin koordinaattien maarittely
+input-tiedostossa: siinahan on maariteltava atomit, sidokset ja
+sidosten valitset taivutukset. Nama on talla hetkella maaritelty:
+1,2,3 = sidokset (venytykset?)
+4,5,6 = kulmat (taivutukset?)
+Kun taas PE-vakioille kaytan symmetrisoidussa pinnassa:
+1=1 (sym. venytys)
+2=2 (sym. taivutus)
+3a=3 (epasym. venytys a)
+3b=4 (epasym. venytys b)
+4a=5 (epasym. taivutus a)
+4b=6 (epasym. taivutus b)
+Auttaisikohan, jos vaihtaisin koordinaatit 2 ja 4, jolloin kaikki
+kolme venytysta olisivat 1,2,3 ja taivutukset 4,5,6? 
+
+Toinen asia, jota mietin on se TOTSYM taulukko, joka ilmoittaa
+ohjelmassa milloin symmtrisoitu voimavakio haviaa. Nuo yllaolevat
+luvut on laskettu alkuperaisella TOTSYM-taulukolla. Mutta kun nyt
+kaytan jo symmetrisoituja vakioita ja olen jo nollat poistanut,
+olisi kai loogista etta kaikkiin kohtiin siina laitettaisiin 1
+nollan sijasta. Kokeilin tata, mutta se aiheutti ohjelman suorituksen
+kaatumisen (Division by zero exception).
+
+> Katsoin muuten viikonlopun aikana uudestaan minun kirjoittamaa ohjelmaa 
+> XH3-molekyylien venytystilojen laskemiseksi.  Keksin, miten sen saa 
+> muutettua äärellisellä ty|llä sellaiseksi, että my|s taivutus voidaan ottaa 
+> mukaan.  Kantajoukon symmetrisointi on ollut pullonkaula.  Olen 
+> kirjoittanut nyt yli puolet siitä symmetrisointiosuudesta (vain paperilla 
+> en ole vielä naputtanut mitään koneeseen).  Loppu sujuu varmasti.  
+> Ajattelin, että ensi alkuun tekisimme version, jolla voidaan tehdä 
+> täydellisiä variaatiolaskuja.  My|hemmin voimme lisätä siihen 
+> blokkimallioption.  Keskustellaan tästä Helsingissä 12.12. - 16.12.
+
+Joo. Miten tama ANFF-ohjelma ja sinun eroaisivat siina tapauksessa, etta 
+lisaisimme taivutukset siihen? Eiko tamakin ohjelma tee
+variaatiolaskun? 
+
+----------------------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Wed, 22 Nov 1995 09:33:34 EST
+To: rbrother@cc.helsinki.fi
+
+Hei Robert!
+
+Yhteydet olivat eilen tietokonevian vuoksi poikki.
+
+< Tein syottotiedoston kaikkia termeja kayttaen ja yllatyksekseni ohjelma
+< luki ja laski kaikilla 60 vakiolla. Siina olivatkin hyvat uutiset,
+< silla tulokset ovat huonoja:
+
+Ensimmäinen asia tarkistaa katsomalla alkuperäistä ohjelman listausta on 
+se, että pystyykö ohjelma käsittelemään 60 vakiota.  Jos dimensiot ovat 
+pienemmät, niin silloin tätä laskua ei kannata yrittää ilman 
+asianmukaisia muutoksia ohjelmaan.  Lasku ilman ohjelma muutoksia tuottaa 
+varmasta jossain vaiheessa virheellisiä tuloksia.
+
+< Minua rupesi arveluttamaan, josko ohjelmaan voi sittenkaan
+< syottaa voimakentan valmiiksi symmetrisoituna kuten Janne
+< arveli. Tein siis niin, että laitoin voimavakioksi laskemani
+< symmetriset voimavakiot ja symmetroisointimatriisiksi ykkosmatriisin.
+
+Minulla ei ole täällä mukana ohjelman käyttöohjetta.  Mitä se sanoo 
+symmetrisoinnista?  Jannella on testiajo CH3F-molekyylille.  Vertaa nyt 
+siihen tiedostoon ja ajotulokseen.  On mahdollista, että syötettäessä 
+symmetrisoitu F-matriisi, joutuu syöttämään yksikkö U matriisin.  CH3F:n 
+testitiedoston pitäisi käsittääkseni vastata tähän kysymykseen. Voit myös 
+katsoa ohjelman listausta.
+  
+< Ongelmia tuottaa varmaan ainakin koordinaattien maarittely
+< input-tiedostossa: siinahan on maariteltava atomit, sidokset ja
+< sidosten valitset taivutukset. Nama on talla hetkella maaritelty:
+< 1,2,3 =3D sidokset (venytykset?)
+< 4,5,6 =3D kulmat (taivutukset?)
+< Kun taas PE-vakioille kaytan symmetrisoidussa pinnassa:
+< 1=3D1 (sym. venytys)
+< 2=3D2 (sym. taivutus)
+< 3a=3D3 (epasym. venytys a)
+< 3b=3D4 (epasym. venytys b)
+< 4a=3D5 (epasym. taivutus a)
+< 4b=3D6 (epasym. taivutus b)
+< Auttaisikohan, jos vaihtaisin koordinaatit 2 ja 4, jolloin kaikki
+< kolme venytysta olisivat 1,2,3 ja taivutukset 4,5,6?=20
+
+Jälleen sen U-matriisin pitäisi olla vastaus tähän kysymykseen!!!
+
+< Toinen asia, jota mietin on se TOTSYM taulukko, joka ilmoittaa
+< ohjelmassa milloin symmtrisoitu voimavakio haviaa. Nuo yllaolevat
+< luvut on laskettu alkuperaisella TOTSYM-taulukolla. Mutta kun nyt
+< kaytan jo symmetrisoituja vakioita ja olen jo nollat poistanut,
+< olisi kai loogista etta kaikkiin kohtiin siina laitettaisiin 1
+< nollan sijasta. Kokeilin tata, mutta se aiheutti ohjelman suorituksen
+< kaatumisen (Division by zero exception).
+
+Tämä on ihan järkevä kysymys.  Jälleen ongelmana on se, että minä olen 
+täällä ja sinä siellä enkä pysty katsomaan sitä CH3F-testiajoa.  Katopas 
+sitä ja vertaa sinun hommaan.
+
+Jos vaikeudet muodostuvat nyt ylivoimaisiksi, niin minä pääsen käsiksi 
+ANFF-ohjelman listaukseen (en käyttöohjeisiin).  Autan kyllä sinua 
+eteenpäin.  Ole yhteydessä, kun olet tehnyt tarvittavat vertailut CH3F:n 
+kanssa.
+
+< Joo. Miten tama ANFF-ohjelma ja sinun eroaisivat siina tapauksessa, etta
+< lisaisimme taivutukset siihen? Eiko tamakin ohjelma tee
+< variaatiolaskun?
+
+ANF-ohjelma ei tee mitään variaatiolaskuja. Se laskee ainoastaan 
+spektroskoopisia parametrejä kuten x-parametrejä häiriöteorian avulla.  Se 
+ei laske mitään värähdysenergiatasoja suoraan.  Kukaan ei tietääkseni ole 
+koskaan kirjoittanut XH3-molekyyleille kaikki värähdysvapausasteet 
+sisältävää variaatioohjelmaa, joka 
+perustuu käyräviivaisiin sisäisiin koordinaatteihin.  Tuomas kirjoitti 
+ohjelman, joka perustuu blokkiapproksimaatioon.  Se on tällä hetkellä alan 
+ehdoton state of art lasku.  Ajatteles sitä, kun me puhumme ainoastaan 
+neliatomista molekyyleistä, joista on vielä pitkä matka DNA:han!!!!!
+
+Parhain terveisin sinulle....Lauri
+
+----------------------------------------
+
+Thu Nov 23 18:01:23 1995
+To: halonen@CHEMVAX.PRINCETON.EDU
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+Subject: RE: Syottotiedosto symmetriaparametreilla
+
+At 09:33 22/11/95 EST, you wrote:
+
+>Ensimmäinen asia tarkistaa katsomalla alkuperäistä ohjelman listausta on 
+>se, että pystyykö ohjelma käsittelemään 60 vakiota. 
+
+Kävin ohjelman läpi etsien vakiota 50 (jonka manuaali ilmoittaa erisuuruisten
+voimavakioiden maksimimääräksi). Indeksointeja läytyikin pääohjelmasta ja aliohjelmista : 
+FIND(50), FREF(50), JWE(50), JAC(200,50),... monta kymmentä kappaletta. Muutin kaikki 50:t 100:ksi.
+
+Yritän tällä hetkellä kääntää ohjelmaa (kääntäjä ilmoittaa syntaksi-virheistä
+tietyillä riveillä, mutta en ole vielä keksinyt, miten löytäisin ao. rivin emacsissa)
+
+><Minua rupesi arveluttamaan, josko ohjelmaan voi sittenkaan
+><syottaa voimakentan valmiiksi symmetrisoituna kuten Janne
+><arveli. 
+>Minulla ei ole täällä mukana ohjelman käyttöohjetta.  Mitä se sanoo 
+>symmetrisoinnista?  
+
+Kayttöohjehan ainoastaan luettelee syöttötiedoston parametrit ja niiden
+sisällön. Symmetrisoinnista todetaan vain, että U matriisi on symmetrisoiva
+matriisi.
+
+>Jannella on testiajo CH3F-molekyylille.  Vertaa nyt 
+>siihen tiedostoon ja ajotulokseen.  
+
+Joo - olipa hyvä, että muistutit tästä: CHF3:ssa Janne on tosiaan käyttänyt
+symmetrisoitua PE-pintaa juuri kuten minäkin haluan - eli kyllä se varmasti
+tulee onnistumaan.
+
+> symmetrisoitu F-matriisi, joutuu syöttämään yksikkö U matriisin. 
+
+Juuri näin minä tein ja niin näkyy Jannekin tehneen CHF3:ssa.
+
+><Toinen asia, jota mietin on se TOTSYM taulukko
+>Tämä on ihan järkevä kysymys.  
+
+Tähänkin läytyi vastaus CHF3:sta: ainakin siinä TOTSYM on ihan sama
+kuin epäsymmetrisessäkin tapauksessa (on siis sekä nollia että ykkösiä).
+
+><Joo. Miten tama ANFF-ohjelma ja sinun eroaisivat siina tapauk=
+><sessa, etta lisaisimme taivutukset siihen? Eiko tamakin ohjelma tee
+><variaatiolaskun?
+>
+>ANF-ohjelma ei tee mitään variaatiolaskuja. Se laskee ainoastaan 
+>spektroskoopisia parametrejä kuten x-parametrejä häiriöteorian avulla.  
+
+Hmmm... mihin sitten variaatiolaskua enää tarvitaan, jos homma sujuu
+näinkin? Raakojen aaltofunktioiden laskemiseen?
+
+> perustuu käyräviivaisiin sisäisiin koordinaatteihin.  Tuomas kirjoitti 
+> ohjelman, joka perustuu blokkiapproksimaatioon.  
+
+Joo, sen blokkiapproksimaatio-ohjelman toiminnan uskoisin ymmärtäväni.
+
+--------------------------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Fri, 24 Nov 1995 11:38:57 EST
+To: rbrother@cc.helsinki.fi
+Subject: RE: Syottotiedosto symmetriaparametreilla
+
+
+Hei Robert!
+
+
+> Yritan talla hetkella kaantaa ohjelmaa (kaantaja ilmoittaa=
+> syntaksi-virheistä tietyillä riveillä, mutta en ole vielä keksinyt, 
+> miten löytäisin ao. rivin emacsissa)
+
+Pyydä apua Juhalta.  Hän on kokenut emacsin käyttäjä.  Minä en pystysi 
+sinua tässä auttamaan.  Olen aivan toivoton tietokoneiden kanssa.  
+Virheilmoitusten kansa kylla pystyn sinua auttamaan, jos jäät jumiin.  Voit 
+lahettaa minulle convexiin sen virheellisen ohjelman.  Minä yritän sitten 
+katsoa mika se vihe on.  Yrita nyt kuitenkin itse ensin.
+
+> Hmmm... mihin sitten variaatiolaskua enää tarvitaan, jos homma sujuu
+> näinkin? Raakojen aaltofunktioiden laskemiseen?
+
+Se häiriöteoria homma ei kasittele hommaa kovinkaan hyvin. Mm. 
+fermeresonanssit taivutuksen ja venytyksen valilta puuttuvat jne.  
+Ajattelin, etta me voisimme käsitellä rotaatioliikkeen häiriöteorian avulla 
+ja varahdysliikkeen variaatioperiaatteen avulla.  Eli tarvitsisimme sen 
+epaharmonisen voimakenttaohjelman laskemaan alpha-vakioita.  Nama 
+rotaatioparametrit ovat ainoastaan kuutiollisen pinnan funktioita, joten 
+siina mielessa se ohjelman dimensio-ongelma ei pysäyttäisi meita.  
+Kannattaisi nyt kuitenkin yrittaa saada se ohjelma toimiaan myos neljannen 
+kertaluvun pinnalle.
+
+Terveisin....Lauri
+
+--------------------------------------------
+
+Mon Nov 27 14:10:03 1995
+To: halonen@CHEMVAX.PRINCETON.EDU
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+Subject: RE: Syottotiedosto symmetriaparametreilla
+
+At 11:38 24/11/95 EST, you wrote:
+Ohjelman indeksien kasvattamisen kanssa ei ole mennyt hyvin. Kuten sanottu, 
+jotta saisin ohjelman käyttämään enemmän kuin 50 kappaletta erilaisia voimavakioita, 
+muutin lähdekoodista kaikista indeksäinneistä 50:t 100:ksi, esim:
+
+   COMMON POSV(7,3),U(20,20),U1(20,20),Z(50,50),FIND(50),FREF(50),...
+=> COMMON POSV(7,3),U(20,20),U1(20,20),Z(100,100),FIND(100),FREF(100),...
+
+Maalaisjärki sanoo, että indeksien kasvattaminen ei voi koskaan olla paha asia: 
+eihän lisätila haittaa vaikkei sitä käytettäisikään.
+
+Kuitenkin näin muunnetun ohjelman suoritus pysähtyy nollalla jako - systeemivirheeseen:
+
+*** Floating Point Exception: Floating divide by zero: at 80020f9c
+...
+IOT trap
+
+Sama virhe tulee, vaikka vaan yksiulotteiset 50-kokoiset taulukot muuttaa:
+   FIND(50), FREF(50), JWE(50), DF(50), PD1(50), PD2(50), ...
+=> FIND(100), FREF(100), JWE(100), DF(100), PD1(100), PD2(100),  SCL(100),
+
+Tutkin ohjelmaa aikani ja totesin nimenomaan FIND-taulukon pitävän sisällään cubic ja quartic voimavakiot 
+ja sen koon olevan 50. Mutta ohjelma kaatuu samalla tavalla vaikka muutan vain ensimmäisen ohjelmasta 
+löytyvän FIND(50):n FIND(100):ksi!
+
+Onko sinulla fortrania ohjelmoineena mitään kommenttia tästä peräti oudosta virheestä? 
+Sama virhe muuten tuli silloin kuukausi sitten, kun yritin käyttää symmetrisoimattomia 
+voimavakioita (126 kpl) ja kasvattaa erään toisen taulukon indeksiä 100:sta 200:een. 
+Sen vuoksihan lähdin sitten symmetrisoimaan käsin niitä vakioita, mutta eipä siitä kyllä 
+ole mitään hyötyä, jos ei tätäkään indeksiä voi kasvattaa. 
+
+> Se hairioteoria homma ei kasittele hommaa kovinkaan hyvin. Mm. 
+> fermeresonanssit taivutuksen ja venytyksen valilta puuttuvat jne.  
+> Ajattelin, etta me voisimme kasitella rotaatioliikkeen hairioteorian avulla 
+> ja varahdysliikkeen variaatioperiaatteen avulla.  Eli tarvitsisimme sen 
+> epaharmonisen voimakenttaohjelman laskemaan alpha-vakioita.  
+
+Kuulostaa hyvältä idealta. 
+
+--------------------------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Mon, 27 Nov 1995 11:06:00 EST
+To: rbrother@cc.helsinki.fi
+Subject: RE: Syottotiedosto symmetriaparametreilla
+
+Hei Robert!
+
+> Maalaisjärki sanoo, että indeksien kasvattaminen ei voi koskaan olla paha
+
+Olet ihan oikeassa, etta indeksien kasvattaminen on sisansa sallittua.  
+Mutta kun sita tekee, niin silloin taytyy olla todella varovainen.  
+Nimittain ne vastaavat indeksit on muutettava kautta koko ohjelman.  
+Huomaa nyt, että eri aliohjelmissa on sallittua käyttää eri nimiä 
+muuttujille.  muuttujien muodollisista nimista riippumatta matriisien ja 
+vektoreiden koot taytyy olla samoja eri aliohjelmissa.
+
+Esimerkki:
+
+Paaohjelmassa lause:  COMMON /ROBERT/ A(100),B(30,4)
+aliohjelmassa lause:  COMMON /ROBERT/ D(100),E(20),F(100)
+
+Tama esimerkki kuvaa virheetonta tilannetta.  Jos nyt muutat A:n dimension 
+200:ksi, niin luonnollisesti aliohjelmassa dimensiota pitaa kasvattaa.  
+Mutta miten?  Se rippuu ohjelmasta.  On mahdollista, etta oikea ratkaisu on
+COMMON /ROBERT/ D(200),E(20),F(100)
+Tama ei kuitenkaan ole valttamatta ainoa mahdollisuus.  Yleensa 
+kuitenkin tama on suoraviivaista.  Huomaa, etta siina ohjelmassa on voitu 
+kayttaa EQUIVALENCE-lausetta varaamaan samaa muistipaikkaa eri muuttujille. 
+Siina voi tulla ongelmia, kun muutetaan dimensioita.
+
+Katso nyt tata ongelmaa vahan tarkemmin.  Autanm sinua jos tarvis. Pääsen 
+kasiksi ohjelman alkuperaiseen versioon.
+
+Parhain terveisin....Lauri
+
+-------------------------------------------
+
+Tue Nov 28 15:52:02 1995
+To: halonen@CHEMVAX.PRINCETON.EDU
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+Subject: RE: Ongelma selvisi
+
+At 11:06 27/11/95 EST, you wrote:
+>Esimerkki:
+>
+>Paaohjelmassa lause:  COMMON /ROBERT/ A(100),B(30,4)
+>aliohjelmassa lause:  COMMON /ROBERT/ D(100),E(20),F(100)
+
+Joo, nyt alan ymmärtää fortranin logiikkaa: nimi /ROBERT/ viittaa tiettyyn muistialueeseen 
+ja eri aliohjelmat voivat sijoittaa alueelle mitä muuttujia haluavat. 
+Tilanne valkeni, kun tarkastelin ohjelmamme eri alirutiinien muuttujamäärityksiä. Esimerkiksi:
+
+aliohjelmassa A:
+COMMON POSV(7,3),U(20,20),UU(20,20),DUM1(2720),B(15,20),B1(20,3),RL(20),FS(500),IFS(500)
+aliohjelmassa B:
+COMMON POSV(7,3),U(20,20),U1(20,20),Z(50,50),FIND(50),FREF(50),F2(120)
+
+Eli aliohjelmassa A on "dummy" taulukko DUM1(2720) samalla alueella, jossa B:ssä on  
+Z(50,50), FIND(50), FREF(50), F2(120). Huomaa, että
+50*50+50+50+120 = 2720. Jos siis halutaan muuttaa FINT(50) => FINT(100), 
+täytyy muuttaa vastaavasti DUM-taulukoita ympäri ohjelmaa vastaavalla tavalla.
+
+Toisaalta olen helpottunut että tämä selvisi, toisaalta järkyttynyt, että missään 
+ohjelmassa / ohjelmointikielessä käytetään noin arkaanisia ratkaisuja. 
+Jos minä olisin tehnyt tämän ohjelman niin indeksoinnin kasvattaminen vaatisi 
+yhden luvun muuttamisen ja kestäisi 5 sekuntia.
+
+Uskon, että korjaus onnistuu nyt ja saan kohta ok tulokset kaikilla parametreilla.
+
+------------------------------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Tue, 28 Nov 1995 09:41:07 EST
+To: rbrother@cc.helsinki.fi
+Subject: RE: Ongelma selvisi
+
+Hei Robert!
+
+> Toisaalta olen helpottunut että tämä selvisi, toisaalta järkyttynyt, että
+> missään ohjelmassa / ohjelmointikielessä käytetään noin arkaanisia
+> ratkaisuja. Jos minä olisin tehnyt tämän ohjelman niin indeksoinnin
+> kasvattaminen vaatisi yhden luvun muuttamisen ja kestäisi 5 sekuntia.
+
+Sinun kritiikki ei ole ihan oikea, koska Fortranin nykyisissa versioissa on 
+mahdollista kayttaa muuttujia taulukoiden numeroiden sijasta, jolloin 
+tosiaan pystyy muuttamaan indeksoinnin 5 sekunnissa.  Mutta ota huomioon 
+se, etta anh-ohjelma on kirjoitettu noin vuonna 1972.  Olitko sina edes 
+syntynyt silloin?  Mina olin tullut juuri ylioppilaaksi, enka ollut koskaan 
+kayttanyt tietokonetta.  Tietokonekielistä en ollut edes tietoinen.  
+Fortranin hyvä piirre on se, etta naita vanhoja ohjelmia voi edelleen 
+kayttää.  Samaa ei voi sanoa muilla kielilla kirjoitetuista ohjelmista.
+
+Valitettavasti minä myos kirjoitan ohjelmia hyvin vanhahtavalla tyylillä.  
+Kuitenkin pää-asia on s,e, etta ne toimivat ja ovat nopeita.  Fortran 
+kääntajat tuottavat kuulemma hyvin tehokasta koodia.
+
+Tama anh-ohjelma on kirjoitettu Englannissa ja se on vahan vaikeaselkoinen.
+
+Terveisin.....Lauri  
+
+------------------------------------------
+
+Tue Nov 28 19:37:52 1995
+To: halonen@CHEMVAX.PRINCETON.EDU
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+Subject: RE: Ongelma selvisi
+
+Hei!
+
+At 09:41 28/11/95 EST, you wrote:
+>Sinun kritiikki ei ole ihan oikea, koska Fortranin nykyisissa versioissa on 
+>mahdollista kayttaa muuttujia taulukoiden numeroiden sijasta, jolloin 
+>tosiaan pystyy muuttamaan indeksoinnin 5 sekunnissa.  Mutta ota huomioon 
+>se, etta anh-ohjelma on kirjoitettu noin vuonna 1972.  
+
+Ohoh! Tuota en tiennytkään!
+
+> Olitko sina edes syntynyt silloin?
+
+En.
+
+> Fortran kaantajat tuottavat kuulemma hyvin tehokasta koodia.
+
+Nain olen itsekin kuullut. Koodia on kuulemma helppo optimoida
+esim. vektoroiville prosessoreille kuten convex.
+
+----------------------------------------
+
+Wed Nov 29 22:20:29 1995
+To: halonen
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+Subject: Tuloksia ja lisää indeksi-ongelmia
+
+Hei!
+
+Se ohjelma sitten toimi 62 parametrin kanssa (FIND ja FREF kasvatettu 50:stä sataan) 
+noin 20 DUMMY-moottujan indeksin muuttamisen jälkeen.
+
+Kauhukseni huomasin kuitenkin juuri, että FIND ja FREF eivät olekaan ainoita muuttujia, joihin oletus 50 pätee:
+
+      DO 401 I=1,NFIND
+      READ (IN,*) (Z(I,J),J=1,NFREF)
+
+Luulisin mm. tämän perusteella, että myös tämän Z(50,50):n indeksöintiä olisi kasvatettava. 
+(NFIND nimittäin on juuri se erisuurten voimavakioiden määrä)
+
+Hieman oudoksuttaa se, että tulokset ovat kuitenkin jokseenkin järkeviä
+(viimeinen sarake uudet tulokset)
+
+i	j	Janne	  Thiele	Experim	Symm
+1	1	-13.44	-10.88	-12.80	-17.09
+1	2	-16.47	-2.06		-2.36
+1	3	-52.78	-43.28	-51.20	-34.02
+1	4	-23.91	-5.49		-32.24
+2	2	-6.01	  -3.90	  -3.67	  2.15
+2	3	-17.71	-4.84		-1.15
+2	4	3.76	  0.03	  -1.80	  21.01
+3	3	-20.08	-16.38	-19.20	-11.30
+3	4	-24.63	-9.46		-15.40
+4	4	-5.38	  -2.42	  -0.60	  -8.90
+
+--------------------------------------------
+
+From ???@??? Thu Nov 30 12:00:10 1995
+To: hayes
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+Subject: Photos, Research and sceptism
+Cc: 
+Bcc: 
+X-Attachments: 
+
+Hi Hayes!
+
+I apologise for not having sent you and deb some photos yet. But that's on my task list and will be done sooner or later. 
+Because I don't have negatives of most of my old photos, I am planning to scan them and send them as 
+jpg-file attachements in email. I can provide assistance in viewing them if necessary.
+
+Just after arriving back to Finland my physical chemistry pfofessor offered me a job as 
+a research / teaching assistant and that's what I've been doing for the term in addition to my studies. 
+The teacing part - mostly guiding the labwork of younger students - has been very nice and rewarding. 
+
+The research has been more problematic for several reasons. The aim of the project is to improve the 
+calculations of rotation-vibration wavefunctions for arsine-molecule (AsH3) using a combination of 
+variational and perturbation theory. The most visible problem is that my professor has been all this 
+time in USA (will return in sep 96) and all our communication must have been through email. 
+That's of course better than letters but has drawbacks compared to direct discussions. 
+The project is purely theoretical one and I'm basically doing it alone. 
+
+Second, I still haven't been able to take some of the theoretical chemistry courses that would 
+help in this - my professor will lecture them after coming back to Finland. Meanwhile, I have to learn 
+necessary theory from reading articles and this has proven to be time consuming.
+
+Third, the calculation we are planning uses partly a fortran program written by someone somewhere [Halonen]
+twenty years ago. The program is 8000 lines long, there is no documentation, no comments in the program, 
+it's written in a bad programming style (lot's of gotos, bad variable names, etc), and I have never 
+programmed in fortran. 
+
+Fourth, I am also taking normal courses and doing the teching part of the job so that I have not been 
+able to devote many hours of day to the project although I have worked long hours and made compromises with hobbyes.
+
+The project was supposed to start with a minor modification to the program which would extend 
+its capabilities to the calculation of arsine. Due to the complications stated above the program still 
+doesn't work weel for AsH3 and I am still working on the modification. 
+
+---------------------------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Wed, 29 Nov 1995 16:48:53 EST
+To: rbrother@cc.helsinki.fi
+Subject: RE: Tuloksia ja lisää indeksi-ongelmia
+
+Hei Robert!
+
+> Kauhukseni huomasin kuitenkin juuri, että FIND ja FREF eivät olekaan ainoita
+> muuttujia, joihin oletus 50 pätee:
+
+Selvästikin myös ainakin Z-matriisin dimensiot ovat liian pieniä.
+
+> Hieman oudoksuttaa se, että tulokset ovat kuitenkin jokseenkin järkeviä
+> (viimeinen sarake uudet tulokset)
+
+Tulokset ovat hurjan näköisiä.  Ei missään tapauksessa olisi mahdollista, 
+että esimerkiksi x14 = -32.24 cm-1.  Sehän on valtaisi suuruus tälle 
+normaalisti varsin vähäpätöiselle spektroskoopiselle parametrille.
+Käyttäen Thielin pintaa sinun tulisi saada juuri hänen tulos!
+Jannen laskuissakin on jotain pielessä samasta syystä.
+
+Katsos vielä uudestaan ohjelmaa.  Täytyykö dimensioita muuttaaa jossain 
+muualla?
+
+Terveisin....Lauri
+
+---------------------------------------------
+
+Thu Nov 30 14:38:03 1995
+To: halonen@CHEMVAX.PRINCETON.EDU
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+Subject: RE: Tuloksia ja lisää indeksi-ongelmia
+
+At 16:48 29/11/95 EST, you wrote:
+>Selvästikin myös ainakin Z-matriisin dimensiot ovat liian pieniä.
+
+Olen nyt muuttanut kaikki Z(50,50) dimensiot Z(100,100):ksi ja muuttanut muuteoksen 
+edellyttämällä tavalla kaikki DUM(...), DUM1(...), DM2(...) jne. muuttujat.
+
+Ohjelma toimii ja laskee, mutta tuottaa samat tulokset kuin ennen muutosta.
+
+>Katsos vielä uudestaan ohjelmaa.  Täytyykö dimensioita muuttaaa jossain muualla?
+
+Tätä on kovin vaikea sanoa. Ohjelmassa on Z:n muutoksen jälkeen vielä monia taulukoita, 
+joiden indeksissä esiintyy luku 50, kuten JAC(200,50), JWJ(50,50),JWE(50),DF(50), 
+PD1(50),PD2(50),PDEV(50,50) ja SCL(50). Osa näistä saattaa liittyä kyseessä olevaan 
+erisuuruisten voimavakioiden määrään. Monet varmasti eivät liity, koska input-tiedostossa määritellään 
+muitakin taulukoita, joissa rajoituksena on 50. Muuttujien väliset kytkökset on erittäin työlästä 
+tutkia ohjelman pituuden ja aliohjelmien käyttämien kirjavien muuttujanimien vuoksi, 
+joten rupean yksi kerrallaan kasvattamaan indeksejä 100:ksi asianmukaisten DUM-muutosten kera.
+
+Toivottavasti tämä sitten auttaa. 
+
+Ohjelmassa on muuten muutamia kommentteja joiden perusteella voisi päätellä olevan olemassa myös 
+jonkin laajemman dokumentoinnin sen input-ohjeen lisäksi:
+C
+C  COEFFICIENT OF H(4,0) SEE WRITE UP
+C                            ========
+Onko sinulla tietoa tällaisesta?
+
+---------------------------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Thu, 30 Nov 1995 10:26:55 EST
+To: rbrother@cc.helsinki.fi
+Subject: RE: Tuloksia ja lisää indeksi-ongelmia
+
+Hei Robert!
+
+> taulukoita, joiden indeksissä esiintyy luku 50, kuten JAC(200,50),
+> JWJ(50,50),JWE(50),DF(50), PD1(50),PD2(50),PDEV(50,50) ja SCL(50). Osa
+> näistä saattaa liittyä kyseessä olevaan erisuuruisten voimavakioiden
+> määrään. Monet varmasti eivät liity, koska input-tiedostossa määritellään
+
+Tossa listassa ainakin taulukoiden JWJ ja JWE indeksit liittyvat 
+voimavakioiden maaraan.  Nayta taulukoita kaytetaan pienimman neliosumman 
+laskussa (jota sinä et parhaillaan kayta). 
+
+Ohjelmasta ei ole olemassa mitaan muuta materiaalia kuin se, mita olen 
+sinulle antanut.  Sinun kannattaisi lukea artikkeli Hoy, Mills, Strey Mol. 
+Phys. 24, 1265 (1972). 
+
+Ohjelman dimensioiden muutaminen saattaisi vaatia nyt sitä, että sitä 
+ohjelmaa pitaisi tutkia vähän tarkemmin.  Koitas nyt ensin muuttaa niita 
+dimensioita.  Jos se ei onnistu, niin sitten minun taytyy katsoa sita.
+
+Terveisin.....Lauri
+
+-----------------------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Thu, 07 Dec 1995 10:39:44 EST
+To: rbrother@cc.helsinki.fi
+Subject: RE: Tuloksia ja lisää indeksi-ongelmia
+
+Hei Robert!
+
+Mita sinulle kuuluu?
+
+Olen Helsingissa vajaan viikon alkaen tiistaina 12.12.  Haluaisin heti 
+sitten jutella kanssasi.  Katsotaan silloin tata projektia.  Olen vahan 
+tuuminut, etta kannattaisikohan sinun tehda jotain muuta ja jatkaa tata 
+hommaa sitten, kun tulen ensi kesana takaisin Suomeen.  meilla olisi 
+varmasti jotain kivoja gradu aiheita.  Tama nykyinen projekti on enemman 
+vaitoskirjahomma kuin gradu.  Olen muuten kirjoittanut varahdysohjelman, 
+mutta se ei ole viela oikein toimintakunnossa.  jotain siina jo toimii.
+
+Saat muuten hoitaa ensi kevaana assistentin virkaa, joten hommat jatkuvat.
+Jutellaan tosiaan ensi tiistaina lisaa.
+
+Parhain terveisin...Lauri  
+
+----------------------------------------
+
+Fri Dec 08 01:08:13 1995
+To: halonen@CHEMVAX.PRINCETON.EDU
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+Subject: RE: Tuloksia ja lisää indeksi-ongelmia
+
+Hei!
+
+At 10:39 AM 12/7/95 EST, you wrote:
+
+>Mita sinulle kuuluu?
+
+Keskityin tällä viikolla kokeisiin lukuun. Tänään oli sekä orgaanisen kemian 
+että kinetiikan kokeet. Koska assarointien vuoksi oli jäänyt luentoja väliin, 
+jouduin tekemään molemmissa aika paljon töitä. Menivät sitten hyvin.
+
+> Olen Helsingissa vajaan viikon alkaen tiistaina 12.12.  Haluaisin heti 
+> sitten jutella kanssasi.  Katsotaan silloin tata projektia.  
+
+Näin tehdään.
+
+> Olen vahan 
+> tuuminut, etta kannattaisikohan sinun tehda jotain muuta ja jatkaa tata 
+> hommaa sitten, kun tulen ensi kesana takaisin Suomeen.  meilla olisi 
+> varmasti jotain kivoja gradu aiheita.  Tama nykyinen projekti on enemman 
+> vaitoskirjahomma kuin gradu. 
+
+Ei yhtään huono idea. Tässä hommassa on valitettavasti ollut tähän saakka 
+minun kannaltani 80% muiden ja omien ohjelmien debuggausta ja 
+vain 20% fysikaalista kemiaa. Vaikka on sitä opittukin.
+
+>Saat muuten hoitaa ensi kevaana assistentin virkaa, joten hommat jatkuvat.
+>Jutellaan tosiaan ensi tiistaina lisaa.
+
+Mukavaa!
+
+-------------------------------------------
+
+From: halonen@CHEMVAX.PRINCETON.EDU
+Date: Fri, 08 Dec 1995 10:34:54 EST
+To: rbrother@cc.helsinki.fi
+Subject: RE: Tuloksia ja lisää indeksi-ongelmia
+
+Hei Robert!
+
+Tavataan sitten ensi tiistaina (ei ihan aamutuimaan).  Olavi ja Peter ovat 
+varmasti silloin paikalla ja putaan sinun erikoistyö/pro gradu asiasta.  
+Uskon, että meiltä löytyy joku kiva homma.
+
+Terveisin......Lauri
+
+------------------------------------------
+
+Mon Dec 11 17:34:59 1995
+To: halonen@CHEMVAX.PRINCETON.EDU
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+Subject: RE: Tuloksia ja lisää indeksi-ongelmia
+
+Hei!
+
+At 10:34 8/12/95 EST, you wrote:
+>Tavataan sitten ensi tiistaina (ei ihan aamutuimaan).  
+
+Olen paikalla.
+
+------------------------------------------
+
+Wed Dec 27 15:05:48 1995
+To: "O. Hayes Griffith" <hayes@enzyme.uoregon.edu>
+From: Robert Brotherus <rbrother@cc.helsinki.fi>
+Subject: Re: Research
+
+At 14:36 18/12/95 -0800, you wrote:
+> I can well understand your frustration in research [...] I think you
+> should not continue too long on this project.  
+
+Things have actually improved in some aspects even before I received your mail. 
+My professor / advisor visited Finland for one week before christmas and we decided to change my project. 
+We planned to continue with the original project at some lated date when he is 
+back in Finland and can better help me. The problem in last term has not been that Dr. Halonen would not 
+have interest in the project or that he would not have been helpful - on the contrary. 
+The problem has simply been his absence and the lack of other people in the department 
+that would have had specific knowledge about the problems in this project.
+
+The new project is much more straight forward - rotational analysis of an infrared spectra 
+of a linear molecule. What comes to advice, things are not much better, because my new 
+adviser Dr. Vaittinen is ALSO leaving abroad soon (!!). He has taught me theory and practice 
+about the analysis in the past week and I feel I am now quite self sufficient. 
+An improving factor is that there are 2 other people in the department I know that have 
+been doing similar analysis. I should be able to talk with them when problems occur.
