@@ -14,7 +14,7 @@ In my childhood with my friends, if we were not building sand-castles outside we
 
 I liked to play with LEGOs even after I learned BASIC-programming in my VIC-20 (and later Commodore 64), but it slowly dawned on me how much more powerful programming was in building creations of text, graphics, sound and more. Most handicraft hobbies and jobs involve a lot of repetitive work: manual repetitive adding blocks to the LEGO-tower, manual repetitive looping of thread in knitting, manual repetitive shoveling of earth in gardening, manual repetitive placing of pieces with jigsaw puzzles. Time spent in such activities might be only 10% creative (designing what you want to create) and 90% repetitive (manual repetitive building steps). The magic of computer programming is that with a program you can automate practically all of the repetition so that the programmer can focus mostly on the creative design, designing the patterns or features that will be repeated or executed or built by the computer.
 
-![human-robot-legos](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/i-like-programming/human-robot-legos.webp)
+![human-robot-legos](human-robot-legos.webp)
 
 ## Maximizing the creative ratio
 
