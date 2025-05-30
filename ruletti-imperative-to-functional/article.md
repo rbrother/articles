@@ -2,11 +2,11 @@
 
 **Comparing the programming style of my 1987 Commodore 64 Basic Roulette-game to a modern functional-reactive re-implementation with ClojureScript, Re-frame and React reveals a world of difference in the ways in which we can command our computers.**
 
-In the preceding posts I have been describing [a roulette-game I wrote for Commodore 64 in 1987](https://www.brotherus.net/post/blast-from-my-commodore-64-past), the [re-creation of the game with modern tools and languages](https://www.brotherus.net/post/ruletti-re-born-after-34-years) and the [difference in development experience now and then](https://www.brotherus.net/post/developer-experience-in-1987-with-c64-vs-modern-tools). Here I want to go deeper to core meat of programming: to compare at source-code and architectural level the Commodore64 imperative Basic program with PRINT-based UI to the modern functional-reactive Clojure-version with React / Re-Frame -based UI.
+In the preceding posts I have been describing [a roulette-game I wrote for Commodore 64 in 1987](/post/blast-from-my-commodore-64-past), the [re-creation of the game with modern tools and languages](/post/ruletti-re-born-after-34-years) and the [difference in development experience now and then](/post/developer-experience-in-1987-with-c64-vs-modern-tools). Here I want to go deeper to core meat of programming: to compare at source-code and architectural level the Commodore64 imperative Basic program with PRINT-based UI to the modern functional-reactive Clojure-version with React / Re-Frame -based UI.
 
 ## Basic, Basic, Basic, ...
 
-After [I got my VIC-20 computer in 1982](https://www.brotherus.net/post/humble-beginnings-the-vic-20) at age of 9 and later Commodore 64 in 1984, I continued to learn more and more Basic-programming. Initially my only source of learning was finnish-language version of the [VIC-20 user manual](http://cini.classiccmp.org/pdf/Commodore/VIC-20%20User's%20Manual.pdf). From 1984 I started to get more examples from program-listings in [MikroBitti-magazine](https://www.mikrobitti.fi/) which also later published my 1987 game.
+After [I got my VIC-20 computer in 1982](/post/humble-beginnings-the-vic-20) at age of 9 and later Commodore 64 in 1984, I continued to learn more and more Basic-programming. Initially my only source of learning was finnish-language version of the [VIC-20 user manual](http://cini.classiccmp.org/pdf/Commodore/VIC-20%20User's%20Manual.pdf). From 1984 I started to get more examples from program-listings in [MikroBitti-magazine](https://www.mikrobitti.fi/) which also later published my 1987 game.
 
 [![vic20-manual](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-imperative-to-functional/vic20-manual.jpg)](http://cini.classiccmp.org/pdf/Commodore/VIC-20%20User's%20Manual.pdf)
 
@@ -28,11 +28,11 @@ Functional-reactive programming (FRP) of a Web-application is similar to making 
 
 ## UI constructed in imperative Steps
 
-Consider the visual roulette-wheel with 23 tiles in my [Commodore 64 Basic Ruletti-64 game](https://www.brotherus.net/post/blast-from-my-commodore-64-past) and in the [*Ruletti-reframe* remake](https://www.brotherus.net/post/ruletti-re-born-after-34-years):
+Consider the visual roulette-wheel with 23 tiles in my [Commodore 64 Basic Ruletti-64 game](/post/blast-from-my-commodore-64-past) and in the [*Ruletti-reframe* remake](/post/ruletti-re-born-after-34-years):
 
 ![roulette-wheel-old-new](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-imperative-to-functional/roulette-wheel-old-new.jpg)
 
-How is the roulette-wheel and its tiles produced in each program? In the [Ruletti-64 source code](https://github.com/rbrother/ruletti64/blob/main/ruletti.txt) the creation of the roulette-wheel is spread into various subroutines that represent different phases of the game. Subroutine on line-numbers 2000-2190 handles "rotation" of the wheel where tiles light up one by one along the wheel (see [my original article on the C64 version](https://www.brotherus.net/post/blast-from-my-commodore-64-past) for more explanation on the code):
+How is the roulette-wheel and its tiles produced in each program? In the [Ruletti-64 source code](https://github.com/rbrother/ruletti64/blob/main/ruletti.txt) the creation of the roulette-wheel is spread into various subroutines that represent different phases of the game. Subroutine on line-numbers 2000-2190 handles "rotation" of the wheel where tiles light up one by one along the wheel (see [my original article on the C64 version](/post/blast-from-my-commodore-64-past) for more explanation on the code):
 
 ```basic
 2000 REM ***** PYORITYS ***** 

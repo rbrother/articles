@@ -52,4 +52,4 @@ If you have money left you can continue with F1.
 
 ## Diving to the old code
 
-For the programming-oriented, I later wrote another post  [reviewing the code of Ruletti 64](https://www.brotherus.net/post/ruletti-code), looking at challenges with the limited Commodore 64 Basic.
+For the programming-oriented, I later wrote another post  [reviewing the code of Ruletti 64](/post/ruletti-code), looking at challenges with the limited Commodore 64 Basic.

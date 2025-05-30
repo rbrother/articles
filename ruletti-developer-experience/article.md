@@ -1,6 +1,6 @@
 # Developer experience in 1987 with C64 vs modern tools
 
-Earlier I was introducing the old [Commodore 64 "Ruletti" game](https://www.brotherus.net/post/blast-from-my-commodore-64-past) I wrote in 1987 and the new [Ruletti-reframe](https://www.brotherus.net/post/ruletti-re-born-after-34-years) webapp-version I made with modern functional-reactive style. In the latter article I was comparing the versions from users point of view regarding usability, visuals and sounds. The other side of the story is from *developers* point of view: what was it like for an average hobbyist to write a small game like this with Commodore 64 in 1987 compared with a modern PC today?
+Earlier I was introducing the old [Commodore 64 "Ruletti" game](/post/blast-from-my-commodore-64-past) I wrote in 1987 and the new [Ruletti-reframe](/post/ruletti-re-born-after-34-years) webapp-version I made with modern functional-reactive style. In the latter article I was comparing the versions from users point of view regarding usability, visuals and sounds. The other side of the story is from *developers* point of view: what was it like for an average hobbyist to write a small game like this with Commodore 64 in 1987 compared with a modern PC today?
 
 ## Stable zero-startup vs. Evolved power
 
