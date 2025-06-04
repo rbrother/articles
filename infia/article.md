@@ -301,7 +301,7 @@ I had at some point agreed with professor Halonens suggestion that I would aim t
 
 Sprint 1997 become quite hectic. I had still many courses in Chemistry and Mathematics to complete for the degree and I was still working as laboratory course assistant in Physical Chemistry. I had not progressed much in writing of the thesis when Halonen asked me in March, how are the plans about graduating in spring going. I said I have not progressed very far with the thesis, that it might be better that I would finish it in the summer when I would have more time from the other study- and lab-activities. Halonen replied: "*Let's stay with the original schedule, shall we?*" So we did. There was a period of about ten days in May when I locked myself to my apartment with 10 frozen pizzas in the freezer and just kept writing the thesis from morning to evening every day with only occasional pizza-break. I did manage on the evening of the last possible day deliver [my 87-page thesis](https://github.com/rbrother/Infia/blob/master/documentation/DCCBr_master_thesis.pdf) directly to the home of professor Halonen:
 
-[![Thesis](thesis-cover.webp)](https://github.com/rbrother/Infia/blob/master/documentation/DCCBr_master_thesis.pdf)
+[![Thesis](thesis-cover.webp)](https://raw.githubusercontent.com/rbrother/Infia/refs/heads/master/documentation/DCCBr_master_thesis.pdf)
 
 The thesis remains perhaps the best source describing the theory behind the Infia-software, so if you are interested in digging bit deeper to the fascinating quantum-mechanical world of molecular vibrations and rotations, check it out.
 
@@ -317,7 +317,7 @@ One change that I made only after publishing my master thesis was inventing a le
 
 So I played with words related to the topic and come with "Infia" from "**IN**frared **FI**tting **A**pplication" which I used in subsequent presentation and publications. I have no memory how well the new name stuck, but at least for the wider research community that learned about the software through my later articles and posters it probably was useful to have a specific name to use. Here is a [slideset of Infia Software](https://github.com/rbrother/Infia/blob/master/documentation/slides/infia-slides.pdf) I used in some conference posters and presentations in 1998 (click for the full slideset):
 
-[![Infia slideset](infia-slideset.png)](https://github.com/rbrother/Infia/blob/master/documentation/slides/infia-slides.pdf)
+[![Infia slideset](infia-slideset.png)](https://raw.githubusercontent.com/rbrother/Infia/refs/heads/master/documentation/slides/infia-slides.pdf)
 
 ## Adding resonance-band calculations
 
@@ -483,17 +483,17 @@ So, in Spring 1998 professor Halonen suggested taking a pause from my ongoing CH
 
 The whole process took almost a year, though much of that was waiting for reviews and other publication delays. The article "**High-Resolution Infrared Spectrum of 𝜈<sub>5</sub>, 𝜈<sub>4</sub>, 𝜈<sub>3</sub>, 𝜈<sub>4</sub> + 𝜈<sub>5</sub> and 2𝜈<sub>4</sub> Band Systems of Deuterobromoacetylene**" was finally published in January 1999 as [R. Brotherus, O. Vaittinen, L. Halonen, H. Burger, O. Polanz, J. Mol. Spectrosc. 193, 137-149 (1999)](https://github.com/rbrother/Infia/blob/master/documentation/dccbr-article.pdf):
 
-[![dccbr-article-main-page.avif](dccbr-article-main-page.avif)](https://github.com/rbrother/Infia/blob/master/documentation/dccbr-article.pdf)
+[![dccbr-article-main-page.avif](dccbr-article-main-page.avif)](https://raw.githubusercontent.com/rbrother/Infia/refs/heads/master/documentation/dccbr-article.pdf)
 
 The article abstract with citation-links is also available in [ScienceDirect service](https://www.sciencedirect.com/science/article/abs/pii/S0022285298977311).
 
 While the review-process of the DCCBr article was still going on, professor Halonen encouraged me also to write another article about Infia-software itself. I am grateful for that encouragement since this latter article become in the end more significant, more unique and more defining of my career in research and later in software industry. The magazine chosen for the attempt was *Journal for Computational Chemistry*, which I was told is more famous than JMS, but also more challenging one to get accepted for publication.
 
-The acceptance for publication was indeed more close call. I sent the first manuscript with [simple cover letter](https://github.com/rbrother/Infia/blob/master/documentation/article_saatekirje.pdf) in August 1998 to founding editor of the magazine, [Dr Norman L. Allinger](https://en.wikipedia.org/wiki/Norman_Allinger). I later received response from another editor of the magazine [Professor Gernot Frenking](https://en.wikipedia.org/wiki/Gernot_Frenking). He sent me comments from two additional anonymous reviewers. The first reviewer provided extensive feedback and suggestions, provisionally supporting publication of the article. The other reviewer was *not* recommending publication based on the article in his opinion not fitting the theme of the Journal of Computational Chemistry.
+The acceptance for publication was indeed more close call. I sent the first manuscript with [simple cover letter](https://raw.githubusercontent.com/rbrother/Infia/refs/heads/master/documentation/article_saatekirje.pdf) in August 1998 to founding editor of the magazine, [Dr Norman L. Allinger](https://en.wikipedia.org/wiki/Norman_Allinger). I later received response from another editor of the magazine [Professor Gernot Frenking](https://en.wikipedia.org/wiki/Gernot_Frenking). He sent me comments from two additional anonymous reviewers. The first reviewer provided extensive feedback and suggestions, provisionally supporting publication of the article. The other reviewer was *not* recommending publication based on the article in his opinion not fitting the theme of the Journal of Computational Chemistry.
 
-Luckily for me, professor Frenking concluded: "*I tend to agree with the first reviewer.*" So I sent the extensively amended manuscript [with extended cover letter](https://github.com/rbrother/Infia/blob/master/documentation/article_Saatekirje_2.pdf) to professor Frenking in November 1998 and the article "**INFIA - Program for Rotational Analysis of Linear Molecule Spectra**" got published in March 1999 as [R. Brotherus, J Comput Chem 20: 610-622, 1999](https://github.com/rbrother/Infia/blob/master/documentation/article.pdf):
+Luckily for me, professor Frenking concluded: "*I tend to agree with the first reviewer.*" So I sent the extensively amended manuscript [with extended cover letter](https://raw.githubusercontent.com/rbrother/Infia/refs/heads/master/documentation/article_Saatekirje_2.pdf) to professor Frenking in November 1998 and the article "**INFIA - Program for Rotational Analysis of Linear Molecule Spectra**" got published in March 1999 as [R. Brotherus, J Comput Chem 20: 610-622, 1999](https://raw.githubusercontent.com/rbrother/Infia/refs/heads/master/documentation/article.pdf):
 
-[![infia-article-cover.png](infia-article-cover.png)](https://github.com/rbrother/Infia/blob/master/documentation/article.pdf)
+[![infia-article-cover.png](infia-article-cover.png)](https://raw.githubusercontent.com/rbrother/Infia/refs/heads/master/documentation/article.pdf)
 
 Abstract with citation-links is also available at [Wiley Online](https://onlinelibrary.wiley.com/doi/abs/10.1002/(SICI)1096-987X(19990430)20:6%3C610::AID-JCC7%3E3.0.CO;2-W).
 
