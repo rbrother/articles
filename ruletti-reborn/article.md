@@ -8,7 +8,7 @@ In 2020 I re-discovered [the small roulette-game I did in 1987](/post/blast-from
 
 You can [play the new game here](http://roulette-reframe.s3-website.eu-north-1.amazonaws.com/) and inspect the source code at [its GitHub repo](https://github.com/rbrother/ruletti-reframe). For comparison, you can check the [original C64 version here](/post/blast-from-my-commodore-64-past).
 
-[![ruletti-reframe screenshot](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-reborn/ruletti-reframe.webp)](http://roulette-reframe.s3-website.eu-north-1.amazonaws.com/)
+[![ruletti-reframe screenshot](ruletti-reframe.webp)](http://roulette-reframe.s3-website.eu-north-1.amazonaws.com/)
 
 My aim has not been to create pixel-by-pixel replica of the original game or artificially limit myself in ways that Commodore 64 Basic-programming was limited. I rather wanted to make the game as I would make it today, with essentially same high level features. So I was for example choosing not to use the original C64 font (although that is also available as web-app compatible TTF-format) but rather pick suitable fonts from the vast set of freely available choices today. That said, in choices of layout and features I did try to follow the original as much as possible to make comparison easy and connect to the nostalgia of the original project.
 
@@ -38,7 +38,7 @@ I will focus on the User-Experience (1) in this article, since that is likely to
 
 Original Commodore 64 Ruletti and the new Ruletti Re-Frame:
 
-![old-and-new](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-reborn/old-and-new.jpg)
+![old-and-new](old-and-new.jpg)
 
 There are several limitations regarding UX of Commodore 64 Basic in 1987 compared to today's world and tech. Most obvious at the time was the *lack of simple and efficient means to deploy and distribute your programs*. Whereas Ruletti 2021 can be launched from anywhere in the world with any device by just [clicking this link](http://roulette-reframe.s3-website.eu-north-1.amazonaws.com/), hobbyist wanting to play the C64 game back in 1980's was facing formidable challenges. This was time before availability of internet and even the simple modems and BBS-servers to swap software were rarely available for the home hobbyist. The main way used then - and the one for Ruletti - was to buy a computer-magazine with printed code-listing and *write the program from the listing to your computer*. Typing the program from listing took many hours at best and any typing errors risked the final program not working. Such typing errors happened easily with the hazardous control-character system of Commodore 64 as I discuss in the [Ruletti 64 code-review article](/post/ruletti-code).
 
@@ -52,7 +52,7 @@ Commodore 64 is from time before widespread use of *Graphical User Interfaces* (
 
 For rudimentary graphics, the C64 "PETSCII" character-set contains several glyphs for making borders, lines and blocks, similar to the early IBM-PC DOS graphical characters. Ruletti 64 uses these to create the large title-text and white rounded borders inside the roulette-wheel:
 
-![petscii-blocks.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-reborn/petscii-blocks.png)
+![petscii-blocks.png](petscii-blocks.png)
 
  On PC-side, character-based programs were also the norm before widespread use of GUI in Windows OS. While native GUIs based on Windows, Mac OS and Linux are still popular, the top-place in UI-world has been since taken by HTML/CSS-based Web-UIs use by Ruletti 2021. While HTML was not initially meant for fully interactive applications, its capabilities with rise of JavaScript and CSS have grown tremendously during the years. With the arrival of React-based Single-Page-Applications (SPAs) it's not a stretch to say that the have surpassed native UIs in many ways, making them the best choice for many types of applications even if their original advantages - ease of distribution and installation - is not taken into account.
 
@@ -67,7 +67,7 @@ Ruletti 2021 uses HTML/CSS-based UI which means the UI is vector-based and infin
 
 Unlimited number of free fonts are available for Web-app developers, so I replaced the C64 title painstakingly constructed from block-characters with similarly "Western Saloon"-styled font [Wacamoler Caps](https://www.dafont.com/wacamoler-caps.font) with a color-gradient:
 
-![titles.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-reborn/titles.png)
+![titles.png](titles.png)
 
 CSS-styling allows for better representation of he roulette number-tiles, the bread-and-butter of the game. In Ruletti 64 these tiles consists of 3 rows and 4 columns of characters. One immediate visual discrepancy from this is that numbers in the tiles are not always properly centered. For numbers with two digits like 20 the digits are located in columns 2 and 3 of the tile, making them centered. But for single-digit numbers the digit must be placed either in column 2 (too left) or column 3 (too right). In Ruletti 2021 we can use CSS flex-box centering attributes for pixel-perfect centering of any number with any font:
 
@@ -78,7 +78,7 @@ CSS-styling allows for better representation of he roulette number-tiles, the br
 
 Number tiles of Ruletti-64 and Ruletti-reframe:
 
-![tiles.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-reborn/tiles.png)
+![tiles.png](tiles.png)
 
 The higher resolution, graphical UI and CSS allows Ruletti 2021 to draw brighter blurry background behind the numbers of the tiles, allowing the black characters to better stand out from the darkish background. Also the space and resolution allows to display the number of dollars placed on tiles with yellow circles whereas Ruletti 64 could only afford to place an asterisk (*) on such tiles.
 
@@ -122,7 +122,7 @@ CSS Animation are also used for the rotating of the roulette-wheel to more reali
 
 In the example below tile 6 is currently lit but tiles 19,  14, 17 and 12 have still varying shades of "afterglow" of being recently lit:
 
-![lit-tiles.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-reborn/lit-tiles.png)
+![lit-tiles.png](lit-tiles.png)
 
 ## Gimme music
 

@@ -1,6 +1,6 @@
 # Logistic Map Fractal
 
-<img src="https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/logistic-map-fractal/kaaos.jpg" height="400px"/>
+<img src="kaaos.jpg" height="400px"/>
 
 In 1989, when I was 16 years old, I got as a christmas gift a Finnish translation of James Gleicks popular science book [Chaos](https://en.wikipedia.org/wiki/Chaos:_Making_a_New_Science) (original english version published in 1987). It was an inspiring gift from my wise grandfather Robert "Oppe" Brotherus, who had been few years earlier introduced me to the hobby of programming with [my first computer VIC-20](/post/humble-beginnings-the-vic-20).
 
@@ -18,15 +18,15 @@ The formula can be thought as a model of a population of animals (*x*) varying b
 
 One can solve (using *Mathematica* here) as a function of the growth-parameter *r* the expected stable value of population where *x*<sub>n+1</sub> == *x*<sub>n</sub> :
 
-![solved.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/logistic-map-fractal/solved.png)
+![solved.png](solved.png)
 
 When iterating consequent value in the series x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, ...  the iterated x<sub>n</sub> series indeed converges to the stable value (*r* − 1)/*r*, *but only when r* < 3.3. Surprisingly, for r > 3.3, the x<sub>n</sub> series does *not* converge to a single point but instead leads to oscillation between two or more values, eventually infinite set of values, becoming chaotic:
 
-![chaos-mathematica.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/logistic-map-fractal/chaos-mathematica.png)
+![chaos-mathematica.png](chaos-mathematica.png)
 
 The program I wrote during the AC project-week in 1991 used Turbo Pascal for Windows to plot the logistic function in some range of r and x to a zoomable window. We had no good graphical printers available, but I had a film camera and took some pictures of the plots directly from the monitor. The black & white film I could then develop to photos myself in the schools photography dark-room. Here is reproduction of the original 1991 paper photo showing logistic map between 3.5 < *r* < 4.0 with many chaotic regions:
 
-![logictic-photo.webp](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/logistic-map-fractal/logictic-photo.webp)
+![logictic-photo.webp](logictic-photo.webp)
 
 Like in other chaos/fractal programs, the part for iterating the function itself was trivial, just one line of code. Most of the code was devoted for creating and managing of windows, converting values of the function to visual coordinates of the screen and handling user-interaction for zooming and navigating the image.
 
@@ -58,7 +58,7 @@ protected override void DoPlot() {
 
 At the line `x = x * r * (1 - x)` you can see the core logistics function iteration. With the values for `r_min`, `r_max` and `step` in the beginning of the code, there are about 50 million iterations of the formula, which amounts to 10 000+ iterations for each pixel-column on a 4K screen. This takes about 5 seconds on a modern PC, orders of magnitude faster than in 1991. Output is shown below:
 
-[![logicstic-new.jpg](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/logistic-map-fractal/logicstic-new.jpg)](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/logistic-map-fractal/logicstic-new.jpg)
+[![logicstic-new.jpg](logicstic-new.jpg)](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/logistic-map-fractal/logicstic-new.jpg)
 
 At this level of detail, we can clearly see the defining feature of a *fractal*: *self-similarity* - The general structure of the plot with lines bifurcating to more lines and finally into chaos is repeated on smaller scale in the "islands of stability" between the chaotic regions. The higher fidelity compared to the 1991 version is mainly due to following factors:
 
@@ -68,10 +68,10 @@ At this level of detail, we can clearly see the defining feature of a *fractal*:
 
 The better processing power of todays computers allows generation of zooms on the plot in a way that would have been prohibitively slow on the 286 PCs of 1991. Here, for example, zoom from the intensive "star crossroads" region in the range 3.65 < r < 3.70, 0.6 < x < 0.8 :
 
-[![logicstic-new-zoom.jpg](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/logistic-map-fractal/logicstic-new-zoom.jpg)](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/logistic-map-fractal/logicstic-new-zoom.jpg)
+[![logicstic-new-zoom.jpg](logicstic-new-zoom.jpg)](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/logistic-map-fractal/logicstic-new-zoom.jpg)
 
 Another zoom from 3.80 < r < 3.88, 0.4 < x < 0.6 where chaos abruptly converges to an "island of stability" and then expands again to chaos through miniature version of the main bifurcation pattern:
 
-[![logicstic-new-zoom2.jpg](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/logistic-map-fractal/logicstic-new-zoom2.jpg)](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/logistic-map-fractal/logicstic-new-zoom2.jpg)
+[![logicstic-new-zoom2.jpg](logicstic-new-zoom2.jpg)](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/logistic-map-fractal/logicstic-new-zoom2.jpg)
 
 It is fascinating how just repeating such simple formula can produce such variety of complex patterns and shapes - in very similar way to natural processes forming mountains and fern leaves. Even more amazing shapes can be found in the famous *Mandelbrot Set* I explored later, but that's a story for another time.

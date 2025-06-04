@@ -4,7 +4,7 @@
 
 My father **Jaakko Brotherus** and mother **Ulla Brotherus** met each other in 1960's at Helsinki University where they were both studying Chemistry. Jaakkos close study mates **Pertti Törmälä** and **Jouko Korppi-Tommola** later become professors of Polymer Chemistry and Physical Chemistry respectively. Jaakkos own academic career in Biochemistry was also proceeding well and he would have probably got far, but unfortunately he died in 1981 at age of only 36 when I was 7 years old.
 
-![ulla-jaakko](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/entry-to-chemistry-programming/ulla-jaakko.png)
+![ulla-jaakko](ulla-jaakko.png)
 
 <small>My parents Ulla and Jaakko at Helsinki University Chemists (HYK) party in 1968</small>
 
@@ -18,7 +18,7 @@ After the first year, in fall of 1993, I took a one-year break from my studies t
 
 On the Physical Chemistry lab-courses in spring 1995 my teaching assistant was **Tuomas Lukka**, a Finnish science prodigy, who was at the time only 19 and in summer 1995 would become the youngest person in Finland to obtain PhD at age of 20. Tuomas saw my budding enthusiasm for Physical Chemistry and encouraged me to progress on that path. Tuomas (whose work in the Physical Chemistry Laboratory started with summer-work in 1993) suggested he could talk to the Physical Chemistry professor **Lauri Halonen** to hire me in summer 1995. The plan was to do some vibrational quantum chemistry software project with Tuomas. That seemed like great opportunity for me and Tuomas recommendation seemed to be convincing enough for Halonen, so I was hired.
 
-<p><img src="https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/entry-to-chemistry-programming/tuomas.jpg" height="300px"/></p>
+<p><img src="tuomas.jpg" height="300px"/></p>
 
 <small>Tuomas Lukka in 1995</small>
 
@@ -28,19 +28,19 @@ The research-group of Professor Halonen focused on understanding different vibra
 
 When molecule encounters a photon of light whose energy exactly matches the difference of its current energy level and some higher energy level, it can *absorb* the light and *transition* to the higher energy state, producing a *spectrum line* at the frequency of that photon. Since the energy levels corresponding to molecular vibrations are typically on the scale of *infrared light* photons, the transitions between vibration-rotation states produce set of spectral lines in the infrared area. Such spectral lines are measured with *infrared spectroscopy*, which hence was the main experimental method in the research group.
 
-<p><img src="https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/entry-to-chemistry-programming/spectrum.jpg" height="300px"/></p>
+<p><img src="spectrum.jpg" alt="Spectrum" height="300px"/></p>
 
 <small>Example of vibration-rotation infrared spectrum band of linear molecule (NNO)</small>
 
 The quantum mechanical analysis of a molecule therefore involves determining the *wavefunctions* end energy-levels of its various vibration-rotation states. The wavefunctions and corresponding energy-levels are calculated using the time-independent *Shrödinger equation* which includes *Hamilton Operator* describing molecules relevant properties like weights of its atoms and length and strength of the bonds between the atoms. Hence the solution of the equation will reveal the structure and internal forces of the molecule.
 
-<p><img src="https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/entry-to-chemistry-programming/wavefunctions.png" height="300px"/></p>
+<p><img src="wavefunctions.png" alt="Wavefunctions" height="300px"/></p>
 
 <small>Some wavefunctions for harmonic oscillator, the simplest model for molecular vibrations</small>
 
 The exact solution of the vibrational Shrödinger equation is mathematically impossible for real molecules and therefore various approximations are used. One of the main ways is to approximate the wavefunction as a *linear combination* of *orthogonal basis functions*, typically *Hermite polynomials* multiplied by *Gaussian functions*, which are also solutions for *harmonic oscillator*. Any vibrational wavefunction can be approximated to arbitrary precision in this way and this method reduces the solution of the Shrödinger equation into calculating *matrix inversion* where the size of the matrix corresponds to the number of basis functions.
 
-<p><img src="https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/entry-to-chemistry-programming/gaussians.png" height="300px"/></p>
+<p><img src="gaussians.png" height="300px"/></p>
 
 <small>Some Gaussian functions, more well-known from statistics of Normal Distribution</small>
 
@@ -52,7 +52,7 @@ Which brings me to the idea that Tuomas was proposing for our summer-project: in
 
 After some initial discussions with Tuomas and Halonen, I started daily work in May 1995 in the Physical Chemistry laboratory, which had just been moving to the newly built Kumpula Chemistry campus. I sat in the spectroscopy lab next to the big laser-spectrometers programming  with my Toshiba Portege laptop.
 
-![kumpula.jpg](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/entry-to-chemistry-programming/kumpula.jpg)
+![kumpula.jpg](kumpula.jpg)
 
 <small>Helsinki University new Kumpula Chemistry campus main entrance</small>
 
@@ -74,7 +74,7 @@ BinomyCoeff      0.5678 sec   2%
 
 C++ was probably not the ideal tool for this kind of semi-symbolic semi-numeric mathematics. I was not yet aware of *Mathematica*, which would have been much better. But C++ was nevertheless more flexible than *Fortran 77* which was the language of choice of Lauri Halonen and his generation of Quantum Chemists.
 
-<p><img src="https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/entry-to-chemistry-programming/robert.jpg" height="300px"/></p>
+<p><img src="robert.jpg" height="300px"/></p>
 
 <small>Me and my Toshiba Portege laptop in 1995</small>
 
@@ -174,7 +174,7 @@ YEEEEEEES!
 The results seem now VERY encouraging!
 ```
 
-## Encouraging, but no cigar
+## Encouraging, but No Cigar
 
 In the last weeks of June I still write Tuomas about fixing a problem in convergence for higher-order terms and fixing a bug in routine determining optimization step-size. I reported that all our test-cases now converged from initial 10% errors to correct results in less than ten iterations - something that we initially considered sufficient goal for the project.
 
@@ -197,12 +197,12 @@ After that the project, the program and its source-codes were abandoned and lost
 
 I do remember I was slightly disillusioned by this outcome. Earlier, when I had been enrolling on any university courses and classes, I had been getting used to the idea of working hard, doing well in exam, passing the course and getting credits that nudged me towards completion of a formal degree. But now I got the first disturbing glimpse of the uncertainty and risk in real research: When trying out something genuinely new one could work hard, resolve challenging problems and get the work done - and still arrive to a dead-end. Of course one would still learn something and get paid salary, but the effort would essentially go to waste because the results failed to improve on the scientific state-of-the-art. No publication, no credits, no progress towards a formal degree, no going ahead in academic career.
 
-## Joining the team
+## Joining the staff
 
 Nevertheless, after the summer, Professor Halonen gave me a permanent job as a research- and teaching assistant in the Physical Chemistry lab. So in the fall of 1995 I started guiding students in the laboratory courses of Thermodynamics, Dynamics and Structure of Molecules. And I started working on other software projects in molecular quantum mechanics and infrared spectroscopy. And I still needed to continue studying various chemistry, physics, mathematics and computer-science courses needed for the masters degree.
 
 While at that point I remained fully dedicated to the idea of a life-long scientific academic career, it seemed clear that it was not going to be in Biochemistry like my father but in Physical Chemistry.
 
-![team.jpg](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/entry-to-chemistry-programming/team.jpg)
+![Physical chemistry laboratory staff](team.jpg)
 
 <small>Physical Chemistry Laboratory staff in summer 1996, one year after my starting as a permanent member. From left: Jorma Seetula, Susanna Tuomisto, Jouko Hytömäki, Kari Tuomainen, Tuula Fontel, Matthias Horn, (?), Professor Lauri Halonen, (?), Juha Lummila, Kaarlo Kalliorinne, Robert Brotherus (myself), Esa Isoniemi, Mika Petterson, Martti Paakkunainen, Janne Pesonen, Leonid Khriachtchev, Maria Saarinen, Vesa Hynninen, Olavi Vaittinen, Professor Markku Räsänen, Dimitri</small>

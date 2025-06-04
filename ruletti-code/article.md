@@ -6,13 +6,13 @@ When writing C64 Basic there was no *text editor* like the term is currently und
 
 To add or edit line you need to write the full content of that line (starting with line-number) and press RETURN. This stores the line to memory to location indicated by the line number. If you have program with lines 10 and 20 and you want to add a line between them, you cannot simply move cursor visually between the these lines and write a new line. Instead you write a new line anywhere on the screen, but you use a line-number between 10 and 20 so then when you press RETURN, the new line will be stored in Basic memory between the lines 10 and 20.
 
-![Commodore 64 basic code](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-code/c64-code.png)
+![Commodore 64 basic code](c64-code.png)
 
 ## Investigating the source-code
 
 Although the Ruletti-game is written in Basic as text, the original binary file [ruletti.prg](https://github.com/rbrother/ruletti64/blob/main/ruletti.prg) is not immediately readable with a text editor on PC, here is attempt to open with VSCode:
 
-![Prog in VSCode](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-code/prog-vscode.png)
+![Prog in VSCode](prog-vscode.png)
 
 This is because of three reasons:
 
@@ -22,11 +22,11 @@ This is because of three reasons:
 
 The most authentic and original way to view the source code - and the only available way during the years of the Commodore 64 era - is to stop the program in emulator and list some lines with `LIST`-command. Command `LIST` alone will list all the lines and for example command `LIST 4000-4070` will print to the screen subroutine that print the title text "RULETTI" for the game:
 
-![Listing](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-code/listing.png)
+![Listing](listing.png)
 
 The execution of these lines creates the title text with graphical block-characters:
 
-![Ruletti title](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-code/ruletti-title.png)
+![Ruletti title](ruletti-title.png)
 
 The way I was programming these lines was to first draw the desired block-configuration on a piece of paper and then determine the correct block-symbols for each character.
 
@@ -34,7 +34,7 @@ The way I was programming these lines was to first draw the desired block-config
 
 From the source code one can recognize the graphical block-characters where character has block in top-left, top-right, bottom-left, bottom-right, top-side or bottom-side. Looking at the C64 keyboard below, one can further spot that these graphical characters are found from keys C, D, F, V, I and K. To enter them with the C64 keyboard one presses the Commodore-character (bottom-left) and then the respective key with the symbol.
 
-![c64-keyboard](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-code/c64-keyboard.webp)
+![c64-keyboard](c64-keyboard.webp)
 
 But the listing contains also other symbols that are more weird: inverse-heart, inverse Q:s and inverse R:s. What are they and how would one type them on the C64 keyboard? They are *control characters* with custom byte-codes and they encode for some non-visual action:
 
@@ -53,7 +53,7 @@ One can wonder why such complex and unintuitive way of using embedded control-ch
 
 Due to many complaints to MikroBitti from users failing to write the C64 listings to their computer, the magazine shifted to a representation that converts control-characters to more readable representation. In the [printed magazine version of the Ruletti-game](https://github.com/rbrother/ruletti64/blob/main/ruletti.JPG), the lines 4000-4030 look like this:
 
-![Printed basic code](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-code/printed-code.png)
+![Printed basic code](printed-code.png)
 
 Here one can see control-characters being represented by their name in parenthesis like `<CLR>` or `<ORANGE>`. Of course writing such program to your C64 verbatim does not produce the desired outcome since it will print verbatim "`<CLR>`" and "`<ORANGE>`" instead of doing the desired action. So it still requires skill from the person entering the code to know right keys to press, but at least they get now hint to the actual texts on the buttons to press.
 

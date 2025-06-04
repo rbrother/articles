@@ -6,7 +6,9 @@
 
 I also retained the last [version 2.1 executable](https://github.com/rbrother/Infia/tree/master/Binaries%201999-12-01%20-%20Version%202.1) I had been compiling with Delphi 3 for Windows 95 in 1999. It can still be started without errors on Windows 11, which is remarkable testament to the binary backward compatibility of Windows-versions so far apart in time.
 
-![Infia 2.1 EXE, Compiled in 1999, running on Windows 11 in 2025](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/resurrect-infia-2025/infia21.png)
+![Infia 2.1 EXE](infia21.png)
+
+<small>Infia 2.1 EXE, Compiled in 1999, running on Windows 11 in 2025</small>
 
 However, the backward compatibility is still only 90% complete. For example some keyboard shortcuts don't work correctly or at all. These problems could probably be resolved by running the software in Windows 95 Virtual machine, but that is quite a hassle. So I got curious whether there was any way to still make a new compilation from the 1999 source-code.
 
@@ -47,7 +49,7 @@ Note that the numbering essentially started from 1 again in 2011 with Delphi XE.
 
 Investigating the history of Delphi, I found nice [2024 Podcast from Embarcadero which celebrates 29 years of Delphi](https://www.youtube.com/watch?v=n68luA9X_KU) and goes through many parts of the history.
 
-[![Celebrating 29 years of Delphi podcast](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/resurrect-infia-2025/delphi29.jpg)](https://www.youtube.com/watch?v=n68luA9X_KU)
+[![Celebrating 29 years of Delphi podcast](delphi29.jpg)](https://www.youtube.com/watch?v=n68luA9X_KU)
 
 ## Opening the project
 
@@ -55,7 +57,7 @@ Delphi is now available as a free "Community Edition" version, so I proceeded to
 
 Next I checked if I can still open my Delphi project file `Infia.dpr` from 1999, fully expecting that the syntax and content would have changed in 25 years too much to make it readable. Well, the syntax had been definitely evolving, but to my surprise and delight the Delphi 12.1 supported opening and converting past versions of projects *from 25 years ago*, so Infia project was imported and opened without any errors!
 
-![Infia project opened in Delphi 12.1](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/resurrect-infia-2025/delphi12.png)
+![Infia project opened in Delphi 12.1](delphi12.png)
 
 ## But does it compile?
 
@@ -72,7 +74,9 @@ There is one run-time error in the Loomis-Wood view. But this turns out to not c
 
 ## Infia 2025
 
-![Infia recompiled to modern Windows exe in 2024 with Delphi 12](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/resurrect-infia-2025/infia-2024.png)
+![Infia recompiled in 2024](infia-2024.png)
+
+<small>Infia recompiled to modern Windows exe in 2024 with Delphi 12</small>
 
 I added the newly compiled and tested Infia binaries to the [Infia GitHub repo](https://github.com/rbrother/Infia/tree/master/Binaries%202024-11-21%20-%20Version%202.2) along the earlier 1990s versions. As with the earlier versions, it's just one exe and one dll that can be copied to any folder.
 

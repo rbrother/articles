@@ -4,7 +4,7 @@
 
 While the first summer-project was based on idea of **Tuomas Lukka**, the topic for the next one was provided by professor Halonen himself in a meeting at the lab on Monday 1995-09-18. The topic was to apply an anharmonic vibrational model to [Arsine (AsH3)](https://en.wikipedia.org/wiki/Arsine) vibrations.
 
-<p><img src="https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/death-by-fortran-common-block/arsine.png" height="300px"/></p>
+<p><img src="arsine.png" height="300px"/></p>
 
 <small>Arsine-molecule with Arsenic atom and three Hydrogens</small>
 

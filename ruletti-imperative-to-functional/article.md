@@ -8,7 +8,7 @@ In the preceding posts I have been describing [a roulette-game I wrote for Commo
 
 After [I got my VIC-20 computer in 1982](/post/humble-beginnings-the-vic-20) at age of 9 and later Commodore 64 in 1984, I continued to learn more and more Basic-programming. Initially my only source of learning was finnish-language version of the [VIC-20 user manual](http://cini.classiccmp.org/pdf/Commodore/VIC-20%20User's%20Manual.pdf). From 1984 I started to get more examples from program-listings in [MikroBitti-magazine](https://www.mikrobitti.fi/) which also later published my 1987 game.
 
-[![vic20-manual](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-imperative-to-functional/vic20-manual.jpg)](http://cini.classiccmp.org/pdf/Commodore/VIC-20%20User's%20Manual.pdf)
+[![vic20-manual](vic20-manual.jpg)](http://cini.classiccmp.org/pdf/Commodore/VIC-20%20User's%20Manual.pdf)
 
 Quite early in my learning-process I thought of a metaphor for computer program execution which I also used to describe to family and friends: it is like a tiny man walking downward in the program, stepping from one code-line to the next and executing each one in turn. `GOTO` and `GOSUB` statements would then instruct the man to jump to a different line and continue stepping down from there.
 
@@ -16,7 +16,7 @@ This metaphor is still quite valid and can be used to describe programming to ki
 
 ## Functional-reactive programming: the Spreadsheet metaphor
 
-![Excel](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-imperative-to-functional/excel.png)
+![Excel](excel.png)
 
 Functional-reactive programming is sometimes compared to how a spreadsheet software like MS Excel operates. Making a spreadsheet is simple: One enters some input data to set of cells and some formulas (functions) to other cells. Calculated cells can us as input cells with constant values or other calculated cells, forming a tree of calculations that ends up with final result cells.
 
@@ -30,7 +30,7 @@ Functional-reactive programming (FRP) of a Web-application is similar to making 
 
 Consider the visual roulette-wheel with 23 tiles in my [Commodore 64 Basic Ruletti-64 game](/post/blast-from-my-commodore-64-past) and in the [*Ruletti-reframe* remake](/post/ruletti-re-born-after-34-years):
 
-![roulette-wheel-old-new](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-imperative-to-functional/roulette-wheel-old-new.jpg)
+![roulette-wheel-old-new](roulette-wheel-old-new.jpg)
 
 How is the roulette-wheel and its tiles produced in each program? In the [Ruletti-64 source code](https://github.com/rbrother/ruletti64/blob/main/ruletti.txt) the creation of the roulette-wheel is spread into various subroutines that represent different phases of the game. Subroutine on line-numbers 2000-2190 handles "rotation" of the wheel where tiles light up one by one along the wheel (see [my original article on the C64 version](/post/blast-from-my-commodore-64-past) for more explanation on the code):
 
@@ -228,7 +228,7 @@ It is worth noting that in the functional-programming version, there is no manip
 
 ## Connecting state to the UI with subscriptions
 
-![tile-lit-up.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-imperative-to-functional/tile-lit-up.png)
+![tile-lit-up.png](tile-lit-up.png)
 
 <small>Ruletti re-frame Tiles "lighting up" one by one and then slowly dimming</small>
 
@@ -285,4 +285,4 @@ While the C64 Basic and Clojure Re-Frame implementations of Ruletti are in  many
 
 Meanwhile, have fun playing a few rounds of Roulette 😊:
 
-[![ruletti-reframe.webp](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-imperative-to-functional/ruletti-reframe.webp)](http://roulette-reframe.s3-website.eu-north-1.amazonaws.com/)
+[![ruletti-reframe.webp](ruletti-reframe.webp)](http://roulette-reframe.s3-website.eu-north-1.amazonaws.com/)

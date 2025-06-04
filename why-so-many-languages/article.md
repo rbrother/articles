@@ -2,7 +2,7 @@
 
 **Hundreds of programming languages have been born and died during the decades since 1940's. Some created by committees, many by lone heroes, they have transformed the world.**
 
-![Programming languages tree](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/why-so-many-languages/many-languages.jpg)
+![Programming languages tree](many-languages.jpg)
 
 Since [my beginning days of VIC-20 and Commodore 64 Basic programming](/post/humble-beginnings-the-vic-20), I have coded with several programming languages both professionally and as a hobby. In chronological order, I have done significant work in Assembly Language (6502 of the C64 and Motorola 68000 of Amiga), Amiga Basic, C, GW-Basic, QuickBASIC, Turbo Pascal, Excel 1.0 Macro programming, Visual Basic for Excel, Borland Delphi (Object Pascal), PovRay, C++, Fortran (version 66, 77, 95 and 2003), Wolfram Language (Mathematica), Python, Visual Basic 6, JavaScript, XSLT (1.0 - 2.0), Java (1.2 - 11), PHP, C# (1.0 - 7.0), Bash, SQL, Ruby (1.6 - 2.3 plus IronRuby and JRuby), NAPA Basic, F# and Clojure. In the way I have also used many data declaration languages including HTML, CSS, XML, JSON, XSL-FO and SVG, though they cannot be counted as full programming languages.
 
@@ -12,7 +12,7 @@ The astonishing number of programming languages that have been developed during 
 
 Original computers in the 1940's and early 1950's we programmed only in machine code if their respective processors, but when the development of higher-level languages began in mid 1950's with FORTRAN, the explosion of languages and their dialects has been staggering. The [Programming languages genealogy-poster](http://www.digibarn.com/collections/posters/tongues/ComputerLanguagesChart.png) below shows some of the major languages developed between 1954 and 2001 with their predecessors and dependencies.
 
-![Programming languages tree](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/why-so-many-languages/languages-tree.webp)
+![Programming languages tree](languages-tree.webp)
 
 After 2001 the pace has not been slowing down with newcomers like XSLT, Ruby, F#, Clojure, Go, Rust, Scala and Kotlin rising to prominence and the popularity of earlier languages going up and down (most notably JavaScript rising to be a major language). Like with natural languages, new programming languages and dialects don't form in a vacuum but are based on one or more preceding languages. Most languages represent linear development of improving on a single predecessor (like steps from C# 1.0 to current 7.3 version) whereas entirely new languages can draw on multiple sources like Ruby that draws inspiration from SmallTalk, Eiffel, LISP and Python.
 
@@ -22,7 +22,7 @@ Like with any cultural phenomenon, the rise and fall of languages popularity is 
 
 Given the extreme importance of programming languages in todays world, it is remarkable how accidental their birth has often been, dependent on initiative and work of single heroes. Many major languages that have changed the world have been essentially created by a single person: Lisp by **John McCarthy**, Pascal by **Niklaus Wirth**, C++ by **Bjarne Stroustrup**, Perl by **Larry Wall**, Python by **Guido van Rossum**, PHP by **Rasmus Lerdorf**, Ruby by **Yukihiro Matsumoto**, Clojure by **Rich Hickey** and many more. 
 
-![Programming language creators](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/why-so-many-languages/heroes.jpg)
+![Programming language creators](heroes.jpg)
 
 <small>John McCarthy, Bjarne Stroustrup, Guido van Rossum and Rich Hickey</small>
 
@@ -32,7 +32,7 @@ The fact that new languages still pop up and rise to prominence from single-man 
 
 ## Evolution of skills
 
-![Programming languages tree](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/why-so-many-languages/pragmatic-programmer.webp)
+![Programming languages tree](pragmatic-programmer.webp)
 
 **Andy Hunt** and **David Thomas** recommend in their great practical and inspirational book *The Pragmatic Programmer* that a good software craftsman learns at least two new programming languages per year. While I have not succeeded in quite as high a pace, it is true that continuous learning of new languages throughout ones career is beneficial (and enjoyable!). Bit surprisingly it can be beneficial even in case of new languages that one never ends up using professionally. Languages vary from imperative to functional to declarative, from object-oriented to data-oriented, from weakly to strongly typed, from dynamically to gradually to statically typed, from manifest to inferred typed, from interpreted to compiled, from message-passing to pattern-matching, from garbage-collected to explicitly managed, from curly-braces to homoiconic parenthesis, from stand-alone to runtime-hosted. Learning more and more languages is beneficial because it *expands ones thinking* which allows oneself to become better programmer even *even in the languages one already knows*.
 
@@ -48,7 +48,7 @@ Several times in the past I have encountered a new language that is exciting and
 
 More difficult can sometimes mean more powerful, but there are also accidental unhelpful aspects of difficulty. From [XKCD](https://xkcd.com/):
 
-![Language difficulty XKCD](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/why-so-many-languages/language-difficulty.png)
+![Language difficulty XKCD](language-difficulty.png)
 
 Having experienced several times the feeling of "*Wow, this is the one true language, I will use it forever!*" has of course made me more humble for the possibility that perhaps my latest language love is still not the greatest of all but there might be yet more wonderful possibilities (present or future) that I am just not currently aware of. So although Clojure is in my favor and I have been able to accomplish with it elegance, simplicity and robustness higher than with my earlier lovely languages, I definitely don't want to rule out the possibility of even greater greatness, especially with future innovation.
 
@@ -56,7 +56,7 @@ Having experienced several times the feeling of "*Wow, this is the one true lang
 
 Flame-wars between proponents of different programming languages erupt occasionally in the internet and preferences can be rather personal. There are several counter-arguments to an extreme preference of one language over another, though their validity vary. First, it can be said that most modern popular languages are "good enough" and differences in productivity are not significant. While this is certainly true for small to medium-size programs, the validity of the argument is less clear in large-scale or special-purpose programs where the differences in languages support for eliminating incidental complexity (complexity not related to the application-problem itself) can become more significant.
 
-![Language difficulty XKCD](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/why-so-many-languages/haskell-lisp.png)
+![Language difficulty XKCD](haskell-lisp.png)
 
 Second, it is argued that instead trying to find single best language, one should pick best language for a particular purpose and if a large-scale program involves multiple purposes, allow multiple interacting languages (so-called polyglot-programming). This can be valid in some cases, especially if some purposes depend on libraries available only in some languages (high-performance math as an example). But one should keep in mind that of the many large systems that use multiple languages, most cases are likely to be accident of history and not represent a planned polyglot-strategy. Also the cost of interoperating between multiple languages gets rapidly higher as the number of language-pairs rises as the square of the number of languages, though a microservices-architecture with standard interfaces can alleviate this problem.
 
@@ -66,4 +66,4 @@ The wonderful [Tao of Programming](http://www.mit.edu/~xela/tao.html) concludes:
 
 "*Thus spake the Master Programmer: Each language has its purpose, however humble. Each language expresses the Yin and Yang of software. Each language has its place within the Tao. But do not program in COBOL if you can avoid it.*" ☺
 
-![Tao of programming](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/why-so-many-languages/tao-programming.png)
+![Tao of programming](tao-programming.png)

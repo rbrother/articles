@@ -4,7 +4,7 @@
 
 In the 1980's [when my computer-hobby was started with VIC-20](http://www.brotherus.net/post/humble-beginnings-the-vic-20) and later Commodore 64, there was no Internet to publish hobby programs or study programming. During those years several computer hobby-magazines were launched and one of their main content was publishing full source-codes of small programs that readers were sending them. In Finland the legendary [MikroBitti](https://www.mikrobitti.fi/) magazine started in July 1984 (when I was 10 years old) and I eagerly subscribed to it from the very first number, shown here:
 
-![Mikrobitti](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-c64/mikrobitti.webp)
+![Mikrobitti](mikrobitti.webp)
 
 ## Making of the Ruletti game
 
@@ -12,11 +12,11 @@ Like other hobbyists, I spent many tedious hours typing in programs from the lis
 
 As my skills grew I was writing more programs from scratch too, small utilities and games. I did not think at that time that preserving any of those would be important, so later in 1989 when I sold my Commodore64 and switched to Amiga 500, all those small programs I had done were lost forever. Except, fortunately, for one small game "Ruletti" (roulette) that I had written in April 1987 (when I was 13) and MikroBitti had published in their May 1988 magazine (when I was 14).
 
-![Ruletti Screenshot](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-c64/screenshot.png)
+![Ruletti Screenshot](screenshot.png)
 
 Below I am using my Commodore 64 in 1987, around the time of making Ruletti-game. Note the small CRT-TV used as the computer monitor and on its left-side a casette-drive and some C-casettes that I saved programs to:
 
-![Robert](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-c64/robert-c64.jpg)
+![Robert](robert-c64.jpg)
 
 ## Lost and Found
 
@@ -30,14 +30,13 @@ I shared this happy finding with my Facebook friends and remarked that it would 
 
 By a feat of luck one of my Facebook acquaintances knew an easier possibility. It turns out that in 1987 MikroBitti started selling to its subscribers yearly program-listing collections on floppy-disks, so readers could play the games without typing them in. And it turned out that a Commodore hobbyist **Niila T Rautanen** had been collecting all these floppies and creating and internet archive of them! My friend knew of this archive and sent me [its link](https://tietokonesivut.kasettilamerit.fi/) where after searching the Commodore 64 games section found my game, with screenshot and download-link for the program file:
 
-[![Niila Rautanen sivut](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-c64/niila-rautanen-sivut.png)](https://tietokonesivut.kasettilamerit.fi/)
+[![Niila Rautanen sivut](niila-rautanen-sivut.png)](https://tietokonesivut.kasettilamerit.fi/)
 
 To my delight and amazement just moments later I had been able to download, launch and play [ruletti.prg](https://github.com/rbrother/ruletti64/blob/main/ruletti.prg) on the web/Javascript-based emulator in browser! 😊
 
 Here is a small video I recorded of starting the game in emulator and playing some rounds:
 
-[![Rulette gameplay video](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-c64/youtube-gameplay.jpg)
-](https://www.youtube.com/watch?v=XFEan7Hm9GI)
+[![Rulette gameplay video](youtube-gameplay.jpg)](https://www.youtube.com/watch?v=XFEan7Hm9GI)
 
 If you want to try playing the game in this way, following instructions are needed since the game texts are in Finnish:
 

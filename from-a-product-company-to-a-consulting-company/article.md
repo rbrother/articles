@@ -2,7 +2,7 @@
 
 **How I learned that what matters to me in in the end is using my skills with good colleagues to write meaningful software - not what legal entity ultimately owns the product.**
 
-![Nitor](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/from-a-product-company-to-a-consulting-company/nitor.jpg)
+![Nitor](nitor.jpg)
 
 On 15th May 2019, 8 months ago as of this writing, I started in a new job as a software developer at [Nitor](https://www.nitor.com/en), a Helsinki-based software consultant company with several customers in the capital area. The move ended my 12-year long stay at [Napa](https://www.napa.fi/), a company making software for ship design and operation. But more significantly, the move marked a change from my long career in product companies (LabSystems, Nokia and Napa) that develop and sell their own products to consultant world where Nitor is not developing any own products but we instead work on various customer-projects helping other companies to develop software.
 
@@ -20,7 +20,7 @@ I am glad now that my attitudes had been warming up enough this spring that I wa
 
 First, the level of respect, I now see that consultants can be not only on the same level as their in-house counterparts, but often enjoy a *higher* level of respect. It turns out that developers of any origin are respected by their customers and peers *when they do their job well*: when they are productive, excel in tech and soft skills and write rapidly great code that implements great innovative applications that exceed customers expectations. One starts to wonder that perhaps the consultant-companies and consultants of the olden days got a bad rap partly because there were too many cases there they simply did not do such a good job? It now seems that company like Nitor that employs great developers and pursuits to keep them on the top in competence has possibility for continued respect both on individual and company level.
 
-![Nitor](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/from-a-product-company-to-a-consulting-company/team.webp)
+![Nitor](team.webp)
 
 Regarding the level of job-security and propensity of being fired, my earlier assumptions have been even more overturned. I am now aware of several cases, including my current customer company, where a customer has been rather laying off their in-house people than their Nitor consultants. Part of the reason seems to be simply in the good experience the customer has had with the quality and productivity of Nitor-developers.
 
@@ -34,7 +34,7 @@ How about consultants having to work on the most shitty projects? I am sure this
 
 Good colleagues matter. Not only in gaining the respect of customers through good performance, but also simply as enjoyable and interesting human beings to spend your days with. It seems to me now, that some of the best tech people tend to gravitate to these next-generation consulting companies. This "good" should not be taken too narrowly to mean knowledge, skills and intelligence - while those are also important, the real kick that comes with these people is their character: Great unique humans with charm, personality, passion and stories to tell. Perhaps it is not just a coincidence that highly skilled people tend to also be quirky and colourful in interesting and delightful ways.
 
-![Italy trip](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/from-a-product-company-to-a-consulting-company/colleagues.jpg)
+![Italy trip](colleagues.jpg)
 
 <small>With Nitor colleagues on our trip to Italy in September</small>
 
@@ -46,7 +46,7 @@ The more stable business model of consultant companies might also help bring out
 
 What about my biggest original hurdle, my feeling that I must be working for product company in order to have a feeling of ownership of my work? In this case it turned out I was just wrong. It turns out that it does not much matter what is the chain of organisations and their agreements through which one ends up contributing to some project and product. I found out that once I *do* contribute to a product, once I *do* innovate and use my skills and write the code and features and once customers see the product and use it and are delighted by it - then regardless of anything else it feels that it is *mine* and *ours* and that nothing can take that feeling and pride away.
 
-![Italy trip](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/from-a-product-company-to-a-consulting-company/posti-kioski.jpg)
+![Italy trip](posti-kioski.jpg)
 
 <small>Customers exploring the new Post self-service kiosk that our Nitor team launched in the summer</small>
 
@@ -58,7 +58,7 @@ Of course, life is not always sunshine anywhere. I have also experienced hard mo
 
 In terms of programming technologies, consulting companies might on average be more on the latest-and-greatest side of the curve than product companies with any length of history. So there might be a bit less need to compensate lack of learning in work by high-tech hobby projects like I have been doing during my years. Indeed it is remarkable that I am currently able to use in my main project the wonderful ClojureScript / Re-Frame combo that I had earlier used only in hobby projects.
 
-![Laptop](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/from-a-product-company-to-a-consulting-company/laptop.jpg)
+![Laptop](laptop.jpg)
 
 <small>A consultant decorates his laptop with stickers denoting his favorite technologies</small>
 

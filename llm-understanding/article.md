@@ -1,6 +1,6 @@
 # Don't LLMs really have understanding?
 
-![Girl and Robot](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/llm-understanding/girl-and-robot.jpg)
+![Girl and Robot](girl-and-robot.jpg)
 
 In articles and podcasts discussing relationship of LLMs and Artificial General Intelligence (AGI), I have multiple times noted claim that LLMs are "actually very stupid" or "not even approaching AGI" since "they just generate stream of tokens from some algorithm" and "do not have any *real understanding*" of what they are saying. ChatGPT can itself summarize these views by its answer to question "*Do the large language models understand anything really?*": 
 

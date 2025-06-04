@@ -2,7 +2,7 @@
 
 **Programming is like building with LEGOs but with infinite number of blocks and lightning fast servant performing the repetitive parts of adding blocks**
 
-![lego-towers](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/i-like-programming/lego-towers.jpg)
+![lego-towers](lego-towers.jpg)
 
 Last summer me and my wife and kids were driving towards our summer-cottage at Mäntyharju. On those long drives we sometimes pass time by me explaining enthusiastically about some topic in Chemistry, Physics, Astronomy or Programming - something that my wife and adult boys to my delight tolerate increasingly well, recently often even showing signs of interest and joining the discussion.
 
@@ -43,7 +43,7 @@ But when one thinks about it, the need to declare such auxiliary variables and t
 
 The ultimate creative aim of the (functional) programmer is to minimize plumbing in order to become as declarative as possible: almost like the mythical God of Old Testament who just makes things by declaring them into existence: "*Let there be light*" - no *how* needed! Although in the classic XKCD-cartoon we learn that Gods plans to use LISP were slightly compromised in the creation of world 😉:
 
-![Lisp](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/i-like-programming/lisp.jpg)
+![Lisp](lisp.jpg)
 
 ## Hobby not easily outgrown
 
@@ -51,4 +51,4 @@ Most children will outgrow the childhood hobby of building LEGOs due to its limi
 
 Any activity in programming that is in risk of becoming repetitive can be further automated by the programmer on a higher level. It is hence not easy to find people who after learning to program well would have outgrown it or become bored. On the contrary, in software-development one can keep gathering for a lifetime new skills for even more powerful and hence delightful ways.
 
-![programming-bliss](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/i-like-programming/programming-bliss.webp)
+![programming-bliss](programming-bliss.webp)

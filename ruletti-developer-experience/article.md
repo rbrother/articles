@@ -10,7 +10,7 @@ Contrast this to my current *ClojureScript*-setup: In addition to installation o
 
 Commodore 64 basic-environment and IntelliJ IDEA IDE:
 
-![editor-old-new.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-developer-experience/editor-old-new.png)
+![editor-old-new.png](editor-old-new.png)
 
 The blazing startup-time and lack of required installations in the C64 environment is, however, also a hint to its greatest weakness: lack of evolution in form of updates. Content of ROM-chip is read-only by definition, so Commodore Basic-hobbyists in 1988 were still using the same OS, same editing tools and same Basic-language as Commodore hobbyists in 1982. The fact modern PC-environment requires installation of several tools means that these tools can be *updated to new better versions later*. And with internet it's easy and quick to do such updates. The fierce competition of different languages, libraries and tools for hearts and minds of developers has been leading to rapid evolution of the capabilities of these technologies.
 
@@ -33,7 +33,7 @@ However, Commodore 64 Basic-environment in 1980's did *not* work according these
 
 You can see the code... But you cannot scroll:
 
-![c64-code.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-developer-experience/c64-code.png)
+![c64-code.png](c64-code.png)
 
 With these features it is not possible to directly "Edit" the source-code of the  program. Closest we can get is to "editing" experience is by (1) LIST a line, (2) move cursor to the listed line, (3) overwrite some content of the listed line on screen and (4) press enter to *execute* the listed line as command which will overwrite the old version of the line in the Basic memory buffer.
 
@@ -47,7 +47,7 @@ Perhaps the biggest challenge with explicit line-numbers - and something that ha
 
 But what if you needed to add a line between lines with line numbers 205 and 206? You would be out of luck - can't do that, sorry, game over:
 
-![line-numbers.jpg](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-developer-experience/line-numbers.jpg)
+![line-numbers.jpg](line-numbers.jpg)
 
 Because of this limitation a C64 Basic programmer with even little experience would not start writing programs with line numbers 1,2,3, etc: although that works initially fine, with such numbering its impossible to add any new lines between any existing ones. A common practice that I also used in [Ruletti 64 source code](https://raw.githubusercontent.com/rbrother/ruletti64/main/ruletti.txt) was to number lines 10, 20, 30, ... and then the occasional in-between lines ending with 5 like 25... and hoping that one never ever needs to add more than 9 lines between two initial lines.
 
@@ -70,7 +70,7 @@ Users of modern editors like IntelliJ also enjoy many more advanced editing feat
 
 Plain code view of C64 Basic versus syntax-highlighting of Clojure in IntelliJ IDEA:
 
-![code-comparison.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-developer-experience/code-comparison.png)
+![code-comparison.png](code-comparison.png)
 
 The IntelliJ IDEA editor with Cursive-plugin even supports special [Structural Edition or "Paredit"](https://cursive-ide.com/userguide/paredit.html) for working with LISP-structures of Clojure. These allow easy and robust creation and editing of nested parenthesis-expressions as alternative to the more brittle copy/cut/paste.
 
@@ -82,7 +82,7 @@ While version control really shines in multi-person project, it is surprisingly 
 
 At the time of writing Ruletti 64 I did already have floppy-disk-drive which was huge upgrade to my earlier setup with C-cassette tape-drive. Still, that allowed at most the saving of some set of earlier versions of the code. And without any tools to compare or inspect these versions or have them opened at the same time or copy code between them, this was not very useful except for simple backup purposes. Though such backups were still valuable considering how easily the 5"25 floppy-disks used by C64 were getting corrupted.
 
-![floppy.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-developer-experience/floppy.png)
+![floppy.png](floppy.png)
 
 ## Incremental Development, Hot Reload & REPL
 
@@ -96,7 +96,7 @@ Dropping of compilation time from the full 10-30 seconds to the hot reload incre
 
 In the case of Clojure(Script) the hot reload can be enhanced further by *REPL* (Read Evaluate Print Loop) feature where custom commands and expressions can be evaluated from the keyboard interactively *within the live running process of the game*:
 
-![repl.jpg](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-developer-experience/repl.jpg)
+![repl.jpg](repl.jpg)
 
 While hot reload can be used to quickly experiment with code, REPL adds quick experiments with program state and events. Even the humble Commodore 64 has primitive REPL as the main user interface to the system - individual Basic-statements can be written and executed interactively - but this is not withing running program context and requires the program execution to be stopped.
 
@@ -117,7 +117,7 @@ aws s3 cp resources/public s3://roulette-reframe/ --recursive
 
 This makes the updated game version immediately available in URL [http://roulette-reframe.s3-website.eu-north-1.amazonaws.com/](http://roulette-reframe.s3-website.eu-north-1.amazonaws.com/) enabling true iterative development and feedback all the way to users.
 
-[![ruletti-url.jpg](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ruletti-developer-experience/ruletti-url.jpg)](http://roulette-reframe.s3-website.eu-north-1.amazonaws.com/)
+[![ruletti game](ruletti-url.jpg)](http://roulette-reframe.s3-website.eu-north-1.amazonaws.com/)
 
 ## Productivity boost
 

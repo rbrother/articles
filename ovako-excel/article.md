@@ -2,7 +2,7 @@
 
 **I got my first paid job as software developer at age of 16 in the summer of 1989. This was at the time in history when Personal Computers were appearing on desks of managers at offices and factories, challenging and slowly chipping away the status-quo of mainframes and mini-computers of the era. That provided unlikely niche for some self-taught computer-geeks like me to participate in wild development of real factory production-systems in a way that would be difficult to envision today.**
 
-![leaf-springs](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ovako-excel/leaf-springs.webp)
+![leaf-springs](leaf-springs.webp)
 
 <small>Leaf spring similar to the ones produced at Ovako Steel factory at Karjaa</small>
 
@@ -10,7 +10,7 @@ The history of the *Billnäs Steel Spring factory* in Finland's South-West coast
 
 I got connected to the Ovako Steel factory thanks to **Ensio "Enska" Virtanen** who was in 1989 working as student counselor at [Karjaa Comprehensive School](https://www.yhteiskoulu.fi/). The Finnish comprehensive school curriculum includes a period of work-training where the students need to find a company that is willing to employ them for a nominal salary for two weeks. Usually such jobs are simple and don't require special skills. But Enska been building extensive set of connections to the local companies and he had keen eye for special skills of his students like my [Commodore 64 programming hobby](/post/blast-from-my-commodore-64-past). So when my time for finding work-training come in spring 1989, he was able to "sell" me as a "bit smarter computer-geek" and grandson of [industrialist Perh Sommar](https://fi.wikipedia.org/wiki/Pehr_Sommar) to **Matti Toivonen**, the production-planning manager at the Ovako factory.
 
-![karjaa-school.jpg](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ovako-excel/karjaa-school.jpg)
+![karjaa-school.jpg](karjaa-school.jpg)
 
 <small>Karjaa comprehensive school</small>
 
@@ -18,7 +18,7 @@ I got connected to the Ovako Steel factory thanks to **Ensio "Enska" Virtanen** 
 
 The two-week training at the factory did not yet include any proper programming: the tasks that Matti gave me were mostly involving spreadsheet processing and development with [Lotus Symphony spreadsheet](https://en.wikipedia.org/wiki/Lotus_Symphony_(MS-DOS)) (very similar to the more famous Lotus 1-2-3) running on MS DOS. 
 
-![lotus-symphony.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ovako-excel/lotus-symphony.png)
+![lotus-symphony.png](lotus-symphony.png)
 
 <small>Lotus Symphony spreadsheet software on MS DOS</small>
 
@@ -38,7 +38,7 @@ Towards the end of the summer a plan for a more ambitious project started to tak
 
 To replace the use of paper with Electronic Data Interchange (EDI) in this and related processes, several automotive industry members had been creating [industry-standards group ODETTE](https://www.odette.org/) (*Organization for Data Exchange by Tele Transmission in Europe*) in 1984.
 
-![odette-page.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ovako-excel/odette-page.png)
+![odette-page.png](odette-page.png)
 
 <small>ODETTE-consortium web-page in 2025</small>
 
@@ -59,7 +59,7 @@ It was clear that this far more ambitious project required more advanced tools t
 
 While Microsoft made the original Excel 1.0 already in 1985, that version was only for the *Apple Macintosh* computer. The first version for their own Windows-platform was launched in 1987 and had version-number 2.0. In the fall of 1989 this miracle-software was introduced to me by Kaj Bredenberg at Ovako and oh-boy what an improvement it was over the Lotus Symphony! It is not wonder that Excel eventually won the spreadsheet wars and the word "Excel" even become synonymous with "spreadsheet".
 
-![excel2](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ovako-excel/excel2.png)
+![excel2](excel2.png)
 
 <small>Excel 2.0, the first Excel on Windows. Note the meager 77 *kilobytes* of memory available for user data</small>
 
@@ -71,7 +71,7 @@ Microsoft solved this chicken-and-egg problem in a way that sounds quite crazy t
 
 The best thing in Excel over Lotus spreadsheets was vastly more powerful macro-language. While this was not yet the *Visual Basic for Applications* (which come many years later in Excel 5.0), it was something that actually resembled a real programming-language with variables and structures and programming-oriented statements and functions. These XLM-macros become the cornerstone of the Ovako spring-factory ODETTE-software I developed.
 
-![excel2-macro.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ovako-excel/excel2-macro.png)
+![excel2-macro.png](excel2-macro.png)
 
 <small>Excel 2.0 XLM-macros, long before introduction of *Visual Basic for Applications* (VBA) used special spreadsheet formulas for program constructs</small>
 
@@ -86,7 +86,7 @@ Kaj Bredenberg recalled in 2022:
 
 The system was started to be used for real factory order processing and production planning quite soon in autumn 1989, replacing paper-based orders from Volvo and Scania. The role of the ODETTE Excel-macro in the order processing and production-planning is shown in the diagram that Kaj Bredenberg had produced (text in Finnish, translated below the diagram):
 
-![odette-system.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ovako-excel/odette-system.png)
+![odette-system.png](odette-system.png)
 
 <small>Block diagram showing the electronic order-processing at the Ovako factory in 1990s</small>
 
@@ -106,13 +106,13 @@ After the initial implementation and taking to use of the software, I continued 
 
 I have no records on how many hours I worked for the project in the end, but after the initial summer work in 1989 I continued to be employed by the company part-time all the way to summer 1990 and then again full-time until autumn 1990 when I left to study to the [Atlantic College](https://www.atlanticcollege.org/) high-school in Wales. Perhaps 10 hours per week is realistic estimate, making the total hours somewhere around 500 from the part-time period and 300 more from the summer 1990.
 
-![newspaper-interview.webp](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ovako-excel/newspaper-interview.webp)
+![newspaper-interview.webp](newspaper-interview.webp)
 
 <small>Local newspaper interviewed me (in Finnish) in August 1990 after I received scholarship to study at Atlantic College. Interview topics included the programming work at Ovako.</small>
 
 During my high-school studies at Atlantic College is was difficult for me to continue the part-time work on the project. The study- and activity-schedule at this boarding-school was quite tight. Moreover, this was before internet was available, so communicating between Wales and Finland was restricted to slow paper mail (with disks) and prohibitively expensive long-distance phone-calls. We had few attempts to sending some requests and data with disks but it was too clumsy to be really usable. Here is one letter from Matti Toivonen to me during my second year at the college:
 
-<img class="fullsize" alt="Letter from Matti" src="https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ovako-excel/kirje-matti.webp"/>
+<img class="fullsize" alt="Letter from Matti" src="kirje-matti.webp"/>
 
 Matti wrote (translated):
 > Greetings from our spring factory, we wish everything is going fine with you as before. I remember you told that you might be able to continue some small work if suitable topic comes up and now this has happened. (I suppose you have Excel available to use there?) The ODETTE-macro has limitations in performing the weekly summation with some new data-sets which I am sending here with a disk. We would need to calculate for example Volvo, Volvo Belgium and Volvo spare parts products in a weekly report. If something is missing or there is another reason why you cannot do this, let me know. List me the hours used as before, I suppose we can continue to pay to your old bank-account. If you have time on your forthcoming christmas holiday, do pay us a visit for a chat.
@@ -123,7 +123,7 @@ During my 1991 summer holiday back in Finland, I continued to work for the Ovako
 
 Summer 1991 was the last time I worked for Ovako: In summer 1992 I was traveling around the world and then in fall 1992 started in Helsinki University my studies of chemistry, physics, mathematics and computer science.
 
-![employment-certificate.webp](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ovako-excel/employment-certificate.webp)
+![employment-certificate.webp](employment-certificate.webp)
 
 <small>My employment certificate from Ovako</small>
 
@@ -139,7 +139,7 @@ The minicomputer running TERTTU-software was towards the end of my time at Ovako
 
 Since my departure, the Billnäs steel-spring factory continued its operation, changing occasionally ownership and name. Until the last owner, [Frauenthal Group](https://www.frauenthal.at/en/), decided to [close the factory in 2006](https://www.hs.fi/talous/art-2000004379559.html), 15 years after my time there. At that time the factory was employing about 100 people and annual sales were about 17 million euros. The factory would probably still have been competitive on the market on its own, but unfortunately Frauenthal purchased several leaf-spring companies and then proceeding to eliminate their self-created "over-capacity", ending the century of production of high-quality steel-springs at Billnäs.
 
-![roope-factory.webp](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ovako-excel/roope-factory.webp)
+![roope-factory.webp](roope-factory.webp)
 
 <small>Visiting the yard of the old Ovako Steel factory building in 2024. The office room where I had been working with Matti Toivonen is in the middle of the second floor. The building is not in factory use any more since the company was closed in 2006 but it is still used as a warehouse by various smaller companies.</small>
 
@@ -147,7 +147,7 @@ Matti Toivonen worked at the factory as the production manager all the way to th
 
 More remarkably, the life of the Excel ODETTE-system continued even after the end of the Billnäs factory. Kaj Bredenberg had already bought the rights to the software from Ovako for his own consultant company. The application turned out to be general enough to be sold and customized by him to several other companies in the automotive industry. Last customer moved away from the Excel-macro-based ODETTE-processing software as late as 2016, giving it an unexpected 27-year lifespan in the industry.
 
-[![bredenberg-consulting.webp](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ovako-excel/bredenberg-consulting.webp)](https://www.kb-consulting.fi/)
+[![bredenberg-consulting.webp](bredenberg-consulting.webp)](https://www.kb-consulting.fi/)
 
 <small>The web page of Kaj Bredenber consulting company in 2022, still offering "EDI-applications for Automotive industry"</small>
 
@@ -155,7 +155,7 @@ More remarkably, the life of the Excel ODETTE-system continued even after the en
 
 After the initial publication of this blog post in 2022 I was able to get into contact through Facebook with Kaj Bredenberg, the Ovako IT-colleague from our 1989 ODETTE-project. To my delight, Kaj had also been throughout these years staying in contact with the Ovako production manager Matti Toivonen and knew his current whereabouts. So we were able to arrange a nice long lunch-meeting sharing our memories about the Ovako spring-factory and the ODETTE-project.
 
-![old-gang.jpg](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/ovako-excel/old-gang.jpg)]
+![old-gang.jpg](old-gang.jpg)]
 
 <small>Kaj Bredenberg, Matti Toivonen and myself at reunion in 2022 after 33 years</small>
 

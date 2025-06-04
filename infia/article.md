@@ -2,7 +2,7 @@
 
 **After some false starts, I finally found success in my Physical Chemistry research from unexpected direction, when I started gradually improving the old software tools our lab used for spectrum analysis in 1996 when I was 23.**
 
-![Infia windows](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/infia-windows.png)
+![Infia windows](infia-windows.png)
 
 After the dead-end of [my first project of vibrational wavefunctions](/post/starting-on-a-career-in-computational-quantum-chemistry) and the grinding to halt of my [Arsine vibrations project](/post/death-by-fortran-common-block) at the Physical Chemistry laboratory, there was a need to try something with higher probability of success. To this end professor **Lauri Halonen** proposed spectrum analysis in January 1996. Halonen had available Deuterobromoacetylene (DCCBr) high-resolution infrared spectra which had been measured by **Olavi Vaittinen** (in group of Halonen) and **Oliver Polanz** (from Wuppertal University in Germany) but not yet analyzed.
 
@@ -10,7 +10,7 @@ Such spectra contain thousands of absolution peaks at specific wavelengths in th
 
 Below Figure 1 shows one band-system out of five that I analyzed from DCCBr spectrum. Three levels of magnification demonstrate the high density of absorption peaks:
 
-![Spectrum zooms](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/spectra-zooms.png)
+![Spectrum zooms](spectra-zooms.png)
 
 Analysis of the spectrum means assignment of each spectrum peak to the vibration-rotation quantum transition it corresponds to. After the assignment of as many peaks as possible, the quantum mechanical model can be used to calculate molecules vibration and rotation parameters from the peak wavelengths.
 
@@ -26,7 +26,7 @@ I was also curious to try Borland Delphi for something real. Borland had been re
 
 So, during spring 1996 I started to divide my research time into progressing with the spectrum assignment on one hand and developing the spectrum viewer window with Delphi 2.0 on the other. Here is early simple spectrum view with selection and zoom capabilities:
 
-![Spectrum window](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/spectrum-window.png)
+![Spectrum window](spectrum-window.png)
 
 In Delphi visual components like windows consists of binary Form files produced Delphi UI editor and corresponding Pascal files defining functionality. For spectrum window these are [SpecWin.dfm](https://github.com/rbrother/Infia/blob/master/SPECWIN.dfm) and [SpecWin.pas](https://github.com/rbrother/Infia/blob/master/SpecWin.pas). The final version of SpecWin.pas is about 700 lines, but the initial version just showing the spectrum waveform was much shorter. ObjectPascal is object-oriented strongly-typed language and separates each file to publicly visible interface containing class-definitions (think of C++ header-file) and private implementation part which contains method implementations (think of C++ *.cpp file):
 
@@ -123,11 +123,11 @@ Completing the spectrum view helped a lot: Instead of browsing through the 100-p
 
 So, I added labelling of the peaks to the software. The peaks of a spectrum band-system can be grouped into multiple *bands* and each band has multiple *peaks* with integer index and approximate constant separation. In the five band-systems I was analyzing there was about 50 detectable bands per system and about 70 detectable peaks per band. I started with single color for a band label, but soon run out of colors, so I opted for a two-color scheme for the labels:
 
-![Spectrum and labels](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/spectrum+labels.png)
+![Spectrum and labels](spectrum+labels.png)
 
 With this new data for peak assignments, I needed new files to store the data. Classic fortran-style input files were simply numbers separated by whitespace and hence very prone to index-errors that go undetected. I wanted something more robust and hence *structured*. But 1996 was time before JSON and YAML (even JavaScript 1.0 itself was only released in the middle of 1996 in Netscape 2). Even XML only become standard in 1998 and wider tool support for it only come around 2000. So I opted for custom semi-structured syntax that was *Comma Separated Values* (CSV) on top-level, but used still named attributes for each atomic value. This provided some robustness, readability and extensibility similar to XML/JSON/YAML attributes. Here is excerpt from the [nu4_assignments.csv](https://github.com/rbrother/Infia/blob/master/DemoProjects/DCCBr/nu4_assignments.csv) file from my DCCBr analysis:
 
-![Assignments file](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/assignments-file.jpg)
+![Assignments file](assignments-file.jpg)
 
 At runtime the bands and their assignments were modeled by classes in [BandUnit.pas](https://github.com/rbrother/Infia/blob/master/BandUnit.pas):
 
@@ -213,7 +213,7 @@ Adding these calculations to the software was much bigger effort than the previo
 
 Below is typical window setup when assigning peaks to new band. Predicted peak with m=57 has been selected and can be assigned to the band with one click:
 
-![Peaks and assignments](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/peaks+assignments.png)
+![Peaks and assignments](peaks+assignments.png)
 
 For the linear-least-squares polynomial fit required implementation of linear algebra operations with **Matrix**, **SquareMatrix** and **Vector** objects, which I implemented in 500-line [LINALG.PAS](https://github.com/rbrother/Infia/blob/master/LINALG.PAS) exemplified below:
 
@@ -275,11 +275,11 @@ Integration of the *Combination Difference Prediction* method to the UI was also
 
 Below example of Infia Combination Difference Prediction report listing best 10 best predictions for lower state and delta-m, reducing hours of work to seconds:
 
-![Combination Difference](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/combination-difference.png)
+![Combination Difference](combination-difference.png)
 
 The capability to calculate band upper vibrational state parameters also called for new data structures, new files for saving the data and a new "Vibrational State parameters" window collecting the results of the calculations, shown below:
 
-![Vibrational parameters](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/vibrational-parameters.png)
+![Vibrational parameters](vibrational-parameters.png)
 
 In case multiple bands have the same vibrational upper state, user can choose to use the parameters from the highest quality band.
 
@@ -287,13 +287,13 @@ In case multiple bands have the same vibrational upper state, user can choose to
 
 During spring 1997 I completed the analysis if 𝜈<sub>3</sub> and 𝜈<sub>4</sub> band-systems of the DCCBr spectrum. But I also learned to make experimental measurements of the infrared spectrum of DCCBr myself with the [Bruker IFS 120 HR FTIR Spectrometer](https://www.bruker.com/en/products-and-solutions/infrared-and-raman/ft-ir-research-spectrometers/ifs-125hr-high-resolution-ft-ir-spectrometer.html) professor Halonen had in his lab:
 
-![Bruker](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/bruker.jpg)
+![Bruker](bruker.jpg)
 
 We had still some DCCBr sample left, and I set the goal of measuring the 𝜈4 band-system with higher resolution than the spectrum that had been measured in Wuppertal University and I had used in the analysis. In FTIR Spectrometry several *scans* are measured of the sampled molecule and then a *Fourier Transform* is calculated to produce the final spectrum. The higher the number of scans, the higher the resolution one can obtain for the spectrum. So, I scanned the sample whole day and the following night as well until I estimated I had enough scans for a significant resolution improvement.
 
 Excerpt from the 𝜈<sub>4</sub> band-system below shows the dramatic effect of even slight improvement in resolution. The original spectrum from Wuppertal (bottom) has resolution of about 0.004 cm<sup>-1</sup> whereas my new measurement in Helsinki (top) has resolution of about 0.002 cm<sup>-1</sup>. The doubling of the resolution more than doubles the number of detectable peaks, which allows many more bands to be analysed from any band-system:
 
-![Spectra resolution](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/spectra-resolution.jpg)
+![Spectra resolution](spectra-resolution.jpg)
 
 ## Master Thesis and graduation
 
@@ -301,13 +301,13 @@ I had at some point agreed with professor Halonens suggestion that I would aim t
 
 Sprint 1997 become quite hectic. I had still many courses in Chemistry and Mathematics to complete for the degree and I was still working as laboratory course assistant in Physical Chemistry. I had not progressed much in writing of the thesis when Halonen asked me in March, how are the plans about graduating in spring going. I said I have not progressed very far with the thesis, that it might be better that I would finish it in the summer when I would have more time from the other study- and lab-activities. Halonen replied: "*Let's stay with the original schedule, shall we?*" So we did. There was a period of about ten days in May when I locked myself to my apartment with 10 frozen pizzas in the freezer and just kept writing the thesis from morning to evening every day with only occasional pizza-break. I did manage on the evening of the last possible day deliver [my 87-page thesis](https://github.com/rbrother/Infia/blob/master/documentation/DCCBr_master_thesis.pdf) directly to the home of professor Halonen:
 
-[![Thesis](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/thesis-cover.webp)](https://github.com/rbrother/Infia/blob/master/documentation/DCCBr_master_thesis.pdf)
+[![Thesis](thesis-cover.webp)](https://github.com/rbrother/Infia/blob/master/documentation/DCCBr_master_thesis.pdf)
 
 The thesis remains perhaps the best source describing the theory behind the Infia-software, so if you are interested in digging bit deeper to the fascinating quantum-mechanical world of molecular vibrations and rotations, check it out.
 
 I declared the version of the software at the time of submitting the thesis "version 1.0" and kept [its executable](https://github.com/rbrother/Infia/tree/master/Binaries%201997-05-20%20-%20Version%201.0) so that it would always correspond to the descriptions in the thesis despite later modifications.
 
-![About infia 1.0](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/about-infia-1.png)
+![About infia 1.0](about-infia-1.png)
 
 ## "Infia" name
 
@@ -317,7 +317,7 @@ One change that I made only after publishing my master thesis was inventing a le
 
 So I played with words related to the topic and come with "Infia" from "**IN**frared **FI**tting **A**pplication" which I used in subsequent presentation and publications. I have no memory how well the new name stuck, but at least for the wider research community that learned about the software through my later articles and posters it probably was useful to have a specific name to use. Here is a [slideset of Infia Software](https://github.com/rbrother/Infia/blob/master/documentation/slides/infia-slides.pdf) I used in some conference posters and presentations in 1998 (click for the full slideset):
 
-[![Infia slideset](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/infia-slideset.png)](https://github.com/rbrother/Infia/blob/master/documentation/slides/infia-slides.pdf)
+[![Infia slideset](infia-slideset.png)](https://github.com/rbrother/Infia/blob/master/documentation/slides/infia-slides.pdf)
 
 ## Adding resonance-band calculations
 
@@ -325,7 +325,7 @@ While most of the improvements to Infia after the thesis-version were minor, I s
 
 One such opportunity arose during autumn 1997 when professor Halonen sent me to work for one month to the University of Wuppertal in Germany. Halonen had been co-operating with the spectroscopy group of professor **Hans Bürger** in Wuppertal. I was to learn the experimental method for synthesis of DCCBr from Burgers PhD student **Wolfgang**. During days we proceed in the steps of the synthesis, which succeeded to sufficient degree that I got confident I could reproduce it later in Helsinki. Here is Wolfgang working on the vacuum-line which formed the basis of the gas-phase synthesis:
 
-![Wolfgang](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/wolfgang.jpg)
+![Wolfgang](wolfgang.jpg)
 
 But in the long evenings I spent in my residence I had spare time. And I had been long time been bit bothered by the fact that calculation framework in Infia 1.0 was incomplete: it lacked the *matrix diagonalization calculation* and *non-linear least squares method* for handling spectrum bands that exhibited *resonance* (*l-resonance*, *coriolis-resonance* or *fermi-resonance*) and were therefore not suitable for the simple polynomial formulas. Because of this, I had written in my thesis:
 
@@ -434,7 +434,7 @@ function DiagSymMatrix(var MatrixSize : longint;
 
 I did last major new feature to Infia quite close to publication of the results. Professor Halonen encouraged me to check some articles on "Loomis-Wood" diagrams (after the original paper by **F. Loomis** and **R. Wood** in 1928). The idea is to slice the spectrum energy axis to regular pieces (reflecting the semi-regular spacing of peaks) and then tilt the pieces to vertical slices. When spectrum peaks are marked on these slices, the peaks belonging to different bands become more easily visible like pearls on a necklace:
 
-![Loomis wood theory](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/loomis-theory.png)
+![Loomis wood theory](loomis-theory.png)
 
 Loomis-wood diagrams in earlier software tended to be black & white printouts on paper. The Infia version had several visual improvements over previously published versions:
 
@@ -444,7 +444,7 @@ Loomis-wood diagrams in earlier software tended to be black & white printouts on
 
 Infia interactive Loomis-wood view of the 𝜈<sub>4</sub> Band-system of DCCBr:
 
-![Loomis wood](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/loomis.webp)
+![Loomis wood](loomis.webp)
 
 I implemented the interactive Loomis-Wood diagram in [LoomisUnit.pas](https://github.com/rbrother/Infia/blob/master/LoomisUnit.pas). The simplicity of the beautiful idea of the diagram is evident in the main function being only 50 lines long in Deplhi. Condensed here:
 
@@ -473,7 +473,7 @@ end;
 
 The value of the Loomis-Wood view in India was enhanced by its interactive nature: could use it not only to look at the spectrum but assign peaks by clicking. And it works together with the spectrum-view and band-assignments view: selecting a peak in any of these views automatically shows the peak in all three views. The most productive way of working in Infia was hence to tile these different sub-windows withing the main window as shown here:
 
-![all-windows.webp](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/all-windows.webp)
+![all-windows.webp](all-windows.webp)
 
 ## Publications
 
@@ -483,7 +483,7 @@ So, in Spring 1998 professor Halonen suggested taking a pause from my ongoing CH
 
 The whole process took almost a year, though much of that was waiting for reviews and other publication delays. The article "**High-Resolution Infrared Spectrum of 𝜈<sub>5</sub>, 𝜈<sub>4</sub>, 𝜈<sub>3</sub>, 𝜈<sub>4</sub> + 𝜈<sub>5</sub> and 2𝜈<sub>4</sub> Band Systems of Deuterobromoacetylene**" was finally published in January 1999 as [R. Brotherus, O. Vaittinen, L. Halonen, H. Burger, O. Polanz, J. Mol. Spectrosc. 193, 137-149 (1999)](https://github.com/rbrother/Infia/blob/master/documentation/dccbr-article.pdf):
 
-[![dccbr-article-main-page.avif](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/dccbr-article-main-page.avif)](https://github.com/rbrother/Infia/blob/master/documentation/dccbr-article.pdf)
+[![dccbr-article-main-page.avif](dccbr-article-main-page.avif)](https://github.com/rbrother/Infia/blob/master/documentation/dccbr-article.pdf)
 
 The article abstract with citation-links is also available in [ScienceDirect service](https://www.sciencedirect.com/science/article/abs/pii/S0022285298977311).
 
@@ -493,7 +493,7 @@ The acceptance for publication was indeed more close call. I sent the first manu
 
 Luckily for me, professor Frenking concluded: "*I tend to agree with the first reviewer.*" So I sent the extensively amended manuscript [with extended cover letter](https://github.com/rbrother/Infia/blob/master/documentation/article_Saatekirje_2.pdf) to professor Frenking in November 1998 and the article "**INFIA - Program for Rotational Analysis of Linear Molecule Spectra**" got published in March 1999 as [R. Brotherus, J Comput Chem 20: 610-622, 1999](https://github.com/rbrother/Infia/blob/master/documentation/article.pdf):
 
-[![infia-article-cover.png](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/infia-article-cover.png)](https://github.com/rbrother/Infia/blob/master/documentation/article.pdf)
+[![infia-article-cover.png](infia-article-cover.png)](https://github.com/rbrother/Infia/blob/master/documentation/article.pdf)
 
 Abstract with citation-links is also available at [Wiley Online](https://onlinelibrary.wiley.com/doi/abs/10.1002/(SICI)1096-987X(19990430)20:6%3C610::AID-JCC7%3E3.0.CO;2-W).
 
@@ -564,7 +564,7 @@ Of particular interest in the last category is the "LWW" software by the Czech r
 
 This inspiration is quite easy to recognize by comparing Infia screenshots shown earlier in this post to the LWW screenshot from the [LWW Software web-page](https://lww.amu.edu.pl/index.html):
 
-![LWW.jpg](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/LWW.jpg)
+![LWW.jpg](LWW.jpg)
 
 We can see that the LWW software indeed has very similar tiled design with spectrum view, Loomis-Wood view and Assignment-list as Infia. There is also eerie resemblance even in details like main menus which for Infia and LWW respectively:
 
@@ -598,7 +598,7 @@ Infia taught me that *evolution can lead to revolution*: big good things can gro
 
 It was only in 2000 when I had started in my first industry job when I heard from my new team of the "Agile" revolution that had just started to blow through the industry. First as [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming) - I read all the books - and later as Scrum. Reading the 2001 [Agile Manifesto](https://agilemanifesto.org/) by heroes like **Kent Beck**, **Robert C. Martin**, **Andrew Hunt** and **Martin Fowler**, I was immediately on board with the recommendations like "*Responding to change over following a plan*" and valuing "*Working software over comprehensive documentation*". The manifesto remains as good remainder to return to original simplicity of Agile when confronted by later more convoluted pseudo-agile processes.
 
-![extreme-programming.jpg](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/extreme-programming.jpg)
+![extreme-programming.jpg](extreme-programming.jpg)
 
 With the Agile revolution I realized that the way I had learned to developed software like Infia was becoming the officially preferred way of the world after all 😀. My later experience has confirmed the core wisdom of agile development, which I like express in the following way: "Trying to make comprehensive requirement specification before starting the implementation is often futile since often people do not realize what they really want *until they get something that they do not want.*" That's why it's critical to make something small fast and start the loop of iterative improvement. Every week in my work in industry I get for our softwarenew new ideas and feedback on improvements that could not have been thought of before having working software.
 
@@ -616,7 +616,7 @@ My career as software developer in industry since 2000 has been wide and rewardi
 
 [Short video promotion of my job at Sartorius in 2022](https://www.youtube.com/watch?v=xX0hwqSnlW0):
 
-[![robert-sartorius.jpg](https://raw.githubusercontent.com/rbrother/articles/refs/heads/main/infia/robert-sartorius.jpg)](https://www.youtube.com/watch?v=xX0hwqSnlW0)
+[![robert-sartorius.jpg](robert-sartorius.jpg)](https://www.youtube.com/watch?v=xX0hwqSnlW0)
 
 ### Love of Software, Love of Science
 
