@@ -68,6 +68,9 @@ Gordon stopped, stood, and stared. A dark, cold thought crept into his mind as h
 — It's the hook from Genial into my custom native looping extension.  
 — The debugger shows your extension is returning a *null value* here! How the hell could you generate null value in Genial?!  
 — The extensions is old code from the 2060s I found, with some older language. I was able to modify Genial core routines to connect the module as an external service. It has blazing fast results in looping tests... What do you mean by "null value"?  
+
+For a heartbeat the room fell into a different kind of noise: a thin, ragged chorus of breaths, the clack of drywall fragments as a distant collapse settled. Irwin's eyes shone with a wet, feverish focus while Gordon's jaw worked as if he could chew the answer out of thin air. A spilled coffee mug steamed on the console.
+
 — You kids really don't know?! Well, it shouldn't really exist anymore. Null means "nothing" and it was used in some long-gone languages to represent exactly that. It used to be a source of endless bugs until the concept disappeared as the world moved to a new generation of languages over fifty years ago. But your ancient hack of an extension has brought that calamity here, returning a null straight to the main transformer software!  
 — So what! Let's fix the bug!  
 — It's too late now! A null value would propagate through the transformer control framework, all the way to the quantum wave pattern! Do you know what that means?!  
@@ -76,4 +79,4 @@ Gordon stopped, stood, and stared. A dark, cold thought crept into his mind as h
 — Let's shut down the transformer then!  
 — You fool! Don't you get it? There is no more transformer, there is no more proto-lab — the first thing that such a rogue quantum wave pattern would do is to eat the electronics and casing of the transformer device around it! There is now just a naked quantum-gravity wave pattern rapidly sucking in anything on Earth!  
 
-In a thunderous boom the eastern wall of the software development room collapsed away. Gordon and Irwin turned and saw the dark, ever-expanding abyss. The floor of the room began to crumble.
+In a thunderous boom the eastern wall of the software development room collapsed away. Concrete sheared with a grinding sound as dust exploded up in a choking cloud. A projector screen toppled and spun. Gordon and Irwin turned to face the dark rumbling, ever-expanding abyss; two animals caught at the edge of an enormous, indifferent appetite. The floor of the room began to crumble.
