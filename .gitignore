@@ -1,2 +1,4 @@
 /.clj-kondo/.cache/
 /.lsp/.cache/
+/blog-tech-stack/.clj-kondo/.cache/
+/blog-tech-stack/.lsp/.cache/
