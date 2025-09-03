@@ -1,0 +1,12 @@
+{:name "From imperative C64 Basic to functional-reactive programming",
+ :date "2022-02-06",
+ :id "ruletti-imperative-to-functional",
+ :id-long
+ "from-depths-of-imperative-programming-to-heights-of-functional-style",
+ :tags
+ #{"Computers"
+   "Commodore"
+   "Clojure"
+   "ClojureScript"
+   "Re-Frame"
+   "Programming"}}
