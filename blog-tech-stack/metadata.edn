@@ -1,6 +1,6 @@
 {:name "Tech stack of this blog app",
  :id "blog-tech-stack",
- :date "2025-08-13",
+ :date "2025-08-13" :blog "building-programs"
  :tags
  #{"Computers"
    "AWS"

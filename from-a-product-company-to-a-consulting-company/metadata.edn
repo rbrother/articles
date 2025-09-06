@@ -1,4 +1,5 @@
 {:name "From a Product company to a Consulting company",
  :id "from-a-product-company-to-a-consulting-company",
- :date "2020-02-06",
+ :date "2020-02-06" 
+ :blog "building-programs"
  :tags #{"Computers" "Jobs" "Programming" "Career"}}

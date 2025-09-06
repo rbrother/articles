@@ -2,4 +2,5 @@
  :id "ruletti-c64",
  :id-long "blast-from-my-commodore-64-past",
  :date "2021-08-10",
+ :blog "building-programs"
  :tags #{"Computers" "Commodore" "Programming"}}

@@ -1,4 +1,5 @@
 {:name "Resurrecting Infia in 2025", 
  :id "resurrect-infia-2025",
  :date "2025-05-01" 
+ :blog "building-programs"
  :tags #{"Computers" "Programming" "Development Tools" "Delphi"}}
