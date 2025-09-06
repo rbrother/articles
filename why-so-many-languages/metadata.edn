@@ -1,4 +1,5 @@
 {:name "Why so many languages?",
  :id "why-so-many-languages",
  :date "2019-03-13",
+ :blog "building-programs"
  :tags #{"Computers" "Programming" "Learning"}}

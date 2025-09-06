@@ -1,7 +1,8 @@
 {:name "My entry to Quantum Chemistry programming",
  :date "2023-01-03",
  :id "entry-to-chemistry-programming",
- :id-long "starting-on-a-career-in-computational-quantum-chemistry",
+ :id-long "starting-on-a-career-in-computational-quantum-chemistry" 
+ :blog "building-programs"
  :tags
  #{"Computers"
    "Mathematics"

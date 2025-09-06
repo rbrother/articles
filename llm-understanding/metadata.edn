@@ -2,4 +2,5 @@
  :date "2025-03-28",
  :id "llm-understanding",
  :id-long "don-t-llms-really-have-understanding",
+ :blog "building-programs"
  :tags #{"Computers" "LLM" "AI"}}

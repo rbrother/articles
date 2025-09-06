@@ -1,6 +1,7 @@
 {:name "From Wix to a custom blog-platform",
  :id "blog-platform",
  :date "2025-06-11",
+ :blog "building-programs"
  :tags
  #{"Development Tools"
    "Computers"
