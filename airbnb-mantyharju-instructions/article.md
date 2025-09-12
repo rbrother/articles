@@ -279,7 +279,12 @@ Using the washing machine:
 
 1. Check that the water-tap to the washing machine is open.
 1. Add some washing powder to the washing machine. There is washing powder in a small box on the shelf above the washing machine. If that becomes empty, there is a bigger box at upstairs loft to fill it.
-1. Select program. For clothes you can use the “Wash + Dry” program (which takes about 3 hours and can take only 4 kg of clothes). For linen at the end of your stay you can use the “Quick program” (which takes about 30 minutes).
+1. Select program. For linen at the end of your stay you can use the “Quick program” (which takes about 30 minutes). I recommend adjusting the sping to 1200 rpm by pressing "Spin" to have the linen drier after wash.
+1. Press the start-button
+
+![Washing machine programs](washing-machine-controls.jpg)
+
+For small amount of clothes you can use the “Wash + Dry” program (which takes about 3 hours and can take only 4 kg of clothes). But using the washing machine quick program and kitchen tumble tried for drying is faster.
 
 Troubleshooting:
 
@@ -303,6 +308,10 @@ If it's a warm summer day, the clothes can be best dried outside. In rainy or co
 <img src="tumble-drier.jpg" width="500px"/>
 
 <small>Tumple dryer in the kitchen</small>
+
+![Tumble dryer](tumble-drier-controls.jpg)
+
+<small>Tumple dryer controls. Select "Erittäin Kuiva" for automatic drying and press "Käynnistys / Tauko" button to start.</small>
 
 <img src="clothes-line.jpg" width="500px"/>
 
@@ -358,6 +367,8 @@ In the summer-period there is a long water-hose from the cottage wall to the sau
 In winter time the outside water pipe cannot be used, you need to carry water from the house with buckets.
 
 ![Inside Sauna](sauna-inside.jpg)
+
+<small>Inside sauna. Note that the stove has been changed to a bigger model after taking this picture and the hot-water container is now around the chimney-pipe.</small>
 
 ### Using the sauna
 
