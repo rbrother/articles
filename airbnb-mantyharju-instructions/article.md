@@ -77,7 +77,9 @@ Switching on and using water:
 1. Water pump electricity switch. Switch this on in the beginning of your stay to use water. Switch OFF at the end of your stay to ensure that there is no water damage in case some pipe leak appears.
 2. Water-pipe main valve handle. This can be always kept open (as shown in the photo). But if you have trouble using water, double-check that it is open.
 3. Hot-water boiler electric cable. Keep always plugged in, even at the end of your stay, to ensure hot water is available. If it has been plugged out, it will take about one hour to get hot water again.
-4. Water-pipe heating plug for winter-time. When temperatures are freezing this should be always plugged in, otherwise pipes can freeze and break. Owner will plug it in in November and unplug it in April, guests should never unplug this.
+4. Water-pipe heating plug for winter-time. When temperatures are freezing this should be always plugged in, otherwise pipes can freeze and break. Owner will plug it in in November and unplug it in April, guests should never unplug this. Please verify that it is plugged in and feels warm to hand when you arrive and leave in winter time.
+
+<img width="300px" src="pipe-heating-cable.jpg"/>
 
 ### Waste-water tank check
 
@@ -107,7 +109,9 @@ For heating the cottage when weather outside is cold, there is:
 
 The temperature-setting and other settings of the air-heat-pump can be controlled with a remote control nearby it.
 
-Air-heat pump uses less electricity for heating than the electric radiators, so please use it instead of the electric radiators for the main room heating. For the bedroom you can additionally use its electric radiator if needed. If you do so, please switch off the electric radiator before leaving the cottage.
+Air-heat pump uses less electricity for heating than the electric radiators, so please use it instead of the electric radiators for the main room heating and keep the radiators at the default +5 C temperature.
+
+During your stay, it is recommended to keep the bedroom door open to let the heat from the living room (air-heat pump and fireplace) get there. But if this not enough, you can additionally switch on and use the bedroom electric radiator (power-switch on its right-hand side). If you do so, please switch the bedroom radiator off in the end of your stay.
 
 ## Beds and bedroom
 
@@ -366,11 +370,11 @@ In the summer-period there is a long water-hose from the cottage wall to the sau
 
 In winter time the outside water pipe cannot be used, you need to carry water from the house with buckets.
 
+### Using the sauna
+
 ![Inside Sauna](sauna-inside.jpg)
 
 <small>Inside sauna. Note that the stove has been changed to a bigger model after taking this picture and the hot-water container is now around the chimney-pipe.</small>
-
-### Using the sauna
 
 1. Fill with water the hot-water container around the fireplace chimney from the opening at its top.
 1. Check that water is coming out from the hot-water container tap when you open the handle. Sometimes small sticks from lake water can clog / block the tap and you need to clean the tap first. This is easier if the water is not hot yet.
@@ -379,8 +383,13 @@ In winter time the outside water pipe cannot be used, you need to carry water fr
 1. Make fire to the fireplace and keep it burning hot for about 30-60 minutes occasionally adding more firewood so that the stones get hot
 1. In sauna sit on the highest level and throw water to the stones to make steam (“löyly”)
 1. Make warm washing water by mixing hot water from the hot-water container tap with cold water in a small bucket. Wash and rinse yourself with the warm water.
-1. After using the sauna, wipe excess water away from the floor to help the floor dry.
-1. If you have used Sauna floor heating (see below), remember to switch it off later
+
+### After using Sauna
+
+1. **In Winter time**, fully empty the hot water container above the stove (leave the tap open). Leaving water there in winter time will cause the valve to freeze and break.
+1. Wipe excess water away from the floor to help the floor dry.
+freeze will break the tap.
+1. If you have used Sauna floor heating (see below), remember to switch it off the next day or latest in the end of your stay
 
 ### Sauna Floor heating
 
@@ -392,13 +401,25 @@ If you use the sauna floor heating feature, *remember to switch it OFF* at the e
 
 <img src="sauna-electricity2.jpg" width="400px"/>
 
+## Winter-time: Snow-removal from yard
+
+Snow-plough is coming to remove snow from the road after heavy snowfall, but any required removal of snow in the yard of the cottage (like shoveling a walking-path to the door) is the guests responsibility.
+
+<img src="snow-shovel.jpg" width="400px"/>
+
 ## Jetty
 
 ![Jetty](jetty.jpg)
 
-Jetty can be used for going swimming and boarding the boat in the summer period (approximately May-October period). In the winter-period the lake freezes and the jetty is taken to the shore.
+Jetty can be used for going swimming and boarding the boat in the summer period (approximately May-October period). 
 
 The water at the end of the jetty is quite shallow, so don't jump into the water when you go swimming.
+
+Due to the possibility of ice damage, the Jetty is taken out of the water for winter-period.
+
+<img src="jetty-winter.jpg" width="400px"/>
+
+<small>Jetty in winter</small>
 
 ## Boat
 
@@ -463,6 +484,14 @@ There is also [Kalakortti online-shop for fishing permits](https://www.kalakortt
 [Fishing information on the lake “Pyhävesi”](http://www.mantyharju-repovesi.com/fi/aktiviteetit/kalastus/pyhavesi) mentioning that the lake is known for Pike and Pike-Perch.
 
 ![Fishing](pike.jpg)
+
+## Ice-swimming in winter
+
+If you are interested *and experienced* in ice-swimming, the cottage has tools for making a hole in the ice to swim from Sauna.
+
+Tools that can be used for making hole include ice-drill (kaira), iron bar (rautakanki), saw and electric motor saw.
+
+![Ice-swimming tools](ice-swimming.jpg)
 
 ## Weather
 
@@ -574,11 +603,19 @@ For other waste that cannot be recycled or you choose not to recycle, there are 
 ### Inside arrangements
 
 1. If you have been increasing the level of toilet floor heating, restore it to setting 3.
-1. If you have been using the air-heat-pump during your stay for heating or cooling, turn it off from the remote control.
+1. If you have been using the air-heat-pump during your stay for heating or cooling, in summer-time turn it off from the remote control. **In winter** leave the air-heat-pump on to the minimum heating temperature (+16 C)
 1. Adjust the electric radiators in living room and kitchen to minimum +5 C
 1. Switch off the electric radiator of the bedroom completely from the switch in the side.
+1. Close fireplace chimney knob (see "Fireplace" chapter above)
+1. Close the three air intake valves at walls (see "Fireplace" chapter above)
+1. Switch off kitchen ventilation (see earlier chapter)
+1. Leave kitchen closet doors and dishwasher door slightly open to let heat go to water-pipes inside them (see picture below)
 1. Switch off all lamps and television and computer. Do not switch off the wifi router
 1. Switch off the water-pump main switch. (Do NOT unplug the hot-water boiler or other water-area plugs)
+
+![kitchen-closet-doors-open.jpg](kitchen-closet-doors-open.jpg)
+
+<small>In winter-time leave kitchen closet doors and dishwasher door slightly open to let heat go to water-pipes inside them</small>
 
 ### Outside
 

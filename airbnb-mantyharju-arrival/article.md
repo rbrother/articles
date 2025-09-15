@@ -38,11 +38,49 @@ Close-up map of the "Uitonniemi" peninsula on arrival:
 1. About 500 m along Uitonniementie (Uitonniemenraitti) road, the road turns sharply right. Note that older maps and navigators incorrectly tell that Uitonniementie continues forward here whereas it nowadays turns right northward.
 1. About further 300 m along Uitonniementie (Uitonniemenraitti) road, turn right at “Uitonniementie 86” sign. Note that Google Maps and some other older map apps do not show the road after this point (the road with blue color on the map above)
 1. After about 50 m, turn left at “Uitonniementie 86 B” sign.
-1. After about 100 m there is a hill down and you have arrived at the cottage. **In Winter do not drive down this last hill** since it's too steep and slippery to get back up when the road is icy, instead park at the parking place at the top and walk down.
+1. After about 100 m there is a hill down and you have arrived at the cottage. **In Winter do not drive down this last hill** since it's too steep and slippery (see Arriving and parking in winter" below)
+
+## Arriving and parking in winter
+
+Snow in winter can present challenges in using roads, particularly small countryside roads. We recommend a good winter-capable car, with good winter-tyres with spikes to drive on the icy road. Ideally 4WD. Drive slowly and carefully.
+
+Cottage owner has agreement with a local snow-plough driver to remove snow from the last small roads leading to the cottage. The removal is agreed to happen within 24-hours after heavy snowfall (10+ cm of snow). This means that there might be temporarily snow on the road that hinders driving.
+
+In winter when road has ice or snow *do not drive down the last downhill slope to the cottage*. The hill is too steep and slippery to drive back up so your car will be stuck.
+
+![Do not drive down in winter](no-drive-down-winter.jpg)
+
+Following picture shows map of the area with suggested winter parking locations:
+
+![Winter parking locations](winter-parking-map.jpg)
+
+* Blue circle has a parking place before the last hill to the cottage. This location is usually suitable and recommended for parking in the winter (see picture below)
+* If the road is extremely slippery (wet ice), you don’t have an extremely winter-capable car or you are not an experienced winter-driver, you can consider parking even earlier to crossing (5) or (4). Note however, that if you park in the middle of the road, then the snow-plough cannot come to clean the road if there is snowfall so you might need to prepare for moving your car to allow snow-plough to pass when needed.
+
+![Parking place before last hill](winter-parking.jpg)
+
+<small>car parked on the winter parking place (blue circle in the map)</small>
+
+To get back from the winter parking place to Uitonniementie it might be necessary to back up (drive in reverse) up the hill, especially with a 2WD front-driving car, turning the car on the very slippery icy road can be difficult and lead to your car falling away from the road.
+
+In case you get stuck with your car, you can try following things:
+
+1. Shoveling away some snow around the car with snow-shovel outside the cottage.
+1. Take some gravel from the two gravel boxes on the side of the road and spread to the road to increase friction.
+1. Try using snow-chains (stored in the wood-shed near the cottage)
+1. Finally if nothing else helps, you can call the snow-plough operator **Olli Halme** phone +358 40 524 5859 to come and pull your car. Address is Uitonniementie 86 B (house of Robert Brotherus). This will cost you extra if he needs to come urgently and not wait for the regular schedule.
+
+<img src="gravel-box.jpg" width="500px"/>
+
+<small>Gravel boxes on the side of the road have gravel you can use. The show-chains box shown here can be found at wood shed</small>
+
+## Karttapaikka map
 
 A more detailed local map (cottage position marked with red circle) from Finlands [Karttapaikka-service](https://asiointi.maanmittauslaitos.fi/karttapaikka/?lang=en) which I recommend for local hiking and boating on the lake:
 
 ![Karttapaikka local map](karttapaikka-map.jpg)
+
+
 
 ## Using Taxi to arrive
 
