@@ -79,8 +79,6 @@ Switching on and using water:
 3. Hot-water boiler electric cable. Keep always plugged in, even at the end of your stay, to ensure hot water is available. If it has been plugged out, it will take about one hour to get hot water again.
 4. Water-pipe heating plug for winter-time. When temperatures are freezing this should be always plugged in, otherwise pipes can freeze and break. Owner will plug it in in November and unplug it in April, guests should never unplug this. Please verify that it is plugged in and feels warm to hand when you arrive and leave in winter time.
 
-<img width="300px" src="pipe-heating-cable.jpg"/>
-
 ### Waste-water tank check
 
 Toilet waste water in the cottage is collected to an underground tank that is emptied when it gets full. 
@@ -97,11 +95,15 @@ If the tank is getting close to full, the device emits sound and lights the red 
 
 For heating the cottage when weather outside is cold, there is:
 
-1. Fireplace (see the “Using fireplace” chapter below)
-1. Air-heat-pump on the wall of kitchen (see picture below)
+1. Fireplace (see [“Using fireplace” chapter below](#using-the-fireplace))
+1. [Air-heat-pump](#air-heat-pump) on the wall of kitchen
 1. Electric radiators in each room
 1. Floor heating of the toilet (this must be always on, minimum level 3, even when you leave cottage)
 1. Wall radiator at the toilet (always keep plugged in, no need to adjust)
+
+During your stay, it is recommended to keep the bedroom door open to let the heat from the living room (air-heat pump and fireplace) get there. But if this not enough, you can additionally switch on and use the bedroom electric radiator (power-switch on its right-hand side). If you do so, please switch the bedroom radiator off in the end of your stay.
+
+### Air heat pump
 
 ![Air heat pump](air-heat-pump.jpg)
 
@@ -110,8 +112,6 @@ For heating the cottage when weather outside is cold, there is:
 The temperature-setting and other settings of the air-heat-pump can be controlled with a remote control nearby it.
 
 Air-heat pump uses less electricity for heating than the electric radiators, so please use it instead of the electric radiators for the main room heating and keep the radiators at the default +5 C temperature.
-
-During your stay, it is recommended to keep the bedroom door open to let the heat from the living room (air-heat pump and fireplace) get there. But if this not enough, you can additionally switch on and use the bedroom electric radiator (power-switch on its right-hand side). If you do so, please switch the bedroom radiator off in the end of your stay.
 
 ## Beds and bedroom
 
@@ -125,7 +125,7 @@ The bedroom has drawers where you can store your own clothes and items during yo
 
 <small>Sofa-bed in the living room</small>
 
-Living room sofa can be used as bed and extended to a double-bed by pulling from the handle straps. The sofa-bed also has a storage-box for sheets (see chapter "sheets and towels" below).
+Living room sofa can be used as bed and extended to a double-bed by pulling from the handle straps. The sofa-bed also has a storage-box for sheets (see ["sheets and towels"](#sheets-and-towels) below).
 
 Upstairs loft has some mattresses that can be used as additional beds:
 
@@ -137,7 +137,7 @@ Upstairs loft has some mattresses that can be used as additional beds:
 
 For bed sheets and towels, you can choose to bring your own sheets and towels or use sheets and towels of the cottage.
 
-Cottage has sheets, bag-sheets for blankets, pillow-covers and towels. If you do use the sheets and/or towels of the the house, wash them in the washing machine in the end of your stay (see “washing clothes and linen” chapter later in the instructions).
+Cottage has sheets, bag-sheets for blankets, pillow-covers and towels. If you do use the sheets and/or towels of the the house, wash them in the washing machine in the end of your stay as described in [“washing clothes and linen” chapter](#washing-clothes-and-linen).
 
 Clean sheets and towels are normally stored in the metal drawers in the bedroom or in the linen storage box inside the sofa-bed (see picture below). However, washed sheets from previous guests might also be drying in the kitchen tumble dryer or hanging on the lines outside or from upstairs loft rail. When you arrive, please take these to the linen box or directly to your use.
 
@@ -168,52 +168,13 @@ Any food, spices, oil, paper, soap and other consumables that exist in the kitch
 
 ### Kitchen ventilation
 
-When you are staying in the cottage, you can choose to use the ventilation device (E) on to keep the air in the cottage fresh. The ventilation will suck air from the kitchen and toilet. Minimum level of the ventilation is normally sufficient, you can increase the level when cooking. 
+When you are staying in the cottage, you can choose to use the ventilation device (E) on to keep the air in the cottage fresh. The ventilation will suck air from the kitchen and toilet. Minimum level of the ventilation is normally sufficient, you can increase the level when cooking.
 
-**Turn ventilation off when using the fireplace** (see "fireplace" chapter below) since the low pressure produced by the ventilation disturbs the draft of smoke up through chimney and the fire. This can cause fire to stop or suck smoke from fireplace to the room.
+**Turn ventilation off when using the fireplace** (see ["Using the fireplace" chapter](#using-the-fireplace) below) since the low pressure produced by the ventilation disturbs the draft of smoke up through chimney and the fire. This can cause fire to stop or suck smoke from fireplace to the room.
 
 ![Kitchen ventilation](kitchen-ventilation.jpg)
 
 <small>Kitchen ventilation hood and control buttons</small>
-
-## Using the fireplace
-
-If you want to burn fire in the fireplace, follow these instructions closely. Not following these instructions might cause smoke to come to the cottage and fire alarms to set off.
-
-Firewood is located in the wooden shed between the cottage and sauna. It has two sections A and B for firewood. One section has firewood which is more fresh and wet other one wood which is older and drier. Try to select as dry as possible wood especially when starting the fire, the fresh firewood is difficult to get to burn. If unsure, ask the owner which storage location has currently driest wood.
-
-![Firewood in the shed](firewood.jpg)
-
-<small>Firewoord in the wooden shed</small>
-
-The fireplace contains a lot of stone that heats up when burning the fire and provides heat to the cottage for several hours after the fire has stopped. If the weather is warm, avoid using the fireplace so that it does not become too hot inside.
-
-Using the fireplace (refer to the picture of "Kitchen and Fireplace" above):
-
-1. Keep the chimney closing knob (A) pulled out so that the chimney is open and smoke gets out. In summer you can keep the knob always pulled out, but in winter keep it pushed in when not having fire to preserve heat.
-1. Keep the bottom ventilation switch (D) always in the left position so that the fire can get air from the bottom.
-1. If the bottom of the fireplace contains ash, use the black metal shovel to clean away the ash to the black ash-bucket. If the ash-bucket is full, you can empty it into the forest (but be careful it does not contain any hot ash).
-1. When you have emptied ash, use a metal hook to lift up the metal "arina" grid at the bottom of the fireplace and inspect the metal box under the grid. If it seems close to full of ash, please empty it also.
-1. Get wood from the outside woodshed to the fireplace. Use an ax to make small thin pieces of wood for starting the fire.
-1. Set wood to the fireplace, small pieces to the bottom with some paper and ignition pieces to get the fire starting.
-1. Open the two round air intake vents (see picture below) in the living room walls by pulling from the string below them (unless already open). In summer time these vents can be kept always open, but in winter time please close them when not having a fire in the fireplace.
-1. Before starting fire, turn off the kitchen ventilation (E) and open slightly kitchen window. If doors and windows are closed and/or ventilation is on, the low pressure in the villa will cause fire to stop, suck smoke to the room and cause fire alarms to go off.
-1. Start the fire and close the fireplace door and latch.
-1. If the fire fails to start and dies away, wait while smoke clears away from the fireplace before opening the door to avoid smoke coming to room. After you open the door, you can add more ignition material and try again.
-1. After the fire has been starting well and the chimney warms up, you can close the opened window. But do not use the kitchen ventilation (E) the whole time when using the fireplace to ensure good flow of air. The fire itself provides ventilation by sucking air from the room and passing smoke through the chimney.
-1. Keep the door of the fireplace always closed and the latch handle down (locked) when there is fire burning in the fireplace. If you open the fireplace door when fire is burning, smoke easily comes to the room. Add more wood only when the previous wood has burned to cinder and not producing smoke.
-
-<img src="air-vent.jpg" height="300px"/>
-
-<small>Air replacement vent. Two are on living room walls and one in bedroom. Keep open in the summer or when burning fire in fireplace or using ventilation. Keep closed in winter when not using ventilation or fireplace to preserve heat</small>
-
-## Fire safety
-
-Fire-extinguisher is on the kitchen wall (J). In case of fire, take it, pull away the socket and use it to extinguish the fire.
-
-Be careful with fire since the wooden cottage and Sauna burn easily. Be careful with the fireplace and if you burn any candles, keep eye on them. Do not make fire outside in the forest since the forest can also easily catch fire.
-
-There are smoke-detectors in the cottage: in the ceiling of the kitchen and in the ceiling of the bedroom. If smoke comes to the cottage, they will start emitting extremely loud noise. Button in the fire-alarm can be pressed to temporarily quiet them in case smoke was mistakenly coming from the fireplace or cooking.
 
 ## Using the dishwasher
 
@@ -235,6 +196,51 @@ If the dishwasher stops after a short while and does not start washing and displ
 <img width="300px" src="faucet.jpg"/>
 
 <small>Dishwasher water tap (market with red) on the base of the kitchen faucet</small>
+
+## Using the fireplace
+
+If you want to burn fire in the fireplace, follow these instructions closely. Not following these instructions might cause smoke to come to the cottage and fire alarms to set off.
+
+### Firewood
+
+Firewood is located in the wooden shed between the cottage and sauna. It has two sections A and B for firewood. One section has firewood which is more fresh and wet other one wood which is older and drier. Try to select as dry as possible wood especially when starting the fire, the fresh firewood is difficult to get to burn. If unsure, ask the owner which storage location has currently driest wood.
+
+![Firewood in the shed](firewood.jpg)
+
+<small>Firewoord in the wooden shed</small>
+
+The fireplace contains a lot of stone that heats up when burning the fire and provides heat to the cottage for several hours after the fire has stopped. If the weather is warm, avoid using the fireplace so that it does not become too hot inside.
+
+### Steps for using fireplace
+
+Refer to the picture in ["Kitchen and Fireplace"](#kitchen-and-fireplace) above:
+
+1. Keep the chimney closing knob (A) pulled out so that the chimney is open and smoke gets out. In summer you can keep the knob always pulled out, but in winter keep it pushed in when not having fire to preserve heat.
+1. Keep the bottom ventilation switch (D) always in the left position so that the fire can get air from the bottom.
+1. If the bottom of the fireplace contains ash, use the black metal shovel to clean away the ash to the black ash-bucket. If the ash-bucket is full, you can empty it into the forest (but be careful it does not contain any hot ash).
+1. When you have emptied ash, use a metal hook to lift up the metal "arina" grid at the bottom of the fireplace and inspect the metal box under the grid. If it seems close to full of ash, please empty it also.
+1. Get wood from the outside woodshed to the fireplace. Use an ax to make small thin pieces of wood for starting the fire.
+1. Set wood to the fireplace, small pieces to the bottom with some paper and ignition pieces to get the fire starting.
+1. Open the [two round air intake vents](#air-replacement-vents) in the living room walls by pulling from the string below them (unless already open). In summer time these vents can be kept always open, but in winter time please close them when not having a fire in the fireplace.
+1. Before starting fire, turn off the kitchen ventilation (E) and open slightly kitchen window. If doors and windows are closed and/or ventilation is on, the low pressure in the villa will cause fire to stop, suck smoke to the room and cause fire alarms to go off.
+1. Start the fire and close the fireplace door and latch.
+1. If the fire fails to start and dies away, wait while smoke clears away from the fireplace before opening the door to avoid smoke coming to room. After you open the door, you can add more ignition material and try again.
+1. After the fire has been starting well and the chimney warms up, you can close the opened window. But do not use the kitchen ventilation (E) the whole time when using the fireplace to ensure good flow of air. The fire itself provides ventilation by sucking air from the room and passing smoke through the chimney.
+1. Keep the door of the fireplace always closed and the latch handle down (locked) when there is fire burning in the fireplace. If you open the fireplace door when fire is burning, smoke easily comes to the room. Add more wood only when the previous wood has burned to cinder and not producing smoke.
+
+### Air replacement vents
+
+<img src="air-vent.jpg" height="300px"/>
+
+<small>Air replacement vent. Two are on living room walls and one in bedroom. Keep open in the summer or when burning fire in fireplace or using ventilation. Keep closed in winter when not using ventilation or fireplace to preserve heat</small>
+
+## Fire safety
+
+Fire-extinguisher is on the kitchen wall (J). In case of fire, take it, pull away the socket and use it to extinguish the fire.
+
+Be careful with fire since the wooden cottage and Sauna burn easily. Be careful with the fireplace and if you burn any candles, keep eye on them. Do not make fire outside in the forest since the forest can also easily catch fire.
+
+There are smoke-detectors in the cottage: in the ceiling of the kitchen and in the ceiling of the bedroom. If smoke comes to the cottage, they will start emitting extremely loud noise. Button in the fire-alarm can be pressed to temporarily quiet them in case smoke was mistakenly coming from the fireplace or cooking.
 
 ## Computer and TV-screen
 
@@ -264,7 +270,7 @@ There is a hair-dryer that can be used in the toilet.
 
 On the wall close to the toilet seat are controls for floor heating: on/off button and dial for setting heating level to 1-6.
 
-*Please do not ever switch floor heating off*, keep it always on, even at the end of your stay. Light (green or red) must always burn. Switching the floor-heating off in winter will cause pipes in the toilet to freeze and break which is an expensive damage to repair.
+*Please Never switch floor heating off*, keep it always on, even at the end of your stay. Light (green or red) must always burn. Switching the floor-heating off in winter will cause pipes in the toilet to freeze and break which is an expensive damage to repair.
 
 The normal level of floor heating is 3. If you want to increase the level from 3, please restore to level 3 at the end of your stay.
 
@@ -583,35 +589,34 @@ For other waste that cannot be recycled or you choose not to recycle, there are 
 
 ### Inside cleaning
 
-1. If you have used any sheets from the house, wash them in the washing machine. The wash with the quick program takes 30 minutes to complete, so start it early enough so you will have time to take the sheets to dry before you need to leave.
+1. If you have used any sheets from the house, [wash them in the washing machine](#washing-clothes-and-linen). The wash with the quick program takes 30 minutes to complete, so start it early enough so you will have time to take the sheets to dry before you need to leave.
+1. If you have been washing sheets, check that they are placed in the drawer in the bedroom or if they are still wet, [dry them by hanging from the loft rail or outside](#drying-clothes-and-linen) if the weather is good.
+1. Wash dishes [with the dishwasher](#using-the-dishwasher) or by hand. Empty the dishes in the dishwasher to cupboards.
 1. Take carpets from toilet, living room and bedroom to balcony and shake any dust away from them
 1. Vacuum clean the floors
 1. Clean away any stains on the floors with a wet rug or mop.
-1. Wash dishes with the dishwasher or by hand. Empty the dishes in the dishwasher to cupboards.
 1. Clean the kitchen, shelf and table surfaces with wet wipe
 1. Clean the sink
-1. Wash any dishes with dishwasher or by hand. If you wash the last dishes in the dishwasher it is acceptable to start the dishwasher and leave so that the next guest has clean dishes in the dishwasher.
 1. Clean any dirt from inside of the fridge with a wet wipe. Empty from the fridge any food that can go bad, however well-preserving food like butter and ketchup you can leave to the fridge for the next guests to use.
 1. Empty fireplace of ash. Clean soot from the fireplace glass if needed
 1. Clean the bathroom: toilet seat, the sink and shower floor.
 1. Remove the square drain plate from the bottom of the shower box and clean the metal filter inside from dirt.
 1. Put all items and furniture to their original locations
-1. If you have been washing sheets, check that they are placed in the drawer in the bedroom or if they are still wet, hanging from the loft rail or outside if the weather is good.
 1. After cleaning, send pictures of the living room, kitchen, toilet and bedroom to the host in whatsapp or airbnb chat.
-1. Take away all trash (see instructions above)
+1. Take away all trash (see [Trash Disposal chapter](#trash-disposal) above)
 
 ### Inside arrangements
 
-1. If you have been increasing the level of toilet floor heating, restore it to setting 3.
-1. If you have been using the air-heat-pump during your stay for heating or cooling, in summer-time turn it off from the remote control. **In winter** leave the air-heat-pump on to the minimum heating temperature (+16 C)
+1. If you have been increasing the level of [toilet floor heating](#floor-heating), restore it to setting 3.
+1. If you have been using the [Air heat pump](#air-heat-pump) during your stay for heating or cooling: in summer-time turn it off from the remote control. **In winter** leave the air-heat-pump on to the minimum heating temperature (+16 C)
 1. Adjust the electric radiators in living room and kitchen to minimum +5 C
 1. Switch off the electric radiator of the bedroom completely from the switch in the side.
-1. Close fireplace chimney knob (see "Fireplace" chapter above)
-1. Close the three air intake valves at walls (see "Fireplace" chapter above)
-1. Switch off kitchen ventilation (see earlier chapter)
+1. Close fireplace chimney knob as shown in [Kitchen and Fireplace](#kitchen-and-fireplace) above
+1. Close the three [air intake vents at walls](#air-replacement-vents)
+1. Switch off [kitchen ventilation](#kitchen-ventilation)
 1. Leave kitchen closet doors and dishwasher door slightly open to let heat go to water-pipes inside them (see picture below)
 1. Switch off all lamps and television and computer. Do not switch off the wifi router
-1. Switch off the water-pump main switch. (Do NOT unplug the hot-water boiler or other water-area plugs)
+1. Switch off the [water-pump electricity switch](#water). (Do NOT unplug the hot-water boiler or other water-area plugs)
 
 ![kitchen-closet-doors-open.jpg](kitchen-closet-doors-open.jpg)
 
@@ -620,10 +625,10 @@ For other waste that cannot be recycled or you choose not to recycle, there are 
 ### Outside
 
 1. Clean the outside balconies. Brush any sand away with a broom.
-1. Clean inside of Sauna, including the Sauna floor.
-1. Switch off Sauna floor heating if you have been using it (see separate instructions above)
-1. Take boat to the shore and move oars and motor to the sauna balcony (see “Boat” chapter above)
+1. Clean inside of [Sauna](#sauna), including the Sauna floor.
 1. Close the Sauna door, but leave it unlocked
+1. Switch off [Sauna floor heating](#sauna-floor-heating) if you have been using it
+1. Take boat to the shore and prepare it as described above in [Boat in the end of your stay](#boat-in-the-end-of-your-stay)
 1. Lock the cottage doors and verify that the key is in the key-box.
 
 ### Thank you!
