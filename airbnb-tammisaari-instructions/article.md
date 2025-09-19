@@ -322,9 +322,32 @@ If you have your own boat on boat-trailer, you can put it in to water at a boat 
 
 You can attach your boat then to the cottage jetty, the water depth at the end of the jetty is about 1 m
 
+## Fishing
+
 Tammisaari area is famous for fishing Pike.
 
 <img src="fish.jpg" width="400px"/>
+
+## Mushroom picking
+
+Tammisaari area is famous for mushroom picking. In the fall you can find many different mushrooms in the forest, like:
+
+* [chanterelle (kanttarelli)](https://en.wikipedia.org/wiki/Chanterelle)
+* [funnel chanterelle / yellowfoot / winter chanterelle (suppilovahvero)](https://en.wikipedia.org/wiki/Craterellus_tubaeformis)
+* [black trumpet mushroom / black chantarelle (Musta torvisieni)](https://en.wikipedia.org/wiki/Craterellus_cornucopioides)
+* [boletus edulis / cep / porcino (tatti)](https://en.wikipedia.org/wiki/Boletus_edulis). 
+
+Chantarelle usually is found already i august, other mushrooms in September and October.
+
+Only pick mushrooms that you recognize and are sure are edible. There are many poisonous mushrooms in the area as well.
+
+Map below shows some areas where we have regularly found tasty mushrooms on good mushroom years. Boletus (tatti) is found more randomly in the forest.
+
+![Mushroom map](mushroom-map.png)
+
+<small>Blue: funnel chanterelle (suppilovahvero)  
+Orange: black trumpet mushroom (Musta torvisieni)  
+Violet: chanterelle (kanttarelli)</small>
 
 ## Services in Tammisaari
 
