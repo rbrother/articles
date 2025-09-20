@@ -1,10 +1,12 @@
 # Mäntyharju “Uitonranta” Cottage instructions
 
+[TOC]
+
+## Welcome!
+
 ![Cottage and lake](title.jpg)
 
-Welcome to the Uitonranta Villa at Mäntyharju, Finland!
-
-This instructions document available online at [https://brotherus.net/post/airbnb-mantyharju-instructions](https://brotherus.net/post/airbnb-mantyharju-instructions)
+Welcome to our "Uitonranta" Villa at Mäntyharju, Finland!
 
 Owner: Robert J. Brotherus
 
