@@ -194,11 +194,26 @@ Kitchen has:
 * Dish washing brush and washing detergent.
 * Buckets for carrying water from the balcony faucet.
 * Lots of dishes, pots and pans in the closets.
-* Small desktop dishwasher (see separate [Tammisaari Cottage Dishwasher Instructions](https://docs.google.com/document/d/1CJ4Sjbl-GfPgYHZ1of_QSLIa4yv6zziPQVftAqQPWEM/edit?usp=sharing).)
+* Small desktop dishwasher (see separate [Tammisaari Cottage Dishwasher Instructions](/post/airbnb-tammisaari-dishwasher).)
 
 <img src="kitchen.jpg" width="400px"/>
 
 <img src="kitchen2.jpg" width="400px"/>
+
+### Washing dishes
+
+For hand-washing dishes:
+
+1. Attach the plug in the bottom of the sink
+1. Mix hot water (from the water cooker) and cold water in the sink and add some dishwashing liquid.
+1. Have clean water in another bucket for rinsing.
+1. Wash dishes with brush and dishwashing liquid
+1. Rinse dishes with clean water
+1. Dry dishes with towel or lift them to dry to the drying closet above the sink
+
+Small amount of small dishes that are not very dirty can also be washed in the small desktop dishwasher. See [Tammisaari Cottage Dishwasher Instructions](/post/airbnb-tammisaari-dishwasher)
+
+## Fridge
 
 For food storage, a fridge with freezer box is located in the closet on the right side from the main door.
 
@@ -370,7 +385,7 @@ For example:
 
 1. If you have used towels and/or linen from the cottage, wash them in the balcony washing machine, dry with tumble-drier or leave them to dry on the hanging lines on the balcony.
 1. Vacuum clean the floors (vacuum cleaner is in closet near the entrance)
-1. Wash dishes. For hand-washing you can mix hot water (from the water cooker) and cold water in the sink and add some dishwashing liquid. Have clean water in another bucket for rinsing. Or use the dishwasher device.
+1. [Wash any remaining dishes](#washing-dishes).
 1. Clean the kitchen sink and washing table.
 1. Empty the fridge. Clean the fridge interior if it has got dirtied. If there are some well-preserving foods (like butter or ketchup) in the fridge, you can leave them for the next guest.
 1. Put items and furniture in their original locations.
