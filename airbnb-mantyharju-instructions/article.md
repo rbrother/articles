@@ -1,5 +1,12 @@
 # Mäntyharju “Uitonranta” Cottage instructions
 
+See also separate documents on:
+
+* [Mäntyharju "Uitonranta" Cottage arrival instructions](/post/airbnb-mantyharju-arrival)
+* [Outside activities, services and sightseeing](/post/airbnb-mantyharju-activities) at our cottage and Mäntyharju area.
+
+Table of contents
+
 [TOC]
 
 ## Welcome!
@@ -8,9 +15,13 @@
 
 Welcome to our "Uitonranta" Villa at Mäntyharju, Finland!
 
-Owner: Robert J. Brotherus
+We built this modern villa with love in 2016. It is built on land that our Brotherus extended family has owned over 100 years since 1920's. We built the cottage mainly for our own holiday use, but later decided we wanted to give visitors also the possibility to enjoy beautiful Finnish nature.
+
+## Owner contact info
 
 <img src="robert.jpg" height="150px" alt="Robert Brotherus"/>
+
+Robert J. Brotherus
 
 * Phone / WhatsApp: +358 45 1145602
 * email: [robert@iki.fi](mailto:robert@iki.fi)
@@ -19,8 +30,6 @@ Owner: Robert J. Brotherus
 
 ## Self-service nature of the cottage and cleaning
 
-We built this modern villa with love in 2016 on our family land. We built it mainly for our own summer holiday use, but later decided we wanted to give visitors also the possibility to enjoy beautiful Finnish nature.
-
 Since we live in Helsinki, 2.5 h drive from the cottage, we are not able to visit the cottage between each guest, instead doing maintenance-visits about once per month. This means that the cottage is rented out on a “self-service” basis and we are not able to personally assist our guests at the location (though we are happy to help through text chat and phone).
 
 In this kind of self-service cottage it is especially important for guests to clean the cottage well at the end of their stay as described in the end of these instructions. We do not add any cleaning fee to the rent because cleaning is the responsibility of the guests. On the rare occasion that the previous guests' cleaning is in some way lacking and that causes inconvenience to you, we are open to giving a discount on the rent as compensation. We want to have happy guests, so please consider beforehand whether you would be open to such an arrangement. If you require from your rental properties that there is zero possibility of any issues in the level of cleaning, some other property might be more suitable for you.
@@ -28,15 +37,6 @@ In this kind of self-service cottage it is especially important for guests to cl
 ## Location and arrival to the cottage
 
 See [Mäntyharju "Uitonranta" Cottage arrival instructions](/post/airbnb-mantyharju-arrival)
-
-### Aerial videos from the villa and surroundings
-
-* [The house and yard in September](https://www.youtube.com/watch?v=GTM9HzvT9OM)
-* [The forest and lake in September](https://www.youtube.com/watch?v=wIqPG2b1h-E) 
-* [The forest and lake in July](https://www.youtube.com/watch?v=6NVq_3tQr_4)
-* [The forest and lake in Winter](https://www.youtube.com/watch?v=oH-1yQPNpQs)
-
-
 
 ## Wifi
 
@@ -415,132 +415,6 @@ Snow-plough is coming to remove snow from the road after heavy snowfall, but any
 
 <img src="snow-shovel.jpg" width="400px"/>
 
-## Jetty
-
-![Jetty](jetty.jpg)
-
-Jetty can be used for going swimming and boarding the boat in the summer period (approximately May-October period). 
-
-The water at the end of the jetty is quite shallow, so don't jump into the water when you go swimming.
-
-Due to the possibility of ice damage, the Jetty is taken out of the water for winter-period.
-
-<img src="jetty-winter.jpg" width="400px"/>
-
-<small>Jetty in winter</small>
-
-## Boat
-
-![Boat](boat.jpg)
-
-The boat can be used for going boating on the lake in the summer period. The boat can be rowed with oars or driven with the electric engine. Never rely on the electric engine only: it can run out of battery or break - always have also the oars in the boat for backup even if you choose to mainly use the engine.
-
-When you put the boat to water, ensure that the plug in the bottom is attached so that water does not come in.
-
-During your stay, you can keep the boat in water, attached with rope to the jetty. If rain-water has been coming to the boat, you can empty it with the orange scoop in the boat.
-
-Please use the boat only if you are capable of swimming or wear life vests (located at the sauna balcony). If the weather and water is cold, we recommend life vests even for capable swimmers since swimming in cold water can be hard.
-
-You can have nice varied views of Finnish lake-scenery by taking with the boat the route south from cottage, going around the Muuttosaari island:
-
-![Boat route](boat-route.jpg)
-
-### Navigating the lake, maps and rocks
-
-Be careful of underwater rocks when boating! The lake has many locations with rocks that come near the surface but are not visible and can damage then engine or boat if you collide with them.
-
-To avoid colliding with rocks, especially on longer trips, please use some map app which shows water depth, rock positions and your current position. I recommend using the [Kattapaikka web app](https://asiointi.maanmittauslaitos.fi/karttapaikka/?lang=en) which can be used on phone or tablet. Boat route map above is from karttapaikka app. Below is example of the karttapaikka map with higher magnification, showing water depth and rocks with back T, inverted T and triangle symbols:
-
-![Boat route](boat-route2.jpg)
-
-If you do not follow these instructions and that results in damage the boat or engine, you will be charged for the repair costs.
-
-### Boat electric engine
-
-<img src="boat-engine.jpg" width="300px"/>
-
-In addition to rowing with oars, you can use the boat electric engine. Care and expertise should be used with the electric engine.
-
-The engine model is Motorguide R3, with [full operation manual here](https://www.motorguide.com/content/dam/motorguide/owners-resources/owners-manuals/R3%20Owners%20Manual%20-%202017.pdf). Please read the manual if you are unsure about how to use the engine.
-
-The engine uses 12V battery. Please ensure that the battery has enough charge before using the engine.
-
-<img src="boat-battery.jpg" width="300px"/>
-
-If you use the engine, return the battery inside and charge with the charger as shown below. Make sure to attach the plus (+) and minus (-) cables of the charger to the respective battery terminals. After connecting the charger, press the charger "MODE"-button until both the charging and "car" lights are on:
-
-<img src="battery-charger.jpg" width="400px"/>
-
-The battery can take about 10 hours to charge fully.
-
-### Boat in the end of your stay
-
-1. Pull the electric engine to high position so it will not hit the bottom when you pull boat to land. (Alternatively you can detach the engine and put it to Sauna balcony.)
-1. Pull the boat up fully to land on the side of the jetty
-1. Detach the plug in the bottom at the back of the boat so that rainwater will drain out of the boat (you can leave the plug in the boat)
-
-## Fishing
-
-If you want to go fishing but don't have your own equipment, there are some simple hook-and-bait fishing rods at the house. Baits (worms) you can buy from the town or try to dig from ground with a shovel. Fishing with hook-and-bait does not require a license in Finland. You can catch perch with hook-and-bait.
-
-<img src="perch.jpg" width="300px"/>
-
-Fishing with spinning rod and more advanced equipment requires fishing permit. Fishing permits can be purchased from R-Kioski shops at the Mäntyharju town.
-
-There is also [Kalakortti online-shop for fishing permits](https://www.kalakortti.com/luvan_tilaus/shopdisplayproducts.asp?id=104&cat=M%E4ntyharjun+viehelupa) (Finnish only, but translates ok)
-
-[Fishing information on the lake “Pyhävesi”](http://www.mantyharju-repovesi.com/fi/aktiviteetit/kalastus/pyhavesi) mentioning that the lake is known for Pike and Pike-Perch.
-
-![Fishing](pike.jpg)
-
-## Ice-swimming in winter
-
-If you are interested *and experienced* in ice-swimming, the cottage has tools for making a hole in the ice to swim from Sauna.
-
-Tools that can be used for making hole include ice-drill (kaira), iron bar (rautakanki), saw and electric motor saw.
-
-![Ice-swimming tools](ice-swimming.jpg)
-
-## Weather
-
-See [Weatherspark info](https://weatherspark.com/y/95206/Average-Weather-in-Mikkeli-Finland-Year-Round#Figures-Summary) or [Climate-data.org](https://en.climate-data.org/europe/finland/mikkeli/mikkeli-679/) or [weather-and-climate-com](https://weather-and-climate.com/average-monthly-min-max-Temperature,mikkeli-eastern-finland-fi,Finland) on the Mikkeli area (close to the cottage) weather at different times of year. For example average minimum and maximum temperatures at different months are shown below:
-
-![mikkeli-weather.png](mikkeli-weather.png)
-
-Note that actual maximum and minimum temperatures can be different from the average minimum and maximum. For example in January-February it is not rare to get -25 C occasionally and in July-August it is not rare to get +28 C occasionally.
-
-## Sightseeing and activities
-
-In Finland it is permissible to walk in any forests and use a boat on any lake regardless of the owner. So feel free to roam around in the nature surrounding the house! Just don't go very near other houses to allow privacy for everyone in their yards.
-
-* If you enjoy nature trails, there is [Repovesi National park](https://www.nationalparks.fi/repovesinp) less than 1 hour drive away from the cottage.
-* Web page on Mäntyharju nature activities (Finnish, use translation if needed): https://www.visitmantyharju.fi/luontoaktiviteetit
-* [Art museum “Salmela”](http://www.taidekeskussalmela.fi/eng/) is popular sight for art-lovers at address Mäntyharjuntie 25.
-* [Woikoski Factory museum and Woikoski car museum](https://www.woikoskifeeling.fi/en/attractions) show interesting view to the industrial history of Mäntyharju.
-* [Vola GOLF](https://vola.fi/) at Konnesaarentie 1 has is a driving range located in Mäntyharju, Finland. Vola-Golf offers you a chance to practice your swing or even get a green card. You don’t need your own equipment, just an open mind and curiosity. Suitable for the whole family!
-* [Frisbeegolf track](https://www.mantyharju.fi/sivut/vapaa-aika-kulttuuri/luontoaktiviteetit/frisbeegolf/) can be found Near Mäntyharju town center at address Asematie 10.   
-* [Childrens outdoors playground area](https://www.mantyharju.fi/sivut/vapaa-aika-kulttuuri/luontoaktiviteetit/metsaleikkipuisto/) near town center.
-
-### Winter Outdoors activities
-
-* Rental of snowshoes in [Mikkeli ES-liikunta](https://www.esliikunta.fi/valinevuokraus/)  (Paukkulantie 22, Mikkeli)
-* [Rental of snowshoes at Mäntyharju library](https://www.mantyharju.fi/sivut/vapaa-aika-kulttuuri/kirjasto/lainattavat-esineet/) 
-* Repovesi park has also [activities for Winter-time](http://www.mantyharju-repovesi.com/en/homewinter)
-* Skiing and Skating is often possible directly on the ice of the lake outside the cottage
-* [Maintained Skiing tracks and Skating areas](https://www.mantyharju.fi/sivut/vapaa-aika-kulttuuri/luontoaktiviteetit/talvella-ulkoilua/) close to the cottage.
-
-## Services and shops at Mäntyharju town
-
-Mäntyharju town is located about 10 min driving distance from the cottage. It has good selection of services, shops and restaurants available:
-
-* **Grocery store** with good selection "K-Supermarket Mäntyharju", address: Liiketie 1, Mäntyharju
-* **Grocery store** with good selection "S-Market Mäntryharju", address: Pentinpolku 2, Mäntyharju
-* **Electric car fast-chargers** are at parking places of both K-Supermarket and S-Market.
-* **Gasoline station** is located at the S-Market parking place.
-* **Pharmacy** is located in same building as the S-Market at address Pentinpolku 2.
-* **Tokmanni department store** has selection of hardware, electronics, clothes, kitchenware, toys, etc. Address: Keskustie 18, Mäntyharju.
-* **Pizzeria Dada** is restaurant with Pizza and Kebab, at address: Asematie 1, Mäntyharju
-
 ## Trash disposal
 
 ### Bio waste
@@ -630,7 +504,7 @@ For other waste that cannot be recycled or you choose not to recycle, there are 
 1. Clean inside of [Sauna](#sauna), including the Sauna floor.
 1. Close the Sauna door, but leave it unlocked
 1. Switch off [Sauna floor heating](#sauna-floor-heating) if you have been using it
-1. Take boat to the shore and prepare it as described above in [Boat in the end of your stay](#boat-in-the-end-of-your-stay)
+1. Take boat to the shore and prepare it as described above in [Boat in the end of your stay](/post/airbnb-mantyharju-activities#boat-in-the-end-of-your-stay)
 1. Lock the cottage doors and verify that the key is in the key-box.
 
 ### Thank you!
