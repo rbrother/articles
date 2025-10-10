@@ -2,6 +2,10 @@
 
 ![Cottage](cottage.jpg)
 
+[TOC]
+
+## Welcome!
+
 This instruction document online: https://www.brotherus.net/post/airbnb-tammisaari-instructions
 
 Owner: Robert J. Brotherus  
@@ -173,6 +177,28 @@ Water main switch is at ground near the main door, below the switch is shown ope
 
 <img src="water-switch.jpg" width="300px"/>
 
+The water-pump is located about 10 m from the cottage door towards the forest on other side of the road. If water is not coming from the faucet, please check that the I/O switch on the water-pump is on.
+
+### Emptying water-pipes
+
+Emptying of the water-pipes might be needed when weather it is so cold that there is possibility of freezing temperatures in the night (typically October-November, discuss with owner is unsure). If the pipes are full of water and temperature drops below 0 C, the freezing water will break pipes and pump parts. In these conditions, emptying the pipes is needed at least in the end of your stay, possible even every evening. Steps to empty the water-pipes:
+
+1. Walk to the water-pump (about 15 m from the cottage door towards the forest on other side of the road).
+1. Switch off electricity from the water-pump from I/O switch on its control box ("3" in picture below).
+1. Open the water-pump side valve ("2" in picture below) so that water from the pressure-container runs out. Leave the valve open to let air come in for the next phase below.
+
+![Water-pump and pipes](water-pump-all.jpg)
+
+<small>Water pump in the forest. (1) water main-switch, (2) water side-switch, (3) power switch</small>
+
+4. Walk down to the Sauna and locate the pipe emptying valve, which is in the end of the pipe 2 m from sauna towards the sea-shore (see picture below)
+1. Open the pipe emptying valve and keep it open until water completely stops coming out (about 20 seconds).
+1. Close the pipe emptying valve and the pump side-valve.
+
+![Pipe emptying valve at sauna side of pipe](pipe-emptying-valve.jpg)
+
+<small>Pipe emptying valve near Sauna</small>
+
 ## Washing machine and dryer
 
 Back balcony has a washing machine that you can use to wash your clothes and linen and a dryer for drying them. If you use towels or linen from the cottage you should also wash and dry these at the end of your stay.
@@ -289,7 +315,7 @@ The traditional Finnish wood-fired Sauna is located down the hill close to the s
 
 ## Getting water to the sauna
 
-Before fire is set to the sauna stove, the hot-water container in the chimney above the stove must be filled with water from the opening on the top. Also the large cold-water bucket inside the sauna can be filled at this point. Water-hose with a switch is located on the Sauna balcony.
+Before fire is set to the sauna stove, the hot-water container in the chimney above the stove must be filled with water from the opening on the top. Also the large cold-water bucket inside the sauna can be filled at this point. Water-tap with a switch and hose is located in the Sauna-room.
 
 ## Using Sauna for washing
 
@@ -392,6 +418,7 @@ For example:
 1. After cleaning, please send the host photo from the kitchen, living room and main bedroom to the host.
 1. Switch off all lamps, electric radiators and other electronic devices. However, do not unplug or switch off the wifi/computer-devices or the living-room remote-heating radiator.
 1. Lock the doors and place the key back to the combination-lock box (unless it's there already)
+1. If it is cold time of the year (possibility of freezing temperatures in the night, typically October-November), [empty the outside water pipes](#emptying-water-pipes)
 
 ## Trash
 
