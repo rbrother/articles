@@ -82,6 +82,12 @@ If you still do lose the key, there is a hidden emergency key at the premises, c
 
 To lock the door again, flip the switch back to the “locked” side, close the door and then strongly push against the door strongly for the lock to “click” in. If it does not click to lock easily it might require some oiling (inform the owner about this).
 
+## Charging electric car
+
+Electric cars can be charged at the cottage for additional fee (20 cents / kWh as of 2025-11, please check with owner for current price). You need to have your own charging adapter for your car. Plug your charger adapter to the blue Schuko-socket on the outside wall of the cottage. The socket has 16A / 3.7 kW capacity.
+
+Please report to the owner in the end of your stay amount charged to be added to your bill.
+
 ## Initial check for cleanness
 
 Since the cottage is rented on a “self-service” basis, all guests have the responsibility to clean and arrange the cottage after their stay. Since as the owner I do not have possibility to visit the cottage after every guest, please after arriving, check that the previous guest have been cleaning and arranging properly after their stay:
