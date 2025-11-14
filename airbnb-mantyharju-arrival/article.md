@@ -42,13 +42,17 @@ Close-up map of the "Uitonniemi" peninsula on arrival:
 
 ## Charging electric car
 
-Electric cars can be charged at the cottage for additional fee (20 cents / kWh as of 2025-11, please check with owner before for current price). You need to have your own charging adapter for your car. Please report to the owner in the end of your stay amount charged to be added to your bill.
+Electric cars can be charged at the cottage for additional fee (20 cents / kWh as of 2025-11, please check with owner before for current price). Please report to the owner in the end of your stay amount charged to be added to your bill.
 
-If you want to charge your electric car, open the outside electric box from key (blue in the picture below). Inside is Schuko socket with a 16A / 3.7 kW capacity and red power-electricity socket with 11 kW capacity. You can plug your car charging adapter to either one, let the cable come out from the box through the opening in the bottom (marked red in the picture below and close the box door).
+We provide Type 2 charger and cable with 11 kWh maximum power, connected to 11 kWh socket inside the outside electric cabinet (see pictures below). If this is not compatible with your car, you need to have your own charger adapter. The electric cabinet has also regular Schuko socket with a 16A / 3.7 kW capacity.
 
-![Electric box](electric-box.jpg)
+![Electric box](electric-box-charger.jpg)
 
-<small>Electronics box which has electric sockets inside</small>
+<small>Electricity box and 11 kW Type 2 charging-cable</small>
+
+<img src="car-charger.jpg" height="400px"/>
+
+<small>Charger device with reading on amount of kWh charged</small>
 
 ## Arriving and parking in winter
 
