@@ -125,7 +125,7 @@ The bedroom has drawers where you can store your own clothes and items during yo
 
 ![Sofa-bed](sofa.jpg)
 
-<small>Sofa-bed in the living room</small>
+<small>Sofa in the living room can be used as a bed for one person</small>
 
 Living room sofa can be used as bed and extended to a double-bed by pulling from the handle straps. The sofa-bed also has a storage-box for sheets (see ["sheets and towels"](#sheets-and-towels) below).
 
@@ -141,11 +141,7 @@ For bed sheets and towels, you can choose to bring your own sheets and towels or
 
 Cottage has sheets, bag-sheets for blankets, pillow-covers and towels. If you do use the sheets and/or towels of the the house, wash them in the washing machine in the end of your stay as described in [“washing clothes and linen” chapter](#washing-clothes-and-linen).
 
-Clean sheets and towels are normally stored in the metal drawers in the bedroom or in the linen storage box inside the sofa-bed (see picture below). However, washed sheets from previous guests might also be drying in the kitchen tumble dryer or hanging on the lines outside or from upstairs loft rail. When you arrive, please take these to the linen box or directly to your use.
-
-![Sofa sheet box](sofa-sheet-box.jpg)
-
-<small>Sofa-bed sheet box</small>
+Clean sheets and towels are normally stored in the metal drawers in the bedroom . However, washed sheets from previous guests might also be drying in the kitchen tumble dryer or hanging on the lines outside or from upstairs loft rail. When you arrive, please take these to the linen box or directly to your use.
 
 ## Kitchen and Fireplace
 
@@ -382,15 +378,22 @@ In winter time the outside water pipe cannot be used, you need to carry water fr
 
 ![Inside Sauna](sauna-inside.jpg)
 
-<small>Inside sauna. Note that the stove has been changed to a bigger model after taking this picture and the hot-water container is now around the chimney-pipe.</small>
+<small>Inside sauna in the evening.</small>
 
-1. Fill with water the hot-water container around the fireplace chimney from the opening at its top.
-1. Check that water is coming out from the hot-water container tap when you open the handle. Sometimes small sticks from lake water can clog / block the tap and you need to clean the tap first. This is easier if the water is not hot yet.
+1. Fill with some water the hot-water container around the fireplace chimney from the opening at its top. Not need to be necessarily full, but enough for your washing purposes.
 1. Fill the large bucket on the floor with cold water.
 1. Remove the ashtray from under the stove and empty the ash to a metal ash bucket. If the bucket is full, empty to the forest.
 1. Make fire to the fireplace and keep it burning hot for about 30-60 minutes occasionally adding more firewood so that the stones get hot
 1. In sauna sit on the highest level and throw water to the stones to make steam (“löyly”)
 1. Make warm washing water by mixing hot water from the hot-water container tap with cold water in a small bucket. Wash and rinse yourself with the warm water.
+
+<img src="kiuas.jpg" height="300px"/>
+
+<small>The sauna stove, "kiuas"</small>
+
+<img src="sauna-led-light-socket.jpg" height="300px"/>
+
+<small>You can switch on the sauna ceiling led lights by plugging in their socket on the balcony. Please disconnect in the end of use.</small>
 
 ### After using Sauna
 
