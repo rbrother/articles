@@ -119,11 +119,17 @@ Furthermore, since the language does not have array-literals, to initialize the 
 4540 dim n(23),x(23),y(23),si(27)
 4550 for t=0 to 22:read n(t),x(t),y(t):next t
 4560 data 0,17,5,8,23,5,1,27,5,16,31,5
+
 4565 data 5,31,8,10,31,11,7,31,14
+
 4570 data 20,31,17,3,31,20,12,27,20
+
 4575 data 17,23,20,14,19,20,19,15,20
+
 4580 data 6,11,20,9,7,20,2,3,20
+
 4585 data 21,3,17,22,3,14,11,3,11
+
 4590 data 18,3,8,15,3,5,4,7,5,13,11,5
 ```
 
@@ -139,11 +145,15 @@ If you look at the [Ruletti-game source code](https://github.com/rbrother/rulett
 
 ```basic
 90 gosub 4500:rem alkuparametrit
+
 100 gosub 4000:rem kuva
-120 :
+
 130 gosub 1000:rem valinnat
+
 140 gosub 2000:rem pyoritys
+
 150 gosub 3000:rem voitot
+
 160 if ra>0 then 130
 ```
 
@@ -151,27 +161,49 @@ I chose the line-numbering of the subroutines so that new subroutine starts with
 
 ```basic
 2000 rem ***** pyoritys *****
+
 2015 r=int(rnd(0)*23)+40
+
 2030 t=0:k=0:vi=1
+
 2050 poke 781,y(t):poke 780,0:poke 782,0:sys 65520
+
 2055 if int(t/2)=t/2 then v1=2:v2=10:goto 2060
+
 2057 v1=11:v2=12
+
 2060 if t=0 then v1=5:v2=13
+
 2065 if k>r then vi=vi*1.5
+
 2070 poke 646,v2
+
 2080 print tab(x(t))"{rght}{rvon}  {CBM-M}{rvof}"
+
 2085 print tab(x(t))"{rvon} {rght}{rght}{CBM-M}{rvof}"
+
 2090 print tab(x(t))"{rvon}{CBM-P}{CBM-P}{CBM-P}{SHIFT-@}{rvof}{up}{up}{up}"
+
 2095 poke 646,v1:for tt=1 to vi:next tt
+
 2097 if vi>800 then 2160
+
 2100 print tab(x(t))"{rght}{rvon}  {CBM-M}{rvof}"
+
 2105 print tab(x(t))"{rvon} {rght}{rght}{CBM-M}{rvof}"
+
 2110 print tab(x(t))"{rvon}{CBM-P}{CBM-P}{CBM-P}{SHIFT-@}{rvof}"
+
 2120 t=t+1:if t=23 then t=0
+
 2130 k=k+1
+
 2150 goto 2050
+
 2160 t=n(t)
+
 2170 vv=t
+
 2190 return
 ```
 
