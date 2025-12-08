@@ -1,6 +1,6 @@
 # Humble Beginnings: the VIC-20
 
-**How the right gift at the right time started my life-long interest in programming in 1983**
+**How the right gift at the right time started my life-long interest in programming in 1982**
 
 ![Old photo](oppe.jpg)
 
@@ -36,4 +36,4 @@ Below is entry from a "Friends book" of my friend **Rami Eerola** from 1984 when
 
 Today learning programming is made much easier by numerous web resources: articles, tutorials, courses and videos. Programming is also much more common skill and a child is likely to find some friends, family members or teachers to help. Some schools even have compulsory classes in programming for pupils.
 
-But in some ways the mental barrier for a child to start programming hobby might still be greater than in 1983. Free or cheap computer games are everywhere and it might be difficult to take the more tedious path of learning instead of succumbing to the easy and quick enjoyment of games others have programmed. Also in our daily lives we are interacting with numerous high-quality pieces of software from games to operating-systems to video-players that have been produced by large groups of skilled professionals with extremely great effort. When that sets our standards of what a good or interesting piece of software looks like, it might be difficult to get the the same kick of excitement and feeling of success that I could get in 1983 seeing results of simple self-written for-loop on VIC-20.
+But in some ways the mental barrier for a child to start programming hobby might still be greater than in 1982. Free or cheap computer games are everywhere and it might be difficult to take the more tedious path of learning instead of succumbing to the easy and quick enjoyment of games others have programmed. Also in our daily lives we are interacting with numerous high-quality pieces of software from games to operating-systems to video-players that have been produced by large groups of skilled professionals with extremely great effort. When that sets our standards of what a good or interesting piece of software looks like, it might be difficult to get the the same kick of excitement and feeling of success that I could get in 1982 seeing results of simple self-written for-loop on VIC-20.
