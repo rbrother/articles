@@ -10,3 +10,4 @@ Jos Sinä joskus haluat palata "juurillesi", niin Sinun pitää mennä Vantaan k
 
 Kun katselee tuollaisen keskiaikaisen luonnonkivistä rakennetun kirkon korkeuksiin kohoavaa seinää, ja näkee siellä valtavia järkäleitä toinen toisiinsa liitettyinä, nousee mieleen suuri kunnioitus kirkon rakentajia kohtaan, kun he silloin käytettävissä olleilla alkeellisilla työkaluilla ovat saaneet sen aikaan. Vanhat kansansadut kertovatkin milloin jättiläisen, milloin peräti paholaisen rakentaneen kirkon, niin uskomattomalta on tällainen suoritus tuntunut. Kun taas katsoo tämän tarinani liitteenä olevaa taulukkoa Suomen väkiluvun kehityksestä vuodesta 1550 lähtien, ja palauttaa mieleensä ne vaikeudet ja kärsimykset, jotka noihin vuosiin ovat sisältyneet, on sanottava että esi-isämme ovat olleet sisun ja elämänhalun jättiläisiä pystyessään jättämään meille tämän kukoistavan maan.
 
+Tämän kohta alkavan tarinan perustana on ollut valtiotieteen maisteri ...
