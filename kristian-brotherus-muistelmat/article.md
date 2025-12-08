@@ -1,6 +1,12 @@
 # Kristian Brotherus muistelmat
 
-Kirjoittanut muistiin Robert "Roope" Brotherus, 
+Kirjoittanut muistiin Robert "Roope" Brotherus, kristianin serkun Jaakko Brotheruksen poika.
+
+## Muistelua ukista
+
+## Isän katoaminen
+
+
 
 ## Opinnot
 
