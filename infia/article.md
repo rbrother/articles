@@ -540,7 +540,9 @@ I was later told by Olavi Vaittinen that the set of lab-work on these courses wa
 
 I did not make any further development to Infia after 1998. In 1999 I first continued development of the CH4 vibrational model, but that work had to be abandoned when another researcher published a model that went in sophistication even beyond the plans that Halonen and myself had. Having now experienced three dead-end projects in vibrational-model development, my frustration in the prospects of such research increased to the point that in end of 1999 I left academic world for my first software-development job in private industry.
 
-While preparing this blog-post in 2024 I have collected all Infia source-files, compiled binaries, documentation, articles and demo-projects to GITHUB for historical reference. These are available freely and publicly at the hopefully permanent URL [https://github.com/rbrother/Infia/](https://github.com/rbrother/Infia/) . Nevertheless, if you check the program, feel also fee to drop me note at [robert@iki.fi](mailto:robert@iki.fi) or WhatsApp +358 45 1145602.
+While preparing this blog-post in 2024 I have collected all Infia source-files, compiled binaries, documentation, articles and demo-projects to GITHUB for historical reference. These are available freely and publicly at the hopefully permanent URL [https://github.com/rbrother/Infia/](https://github.com/rbrother/Infia/). Nevertheless, if you check the program, feel also fee to drop me note at [robert@iki.fi](mailto:robert@iki.fi) or WhatsApp +358 45 1145602.
+
+Later in 2025 I was also able to [recompile Infia from original source codes](/post/resurrect-infia-2025) with latest version of Delphi IDE.
 
 ## Later uses of Infia
 
