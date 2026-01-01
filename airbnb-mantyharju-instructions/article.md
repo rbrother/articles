@@ -45,11 +45,11 @@ PASSWORD: `finland123`
 
 The Wifi is provided by a 4G phone-router near the computer. It providers approximately 10 mbit/s connection speed.
 
-## Floorplan
+## Floor plan
 
 First floor:
 
-![floorplan first floor](floorplan1.jpg)
+![floor plan first floor](floorplan1.jpg)
 
 * **Tupa**: Kitchen and living-room with a sofa-bed  
 * **MH**: Bedroom with double bed  
@@ -98,12 +98,11 @@ If the tank is getting close to full, the device emits sound and lights the red 
 For heating the cottage when weather outside is cold, there is:
 
 1. Fireplace (see [“Using fireplace” chapter below](#using-the-fireplace))
-1. [Air-heat-pump](#air-heat-pump) on the wall of kitchen
-1. Electric radiators in each room
-1. Floor heating of the toilet (this must be always on, minimum level 3, even when you leave cottage)
-1. Wall radiator at the toilet (always keep plugged in, no need to adjust)
+1. [Air-heat-pump](#air-heat-pump) on the wall of kitchen. 
+1. Electric remote-controllable heating radiators in each room
+1. Floor heating of the toilet
 
-During your stay, it is recommended to keep the bedroom door open to let the heat from the living room (air-heat pump and fireplace) get there. But if this not enough, you can additionally switch on and use the bedroom electric radiator (power-switch on its right-hand side). If you do so, please switch the bedroom radiator off in the end of your stay.
+The air-heat-pump should be preferred over the electric heating radiators when possible since it used much less electricity for heating. Especially the living room electric heating radiator should be only used as a backup if the air-heat-pump is broken.  During your stay, it is recommended to keep the bedroom door open to let the heat from the living room (air-heat pump and fireplace) get there. But if this not enough, you can additionally use the bedroom electric radiator.
 
 ### Air heat pump
 
@@ -487,15 +486,16 @@ For other waste that cannot be recycled or you choose not to recycle, there are 
 ### Inside arrangements
 
 1. If you have been increasing the level of [toilet floor heating](#floor-heating), restore it to setting 3.
-1. If you have been using the [Air heat pump](#air-heat-pump) during your stay for heating or cooling: in summer-time turn it off from the remote control. **In winter** leave the air-heat-pump on to the minimum heating temperature (+16 C)
-1. Adjust the electric radiators in living room and kitchen to minimum +5 C
-1. Switch off the electric radiator of the bedroom completely from the switch in the side.
+1. Turn off the Air heat pump from the remote control.
+1. Set all electric radiators to minimum temperature (+5 C)
+1. Close the bedroom door
 1. Close fireplace chimney knob as shown in [Kitchen and Fireplace](#kitchen-and-fireplace) above
 1. Close the three [air intake vents at walls](#air-replacement-vents)
 1. Switch off [kitchen ventilation](#kitchen-ventilation)
 1. Leave kitchen closet doors and dishwasher door slightly open to let heat go to water-pipes inside them (see picture below)
 1. Switch off all lamps and television and computer. Do not switch off the wifi router
 1. Switch off the [water-pump electricity switch](#water). (Do NOT unplug the hot-water boiler or other water-area plugs)
+1. Leave both doors between toilet and living room open so heat can circulate.
 
 ![kitchen-closet-doors-open.jpg](kitchen-closet-doors-open.jpg)
 
