@@ -1,4 +1,4 @@
-# Why do I like Programming, The next chapter: AI Coding Agents
+# Why do I like Programming, Part 2: The AI Coding Agents
 
 ![Coding with robots](coding-happily-with-robots.jpg
 )
