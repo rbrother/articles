@@ -124,13 +124,7 @@ If you use linen or towels from the cottage, please [wash them in the end of you
 
 ## Living room Sofa bed
 
-If you have a need for more beds, you can unfold the sofa-bed in the living room to a double bed.
-
-This is IKEA EXARBY sofa-bed With a clicking-mechanism for converting between sofa and bed:
-
-<img src="sofa-bed.jpg" width="400px"/>
-
-Here is also: [video showing the mechanism](https://www.youtube.com/watch?v=pjEt9H_a45Q)
+If you have a need for more beds, you can drag out the extension part of the softa bed to make it double-bed.
 
 ## Electricity
 
