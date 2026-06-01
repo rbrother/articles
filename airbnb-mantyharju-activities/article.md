@@ -9,7 +9,7 @@ This is part of [Mäntyharju “Uitonranta” Cottage instructions](/post/airbnb
 Mäntyharju town is located about 10 min driving distance from the cottage. It has good selection of services, shops and restaurants available:
 
 * **Grocery store** with good selection "K-Supermarket Mäntyharju", address: Liiketie 1, Mäntyharju
-* **Grocery store** with good selection "S-Market Mäntryharju", address: Pentinpolku 2, Mäntyharju
+* **Grocery store** with good selection "S-Market Mäntyharju", address: Pentinpolku 2, Mäntyharju
 * **Electric car fast-chargers** are at parking places of both K-Supermarket and S-Market.
 * **Gasoline station** is located at the S-Market parking place.
 * **Pharmacy** is located in same building as the S-Market at address Pentinpolku 2.
@@ -161,11 +161,12 @@ Tools that can be used for making hole include ice-drill (kaira), iron bar (raut
 
 ### Outside summer activities
 
-* If you enjoy nature trails, there is [Repovesi National park](https://www.nationalparks.fi/repovesinp) less than 1 hour drive away from the cottage.
-* Web page on Mäntyharju nature activities (Finnish, use translation if needed): https://www.visitmantyharju.fi/luontoaktiviteetit
+* If you enjoy nature trails, there is [Repovesi National park](https://www.luontoon.fi/en/destinations/repovesi-national-park) less than 1 hour drive away from the cottage.
+* Mäntyharju nature and cultural activities on [VisitMäntyharju page](https://www.visitmantyharju.fi/mantyharju-in-english/) and its [Nature and sports section](https://www.visitmantyharju.fi/nature-and-sports/)
+* [Nature activities list on Mäntyharju town page](https://www.mantyharju.fi/sivut/vapaa-aika-kulttuuri/luontoaktiviteetit/), for example:
+  * [Frisbeegolf track](https://www.mantyharju.fi/sivut/vapaa-aika-kulttuuri/luontoaktiviteetit/frisbeegolf/) can be found Near Mäntyharju town center at address Asematie 10.
+  * [children's outdoors playground area](https://www.mantyharju.fi/sivut/vapaa-aika-kulttuuri/luontoaktiviteetit/metsaleikkipuisto/) near town center.
 * [Vola GOLF](https://vola.fi/) at Konnesaarentie 1 has is a driving range located in Mäntyharju, Finland. Vola-Golf offers you a chance to practice your swing or even get a green card. You don’t need your own equipment, just an open mind and curiosity. Suitable for the whole family!
-* [Frisbeegolf track](https://www.mantyharju.fi/sivut/vapaa-aika-kulttuuri/luontoaktiviteetit/frisbeegolf/) can be found Near Mäntyharju town center at address Asematie 10.   
-* [Childrens outdoors playground area](https://www.mantyharju.fi/sivut/vapaa-aika-kulttuuri/luontoaktiviteetit/metsaleikkipuisto/) near town center.
 
 ### Winter Outdoors activities
 
