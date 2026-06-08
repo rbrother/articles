@@ -28,6 +28,8 @@ While we have dozens of happy guests every year, it is good to understand that t
 
 ## Arrival instructions
 
+Aim to arrive as early as possible in the evening since if it is very dark in the evening, navigating the small countryside roads can be more difficult. Furthermore if the weather is bit cold, it’s good to have some time to warm up the fireplace and cottage for the night.
+
 Official address: Lustigkullavägen 302 (Lustigkullantie 302), Raasepori  
 [Location of Lustigkullavägen 302 on map](https://www.fonecta.fi/kartat/Lustigkullantie%20302,%2010600%20raasepori?lon=23.521535396575928&lat=59.97633983533491&z=15).  
 Old address before 2010: Aluddintie 118 (Some old maps might still use this)  
@@ -35,24 +37,36 @@ Distance from Helsinki about 100 km, driving time about 1.5 hours.
 
 ![Large scale map](map1.jpg)
 
-Aim to arrive as early as possible in the evening since if it is very dark in the evening, navigating the small countryside roads can be more difficult. Furthermore if the weather is bit cold, it’s good to have some time to warm up the fireplace and cottage for the night.
+### Arrival map
 
 ![Tammisaari arrival map](map2.jpg)
 
-Instructions:
+1. Bridge to Gammelboda island  
+2. Left turn to Lustigkullavägen  
+3. Lustigkullavägen 302, turn left to the small forest road at the “Lustigkullavägen 302” sign.
 
-1. From Tammisaari, drive south over the bridge to Gammelboda island
-1. In Gammelboda, drive about 1.5 km and then turn left to the Lustigkullavägen
-1. Drive about 3 km along Lustigkullavägen (first alongside Ekegolf golf course) to get to Lustigkullavägen 302
-1. At Lustigkullavägen 302 there is an address sign with “Lustigkullavägen 302” text. Turn there left to the small forest road and drive about 200 m to get to the cottage.
+### Land area map
 
-![Local map](map3.jpg)
+![Map of the lot](map3b.png)
+
+1. Lustigkullavägen 302.
+2. "Ichi"-cottage (rented separately)
+3. "Skinnaräng"-cottage
 
 The final forest road turning at Lustigkullavägen 302:
 
 ![Cottage road](cottage-road.jpg)
 
 <img src="address-sign.jpg" width="400px"/>
+
+### Cottages map
+
+![Map of the cottages](map4.png)
+
+Our lot has two cottages that can be separately rented:
+
+1. Ichi-cabin, parking is 70 m before the end of the road
+2. Skinnaräng-cottage, drive all the way to the end of the road
 
 ## Key
 
