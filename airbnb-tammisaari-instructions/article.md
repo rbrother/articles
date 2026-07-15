@@ -183,11 +183,13 @@ Guest computer can also be connected to the television with the HDMI-cable.
 
 ## Water
 
-Clean and drinkable water from a drill-well is available at the cottage. The water faucet (blue in picture below) is in the wall near the main door. You can take water for use in the kitchen directly from the tap to a bucket.
+Drinkable water from a drill-well is available at the cottage. The water faucet (blue in picture below) is in the wall near the main door. You can take water for use in the kitchen directly from the tap to a bucket.
+
+Note that while the water is drinkable and usually good quality, since it's natural water, it can still occasionally contain some minerals and slight color or taste depending on recent weather, amount of usage etc. This does not make the water dangerous for drinking, but if you prefer you can also buy and bring your own drinking water from a shop.
 
 <img src="door.jpg" width="400px"/>
 
-Water main switch is at ground near the main door, below the switch is shown open. Please close the switch in the end of your stay.
+Water main switch is at ground near the main door, below the switch is shown open. You never need to close the main switch, but if someone else has closed it, please open it to use water.
 
 <img src="water-switch.jpg" width="300px"/>
 
