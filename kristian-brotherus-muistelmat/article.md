@@ -146,7 +146,7 @@ Soitti professoreille valtio-tieteellisessä ja oikeustieteellisessä.
 
 Oikeustieteellisen proffat sanoivat että totta kai teet väitöskirjan.
 
-Kristian oli jo kerännyt sisäministeriön komiteoista paljon materiaalia väitöskirjan aiheeseen liittyen. Juridisia asioita, joita kukaan ei ollut koskaan miettinyt.
+Kristian oli jo kerännyt sisäministeriön komiteoista paljon materiaalia väitöskirjan aiheeseen liittyen. Juridisia asioita, joita kukaan ei ollut koskaan miettinyt. Ollut monessa komiteassa mukana. 
 
 Oli oikeustieteellisessä hallinto-elin, jossa piti hyväksyttää väitöskirjan aihe. Aihe suunnilleen: "Valtionapujen suunnittelu ja niihin liittyvät oikeudelliset ongelmat."
 
@@ -174,15 +174,23 @@ Hoitanut tuomiokunnan käräjätuomarin virkaa 2 viikkoa.
 
 80% lakimiehistä on suorittanut auskultoinut.
 
+## Ranskaa Helsingin Yliopiston kielitieteellisessä
+
+Valtiotieteellisen aikana aloitti kielitieteellisessä tiedekunnassa Ranskan opinnot.
+
+3 vuotta, 4 päivänä viikossa 3 tuntia.
+
+Matkusteli sittemmin paljon Ranskassa ja pakotti selviämään Ranskan kielellä.
+
+26 kaupunkia Ranskassa.
+
 ## Työura
 
 ## Kesätyö Englannissa 
 
-Butlins Holiday Camp, Skegess, Limcs England
+[Butlins](https://www.butlins.com/) Holiday Camp, Skegess, Limcs England
 
 Employed as dining hall porter 4.6 - 29.8.1964
-
-<https://www.butlins.com/>
 
 ## Sisäministeriössä 1975-1980
 
@@ -287,6 +295,23 @@ Vuosiansio: (muunna 2025 tasolle -> euro + inflaatio)
 1990 : 309 000 mk
 1991 : 317 000 mk
 1992 : 319 000 mk
+
+### Oslon Yliopistossa Norjan kieltä
+
+Satamaliitto maksoi
+
+3.5 kk aamusta iltaan Norjan kielen intensiivikurssi
+
+Bokmål viralliset asiakirjat
+
+Nynorsk kaikista murteista yhdistetty. Kylät ovat historiallisesti olleet melko eristettynä 
+toisistaan että murteet kehittyivät hyvin erilaisiksi. 
+
+### Kööpenhaminassa Tanskan kieltä
+
+Satamaliitto maksoi
+
+Tanskan kieltä noin 3.5 intensiivikurssi
 
 ### Trustisatama-uudistus
 
