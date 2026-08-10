@@ -331,11 +331,19 @@ The traditional Finnish wood-fired Sauna is located down the hill close to the s
 
 ## Getting water to the sauna
 
+To use water at the sauna, you need to open a valve in the pipe near the house on path to the Sauna. To prevent leaks at the Sauna pipes, please keep this valve opened only when you are filling water containers at the Sauna.
+
+<img src="water-pipe-sauna-switch.jpg" width="400px"/>
+
+<small>Sauna water pipe main valve, in Closed-position</small>
+
 Before fire is set to the sauna stove, the hot-water container in the chimney above the stove must be filled with water from the opening on the top. Also the large cold-water bucket inside the sauna can be filled at this point. Water-tap with a switch and hose is located in the Sauna-room.
 
 ## Using Sauna for washing
 
-1. After filling the water-containers, make fire to the Sauna stove. Keep adding wood as needed, approximately every 20-30 minutes
+1. Fill water to the got and cold water-containers
+1. Empty the ash-tray in the bottom of the stove if it has ash. Put the ash-tray back, but leave it open slightly (~ 2 cm) so that air can flow to the bottom of the stove.
+1. Make fire to the Sauna stove. Keep adding wood as needed, approximately every 20-30 minutes.
 1. After about 30-60 minutes the Sauna is warm and the water in the hot-water container above the stove should also be quite warm.
 1. While In sauna you can throw water to the stones to get "löyly", more heat
 1. You can mix hot water from the hot-water container and cold water in some smaller bucket to get water that is suitable warm for washing.
