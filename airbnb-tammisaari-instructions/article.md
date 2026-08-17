@@ -195,19 +195,51 @@ Water main switch is at ground near the main door, below the switch is shown ope
 
 The water-pump is located about 10 m from the cottage door towards the forest on other side of the road. If water is not coming from the faucet, please check that the I/O switch on the water-pump is on.
 
-### Emptying water-pipes
+### Water pump
 
-Emptying of the water-pipes might be needed when weather it is so cold that there is possibility of freezing temperatures in the night (typically October-November, discuss with owner is unsure). If the pipes are full of water and temperature drops below 0 C, the freezing water will break pipes and pump parts. In these conditions, emptying the pipes is needed at least in the end of your stay, possible even every evening. Steps to empty the water-pipes:
+The drill-well providing water to the cottage is located about 15 m from the cottage door towards the forest on other side of the road, marked with X in map below:
 
-1. Walk to the water-pump (about 15 m from the cottage door towards the forest on other side of the road).
-1. Switch off electricity from the water-pump from I/O switch on its control box ("3" in picture below).
-1. Open the water-pump side valve ("2" in picture below) so that water from the pressure-container runs out. Leave the valve open to let air come in for the next phase below.
+<img src="map4.png" width="400px"/>
+
+Above the ground has water pump and pressure container:
 
 ![Water-pump and pipes](water-pump-all.jpg)
 
 <small>Water pump in the forest. (1) water main-switch, (2) water side-switch, (3) power switch</small>
 
-4. Walk down to the Sauna and locate the pipe emptying valve, which is in the end of the pipe 2 m from sauna towards the sea-shore (see picture below)
+### Well capacity, Well running dry
+
+The drill-well can provide total of about 300-400 L of water per day to the cottages "Skinnaräng" and "Ichi". If the total used by the two cottages is more, there is risk that the water quality lowers (more color) or water runs out completely so that no water comes when opening a tap. So please try to use water in limited way. Washing one load of laundry uses approximately 80 L of water and Sauna large bucket contains about 60 L. 
+
+The pump has a water flow meter attached which shows the total amount of water used in liters (red) and cubic meters (1000 L, black):
+
+<img src="water-meter.jpg" width="300px"/>
+
+If the well runs dry due to excessive usage:
+
+1. Please turn off the power of the water-pump (switch 3 in the image above). 
+2. Wait at least one hour, preferably overnight, to allow new groundwater to gather to the well.
+3. While the well is dry, you can use water from the storage bucket in the front balcony. 5 L containers of clear drinking water are also available in the upper yellow shed.
+4. After letting the well to gather to the well, turn the pump back on. Initially the water in the well can have some more color (this is not dangerous) but should become eventually more clear when the well is allowed to fill more.
+
+If you are running out of water on your day of departure and that prevents you from washing the linen, leave the linen for us to wash in some neat pile in the bedroom.
+
+### Detecting leaks
+
+In some rare cases the well can run dry even if all the taps are closed due to some small leak in the pipe system. A leak can be noticed by observing the small black wheel in the center of the water meter (marked "Leak detection wheel" in the image above). When water is flowing through the pipe, the wheel is turning. When all the taps of the pipe-system are closed, the wheel should be completely stationary. 
+
+If the wheel is slowly rotating even when all taps are closed, this can be sign of a leak. If this happens:
+1. Turn the power of the water-pump off
+2. Whenever you need to use water, turn the pump on, and turn it off after using water. To avoid excessive hassle, we recommend in this situation that you mostly use water from the large 65 L bucket on the front porch and only when it gets empty fill it with well-water.
+3. Inform the owner immediately so we can come to investigate and fix the situation as soon as possible.
+
+### Emptying water-pipes
+
+Emptying of the water-pipes might be needed when weather it is so cold that there is possibility of freezing temperatures in the night (typically October-November, discuss with owner is unsure). If the pipes are full of water and temperature drops below 0 C, the freezing water will break pipes and pump parts. In these conditions, emptying the pipes is needed at least in the end of your stay, possible even every evening. Steps to empty the water-pipes:
+
+1. Switch off electricity from the water-pump from I/O switch on its control box ("3" in the picture).
+1. Open the water-pump side valve ("2" in the picture) so that water from the pressure-container runs out. Leave the valve open to let air come in for the next phase below.
+1. Walk down to the Sauna and locate the pipe emptying valve, which is in the end of the pipe 2 m from sauna towards the sea-shore (see picture below)
 1. Open the pipe emptying valve and keep it open until water completely stops coming out (about 20 seconds).
 1. Close the pipe emptying valve and the pump side-valve.
 
